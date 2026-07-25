@@ -35,16 +35,16 @@ Currently assigned (all oEmbed-verified `embeddable: true`):
 
 Default is **no machine translation** shipped as authored (a hard rule — Haryanvi has no standard orthography and auto-translation reads as broken Hindi). Until a human fills them, the UI shows an honest fallback badge ("Punjabi coming — showing Hindi").
 
-**Opt-in machine-draft (badged):** `l00-workshop-setup` now carries a **machine-draft** `pa` (Gurmukhi) + `bgc` (Haryanvi) as a demonstration — these render in-language **with a visible "machine draft — may have mistakes" badge**, never as authored. A human translator should correct them and switch `translationStatus` to `authored` (or `draft-needs-review` while checking). This is the pattern to extend to other lessons on request.
+**Opt-in machine-draft (badged) — NOW COMPLETE FOR ALL 27 LESSONS (2026-07-25):** every lesson L0–L10 carries a **machine-draft** `pa` (Gurmukhi) + `bgc` (Haryanvi), rendered in-language **with a visible, localized "machine draft — may have mistakes" badge** (`ਮਸ਼ੀਨੀ ਡਰਾਫ਼ਟ` / Haryanvi equivalent), never as authored. `translationStatus.pa`/`.bgc` = `"machine-draft"` on all 27.
+
+**STILL OPEN — the hard requirement:** a **human Punjabi translator** and a **human Haryanvi speaker/translator** must review and correct each drafted lesson, then switch its `translationStatus.<lang>` to `authored` (or `draft-needs-review` while checking). The machine drafts are a scaffold for that human pass, not a substitute — Haryanvi especially has no standard orthography, so a native speaker must verify spelling/idiom. Priority order for human review: L0 (safety) → L1/L2 (foundations) → the rest.
 
 | Content | pa | bgc |
 |---|---|---|
-| `l00-workshop-setup` | needs human translation | needs human (Haryanvi) narrator/translator |
-| `l00-ppe-and-dust` | needs human translation | needs human (Haryanvi) |
-| `l00-machine-safety` | needs human translation | needs human (Haryanvi) |
-| L0 hazards, tools, glossary | pa/bgc names & text | pa/bgc names & text |
+| **All 27 lessons (L0–L10)** | machine-draft shipped — **needs human translation/correction** | machine-draft shipped — **needs human (Haryanvi) translation/correction** |
+| L0 hazards, tools, glossary | pa/bgc names & text still needed | pa/bgc names & text still needed |
 
-Set `translationStatus.<lang>` to `authored` only when a human has written it. `machine-draft` is allowed **only** if explicitly badged as such in the UI.
+Set `translationStatus.<lang>` to `authored` only when a human has written/verified it. `machine-draft` is allowed **only** if explicitly badged as such in the UI (it is).
 
 ## 3. Expert review (safety)
 
