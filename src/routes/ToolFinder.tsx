@@ -6,6 +6,7 @@ import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
 import { DiscoveryNav } from '../components/DiscoveryNav'
+import { RefDraftNotice } from '../components/RefDraftNotice'
 
 export default function ToolFinder({ lang }: { lang: Locale }) {
   const [q, setQ] = useState('')
@@ -20,6 +21,7 @@ export default function ToolFinder({ lang }: { lang: Locale }) {
     <section className="page discovery" lang={lang}>
       <h1>{t('nav.tools', lang)}</h1>
       <DiscoveryNav lang={lang} />
+      <RefDraftNotice locale={lang} />
       <SearchBox value={q} onChange={setQ} placeholder={t('search.tool', lang)} />
 
       <div className="chip-filters" role="group" aria-label="Category">

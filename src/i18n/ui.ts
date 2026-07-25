@@ -71,6 +71,8 @@ const UI: Record<string, Entry> = {
   'badge.coming': { en: 'coming — showing', hi: 'जल्द आ रही है — दिखा रहे हैं', pa: 'ਜਲਦੀ ਆ ਰਹੀ ਹੈ — ਦਿਖਾ ਰਹੇ ਹਾਂ', bgc: 'जल्दी आवैगी — दिखा रे सां' },
   'badge.draft': { en: 'is a machine draft — it may have mistakes and hasn’t been checked by a person yet.', hi: 'एक मशीनी ड्राफ्ट है — इसमें गलतियाँ हो सकती हैं और अभी किसी व्यक्ति ने जाँचा नहीं।', pa: 'ਇੱਕ ਮਸ਼ੀਨੀ ਡਰਾਫ਼ਟ ਹੈ — ਇਸ ਵਿੱਚ ਗ਼ਲਤੀਆਂ ਹੋ ਸਕਦੀਆਂ ਹਨ ਤੇ ਹਾਲੇ ਕਿਸੇ ਨੇ ਜਾਂਚਿਆ ਨਹੀਂ।', bgc: 'एक मशीनी ड्राफ्ट सै — इसमें गलती हो सकैं अर अभी किसे नै जाँच्या न्ही।' },
 
+  'refdata.draftNotice': { en: 'The names and descriptions on this page are a machine draft — they may have mistakes and haven’t been checked by a person yet.', hi: 'इस पन्ने के नाम और विवरण मशीनी ड्राफ्ट हैं — इनमें गलतियाँ हो सकती हैं, अभी किसी ने जाँचा नहीं।', pa: 'ਇਸ ਪੰਨੇ ਦੇ ਨਾਂ ਤੇ ਵੇਰਵੇ ਮਸ਼ੀਨੀ ਡਰਾਫ਼ਟ ਹਨ — ਇਨ੍ਹਾਂ ਵਿੱਚ ਗ਼ਲਤੀਆਂ ਹੋ ਸਕਦੀਆਂ ਹਨ, ਹਾਲੇ ਕਿਸੇ ਨੇ ਜਾਂਚੇ ਨਹੀਂ।', bgc: 'इस पन्ने कै नाम अर ब्यौरे मशीनी ड्राफ्ट सैं — इनम्ह गलती हो सकैं, अभी किसे नै जाँच्या न्ही।' },
+
   'filter.all': { en: 'All', hi: 'सभी', pa: 'ਸਾਰੇ', bgc: 'सारे' },
   'disc.noMatch': { en: 'No matches', hi: 'कोई मेल नहीं', pa: 'ਕੋਈ ਮੇਲ ਨਹੀਂ', bgc: 'कोई मेल न्ही' },
   'disc.woodsTitle': { en: 'Woods & boards', hi: 'लकड़ी और बोर्ड', pa: 'ਲੱਕੜ ਤੇ ਬੋਰਡ', bgc: 'लकड़ी अर बोर्ड' },
