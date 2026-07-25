@@ -7,6 +7,9 @@
   "tags": ["business"],
   "prerequisites": ["l02-squaring-and-marking", "l01-choose-sheet-goods"],
   "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "pEIPdTMYNgA", "lang": "hi", "role": "primary", "credit": "Simply Interiors", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
   "translationStatus": { "en": "authored", "hi": "authored", "pa": "machine-draft", "bgc": "machine-draft" },
   "i18n": {
     "en": {

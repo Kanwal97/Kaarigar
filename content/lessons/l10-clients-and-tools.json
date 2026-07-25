@@ -7,6 +7,10 @@
   "tags": ["business"],
   "prerequisites": ["l10-estimating-and-quoting"],
   "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "cNMQYjHmkY8", "lang": "hi", "role": "primary", "credit": "Raoji Akash", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "YErp2_snJ4M", "lang": "hi", "role": "deep-dive", "credit": "Basant Art woodwork", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
   "translationStatus": { "en": "authored", "hi": "authored", "pa": "machine-draft", "bgc": "machine-draft" },
   "i18n": {
     "en": {
