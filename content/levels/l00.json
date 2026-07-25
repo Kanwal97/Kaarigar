@@ -1,0 +1,17 @@
+{
+  "id": "l00",
+  "number": 0,
+  "joint": "anchor",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Safety & workshop setup",
+      "outcome": "Set up a safe workspace, wear the right protection, and work a full day without getting hurt."
+    },
+    "hi": {
+      "title": "सुरक्षा और वर्कशॉप सेटअप",
+      "outcome": "सुरक्षित जगह बनाना, सही बचाव पहनना, और पूरा दिन बिना चोट खाए काम करना सीखें।"
+    }
+  },
+  "lessons": ["l00-workshop-setup", "l00-ppe-and-dust", "l00-machine-safety"]
+}

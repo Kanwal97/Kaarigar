@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kaarigar/schema/lesson.schema.json",
+  "title": "Lesson",
+  "description": "A single lesson. One file per lesson at content/lessons/<id>.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "level", "order", "difficulty", "estMinutes", "reviewStatus", "i18n", "translationStatus"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^l[0-9]{2}[a-z0-9-]+$", "description": "e.g. l05-mortise-tenon" },
+    "level": { "type": "number", "minimum": 0, "maximum": 10, "description": "Whole number; L4.5 sheet-goods uses level 4 with a high order + tag." },
+    "order": { "type": "integer", "minimum": 0 },
+    "difficulty": { "enum": ["beginner", "intermediate", "advanced"] },
+    "estMinutes": { "type": "integer", "minimum": 1, "maximum": 240 },
+    "tags": { "type": "array", "items": { "type": "string" }, "description": "e.g. sheet-goods, heritage-premium, business" },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^l[0-9]{2}[a-z0-9-]+$" },
+      "description": "Advisory only — never a hard gate."
+    },
+    "tools": { "type": "array", "items": { "type": "string" }, "description": "tool ids; validated against tools.json in CI" },
+    "materials": { "type": "array", "items": { "type": "string" }, "description": "wood/material ids; validated against woods.json in CI" },
+    "hazards": { "type": "array", "items": { "type": "string" }, "description": "hazard ids; validated against hazards.json in CI" },
+    "reviewStatus": {
+      "enum": ["needs-expert-review", "expert-reviewed"],
+      "description": "Safety-bearing lessons stay needs-expert-review until a human signs off."
+    },
+    "reviewedBy": { "type": "string", "description": "Name/credential of the expert who signed off; required when reviewStatus is expert-reviewed." },
+    "audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional per-locale narration; lazy-loaded. Player exists even when empty.",
+      "properties": {
+        "en": { "type": "string" }, "hi": { "type": "string" }, "pa": { "type": "string" }, "bgc": { "type": "string" }
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/video" }
+    },
+    "i18n": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Localized content. en + hi are the authored source pair; pa/bgc fall back visibly if absent.",
+      "required": ["en"],
+      "properties": {
+        "en": { "$ref": "#/$defs/lessonText" },
+        "hi": { "$ref": "#/$defs/lessonText" },
+        "pa": { "$ref": "#/$defs/lessonText" },
+        "bgc": { "$ref": "#/$defs/lessonText" }
+      }
+    },
+    "translationStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Per-locale honesty flag driving the in-UI fallback badge. Never render machine-draft/missing as authored.",
+      "required": ["en", "hi", "pa", "bgc"],
+      "properties": {
+        "en": { "$ref": "#/$defs/tstatus" },
+        "hi": { "$ref": "#/$defs/tstatus" },
+        "pa": { "$ref": "#/$defs/tstatus" },
+        "bgc": { "$ref": "#/$defs/tstatus" }
+      }
+    },
+    "selfCheck": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/selfCheckItem" }
+    }
+  },
+  "$defs": {
+    "tstatus": { "enum": ["authored", "draft-needs-review", "machine-draft", "missing"] },
+    "lessonText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "objectives", "summary", "steps"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "objectives": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "\"What you'll be able to do at the end\" — shown FIRST, before theory."
+        },
+        "summary": { "type": "string" },
+        "steps": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "practice": { "type": "string", "description": "Hands-on practice task." },
+        "safetyNote": { "type": "string", "description": "Human-readable safety callout; underlying claims must map to hazards[] with citations." }
+      }
+    },
+    "video": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["videoId", "lang", "role"],
+      "properties": {
+        "videoId": { "type": "string", "description": "\"TODO\" until CI-verified. NEVER guess a real ID." },
+        "lang": { "enum": ["en", "hi", "pa", "bgc"] },
+        "startSec": { "type": "integer", "minimum": 0, "default": 0 },
+        "endSec": { "type": ["integer", "null"], "minimum": 0, "default": null },
+        "role": { "enum": ["primary", "alternate-language", "deep-dive"] },
+        "credit": { "type": "string", "description": "Channel name." },
+        "verifiedAt": { "type": ["string", "null"], "format": "date-time", "description": "Written by CI oEmbed check." },
+        "embeddable": { "type": ["boolean", "null"], "description": "Written by CI; false → do not embed, show 'Watch on YouTube'." }
+      }
+    },
+    "selfCheckItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["q", "options", "answerIndex"],
+      "properties": {
+        "q": { "$ref": "#/$defs/localizedString" },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/localizedString" }
+        },
+        "answerIndex": { "type": "integer", "minimum": 0 },
+        "explain": { "$ref": "#/$defs/localizedString" }
+      }
+    },
+    "localizedString": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string" }, "hi": { "type": "string" }, "pa": { "type": "string" }, "bgc": { "type": "string" }
+      }
+    }
+  }
+}

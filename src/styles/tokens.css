@@ -1,0 +1,126 @@
+/* Design tokens — seeded from docs/DESIGN.md. M2 expands (full type scale, spacing,
+   elevation). Kept as CSS custom properties so there is zero runtime styling JS. */
+
+:root {
+  /* palette — light. A MOTIVATIONAL scheme grounded in the workshop's own world:
+     orange = energy to act, green wood = growth/progress, brass = achievement/reward,
+     blueprint = focus. Sheesham stays as the grounding brand anchor. */
+  --bg: #fcf8ef; /* warm, bright, uplifting */
+  --surface: #ffffff;
+  --surface-sunk: #f3ead6;
+  --ink: #241a14; /* ~13:1 on --bg */
+  --ink-soft: #5a4a3c; /* ~7:1 on --bg */
+  --line: #ddcba4;
+  --primary: #7e4632; /* sheesham (lightened) — brand / structure / headers; white text 7.48:1 AAA */
+  --primary-ink: #ffffff;
+  --accent: #ce9427; /* brass-gold — achievement, reward, active state, streaks */
+  --accent-ink: #241a14; /* dark ink on brass for guaranteed contrast */
+  --cta: #f2621c; /* extension-cable orange — the ONE high-energy action (Start / Play) */
+  --cta-ink: #241a14; /* dark ink on orange (energetic + accessible; white only on large/bold) */
+  --success: #3f7d4e; /* fresh green wood — progress, completion, momentum */
+  --success-ink: #ffffff; /* on filled success (4.94:1 AA, large/bold) */
+  --info: #1f5c8a; /* blueprint blue — links, focus, information (link text 7.10:1 AAA) */
+  --danger: #a62a1e; /* deep red — ALWAYS paired with icon + word (never colour alone) */
+  --danger-ink: #ffffff;
+  /* --line (above) is for decorative dividers only (exempt from 1.4.11). For
+     interactive control outlines (self-check options, inputs) use --border-strong. */
+  --border-strong: #8c7a4f; /* 4.19:1 vs surface — clears the 3:1 UI-component minimum */
+
+  /* type */
+  --font-body: 'Mukta', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Baloo 2', system-ui, sans-serif;
+  /* Type scale (rem, base root = 16px). The 3-step text-size control steps the
+     ROOT font-size (below), so every rem-based size scales together. */
+  --fs-xs: 0.875rem; /* 14 — captions, credits */
+  --fs-sm: 1rem; /* 16 — labels, secondary */
+  --fs-base: 1.125rem; /* 18 — body / lesson steps (large default for the workshop) */
+  --fs-lg: 1.375rem; /* 22 — lead, card titles */
+  --fs-xl: 1.75rem; /* 28 — section headings */
+  --fs-2xl: 2.25rem; /* 36 — level titles */
+  --fs-3xl: 2.875rem; /* 46 — hero (desktop) */
+  --lh-body: 1.6; /* Indic scripts need headroom for matras / laga-matra */
+  --lh-heading: 1.25;
+  --measure: 66ch; /* max readable line length */
+
+  /* shape */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+
+  /* spacing */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  /* elevation — soft warm shadows, not hard drop shadows */
+  --elev-1: 0 2px 8px rgba(36, 26, 20, 0.12);
+  --elev-2: 0 8px 24px rgba(36, 26, 20, 0.16);
+
+  /* motion — restrained; disabled under prefers-reduced-motion (see base.css) */
+  --dur-1: 160ms;
+  --ease-1: cubic-bezier(0.2, 0.6, 0.2, 1);
+
+  /* touch targets */
+  --tap-min: 48px;
+  --tap-primary: 56px;
+
+  color-scheme: light dark;
+}
+
+/* 3-step text-size control — steps the root font-size so all rem sizes resize.
+   Set by the Me/header control and persisted (src/lib/storage.ts). */
+:root[data-text-size='large'] { font-size: 115%; }
+:root[data-text-size='xlarge'] { font-size: 130%; }
+
+:root[data-theme='dark'] {
+  --bg: #1a130e; /* warm near-black brown, never pure black */
+  --surface: #251b14;
+  --surface-sunk: #2f231a;
+  --ink: #f3e9d8;
+  --ink-soft: #c6b292;
+  --line: #4a3a2a;
+  --primary: #d29a79; /* sheesham lightened for dark surfaces */
+  --primary-ink: #1a130e;
+  --accent: #e0b24e; /* brass, brightened */
+  --accent-ink: #1a130e;
+  --cta: #f5772f; /* orange, brightened */
+  --cta-ink: #1a130e;
+  --success: #5fa46c; /* soft forest green (muted, NOT neon) */
+  --success-ink: #10241a;
+  --info: #7fb2e0; /* blueprint blue, lightened */
+  --danger: #e4776b;
+  --danger-ink: #1a130e;
+  --border-strong: #8f7c5c; /* 4.18:1 vs surface */
+  --elev-1: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --elev-2: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #1a130e;
+    --surface: #251b14;
+    --surface-sunk: #2f231a;
+    --ink: #f3e9d8;
+    --ink-soft: #c6b292;
+    --line: #4a3a2a;
+    --primary: #d29a79;
+    --primary-ink: #1a130e;
+    --accent: #e0b24e;
+    --accent-ink: #1a130e;
+    --cta: #f5772f;
+    --cta-ink: #1a130e;
+    --success: #5fa46c;
+    --success-ink: #10241a;
+    --info: #7fb2e0;
+    --danger: #e4776b;
+    --danger-ink: #1a130e;
+    --border-strong: #8f7c5c;
+    --elev-1: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --elev-2: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+}

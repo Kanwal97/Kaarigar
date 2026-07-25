@@ -1,0 +1,73 @@
+{
+  "id": "l01-choose-sheet-goods",
+  "level": 1,
+  "order": 2,
+  "difficulty": "beginner",
+  "estMinutes": 16,
+  "tags": ["wood", "sheet-goods"],
+  "prerequisites": ["l01-identify-timbers"],
+  "materials": ["commercial-ply", "bwr-ply", "marine-ply", "blockboard", "mdf", "particle-board", "wpc", "laminate", "veneer"],
+  "hazards": ["wood-dust"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "wvSqzDSGHn0", "lang": "hi", "role": "primary", "credit": "Payal Interiors", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "WpYMfSFcGb8", "lang": "hi", "role": "deep-dive", "credit": "Your Ideal Home", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Choose the right board",
+      "objectives": [
+        "Match plywood grade (MR / BWR / BWP) to how wet the location is",
+        "Know when to use MDF, blockboard, particle board or WPC instead of ply",
+        "Pick a surface — laminate, veneer or paint — for the look and durability wanted"
+      ],
+      "summary": "Most paid Indian jobs are ply/MDF carcasses faced with laminate. Getting the grade and board type right is what separates a wardrobe that lasts from one that swells in the first monsoon.",
+      "steps": [
+        "Dry interiors (wardrobe body): MR commercial ply (IS:303) is enough and cheapest.",
+        "Kitchens & semi-wet: step up to BWR ply; for the wettest zones use BWP/marine ply (IS:710).",
+        "Smooth painted or routed shutters: MDF (no grain) — but MDF has no water resistance and heavy dust.",
+        "Long shutters/doors/tabletops: blockboard is light and stiff over spans. Bathrooms/louvers: WPC (waterproof).",
+        "Avoid particle board anywhere it may get wet. Face the carcass with laminate (Sunmica) for wear, or veneer for a real-wood look."
+      ],
+      "practice": "Price a small wardrobe body two ways at your local dealer: MR ply vs BWR ply. Note the price difference per sheet and decide which the job actually needs.",
+      "safetyNote": "MDF and particle board give off very fine dust when cut — always cut with extraction or outdoors, and wear a fitted mask (L0)."
+    },
+    "hi": {
+      "title": "सही बोर्ड चुनें",
+      "objectives": [
+        "प्लाईवुड ग्रेड (MR / BWR / BWP) को जगह की नमी से मिलाएँ",
+        "जानें कब प्लाई की जगह MDF, ब्लॉकबोर्ड, पार्टिकल बोर्ड या WPC इस्तेमाल करें",
+        "लुक और टिकाव के लिए सतह चुनें — लैमिनेट, विनियर या पेंट"
+      ],
+      "summary": "भारत के ज़्यादातर पैसे वाले काम प्लाई/MDF के ढाँचे पर लैमिनेट के होते हैं। सही ग्रेड और बोर्ड चुनना ही तय करता है कि अलमारी टिकेगी या पहली बरसात में फूल जाएगी।",
+      "steps": [
+        "सूखे अंदरूनी (अलमारी बॉडी): MR कमर्शियल प्लाई (IS:303) काफी और सबसे सस्ती।",
+        "रसोई व अर्ध-गीले: BWR प्लाई लें; सबसे गीले हिस्सों के लिए BWP/मरीन प्लाई (IS:710)।",
+        "चिकने पेंट या राउटेड शटर: MDF (बिना ग्रेन) — पर MDF में पानी-रोधकता नहीं और बुरादा ज़्यादा।",
+        "लंबे शटर/दरवाज़े/टेबल-टॉप: ब्लॉकबोर्ड हल्का और बड़े हिस्सों पर मज़बूत। बाथरूम/लौवर: WPC (वॉटरप्रूफ)।",
+        "पार्टिकल बोर्ड को गीली जगह से बचाएँ। ढाँचे पर घिसाव के लिए लैमिनेट (सनमाइका) या असली लकड़ी के लुक के लिए विनियर लगाएँ।"
+      ],
+      "practice": "अपने डीलर से छोटी अलमारी बॉडी के दो दाम पूछें: MR प्लाई बनाम BWR प्लाई। प्रति शीट फर्क नोट करें और तय करें काम को असल में किसकी ज़रूरत है।",
+      "safetyNote": "MDF और पार्टिकल बोर्ड काटते समय बहुत बारीक बुरादा उड़ता है — हमेशा एक्सट्रैक्शन के साथ या बाहर काटें, और सही मास्क पहनें (L0)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Which board is the right choice for a kitchen sink cabinet?",
+        "hi": "रसोई के सिंक कैबिनेट के लिए कौन-सा बोर्ड सही है?"
+      },
+      "options": [
+        { "en": "Particle board", "hi": "पार्टिकल बोर्ड" },
+        { "en": "MR commercial ply", "hi": "MR कमर्शियल प्लाई" },
+        { "en": "BWP / marine ply or WPC", "hi": "BWP / मरीन प्लाई या WPC" }
+      ],
+      "answerIndex": 2,
+      "explain": {
+        "en": "The sink area gets wet, so it needs a waterproof board — BWP/marine ply (IS:710) or WPC. MR and particle board would swell.",
+        "hi": "सिंक वाला हिस्सा गीला रहता है, इसलिए वॉटरप्रूफ बोर्ड चाहिए — BWP/मरीन प्लाई (IS:710) या WPC। MR और पार्टिकल बोर्ड फूल जाएँगे।"
+      }
+    }
+  ]
+}

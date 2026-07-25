@@ -1,0 +1,74 @@
+{
+  "id": "l09-build-a-stool",
+  "level": 9,
+  "order": 1,
+  "difficulty": "intermediate",
+  "estMinutes": 40,
+  "tags": ["project"],
+  "prerequisites": ["l04-sawing-technique", "l05-butt-and-lap", "l06-glue-and-fasteners"],
+  "tools": ["measuring-tape", "gunia", "handsaw", "hand-plane", "chisel-firmer", "mallet"],
+  "materials": ["pine", "sheesham"],
+  "hazards": ["chisel-cut", "workpiece-slip"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "KGEE9nvXQ2Q", "lang": "hi", "role": "primary", "credit": "SUPER WOODWORK", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "lXjoCSppHFE", "lang": "en", "role": "deep-dive", "credit": "Woodworking With Wes", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Build a stool, start to finish",
+      "objectives": [
+        "Take a simple project from a cut-list to a finished piece",
+        "Combine measuring, sawing, planing and a joint into one job",
+        "Make it stand square and not wobble"
+      ],
+      "summary": "This is your first whole project — the moment all the separate skills become one thing you can sell or use. Work in order and don't rush the marking.",
+      "steps": [
+        "Make a cut-list: a seat top, four legs, and rails to join the legs. Measure twice and cut each part (L2, L4).",
+        "Plane the legs straight and square, and the seat flat (L4). Mark the joints with a gunia from your reference faces.",
+        "Cut the leg-to-rail joints (a half-lap or a simple mortise & tenon from L5) and dry-fit the whole frame before any glue.",
+        "Check the frame is square — measure both diagonals; equal means square. Adjust, then glue and clamp (L6).",
+        "Fix the seat on, plane the edges flush, sand up through the grits (L8), and finish. Stand it on a flat floor — no wobble."
+      ],
+      "practice": "Build one stool in pine following this order. Note where you'd change the cut-list or joints for a taller chowki next.",
+      "safetyNote": "Clamp every part while sawing and paring; keep your holding hand behind the chisel and out of the saw's line (L0)."
+    },
+    "hi": {
+      "title": "स्टूल बनाएँ, शुरू से अंत तक",
+      "objectives": [
+        "एक सरल प्रोजेक्ट को कट-लिस्ट से तैयार टुकड़े तक ले जाएँ",
+        "नाप, आरी, रंदा और एक जोड़ को एक काम में मिलाएँ",
+        "इसे चौकोर खड़ा करें, हिले नहीं"
+      ],
+      "summary": "यह आपका पहला पूरा प्रोजेक्ट है — जहाँ अलग-अलग कौशल एक ऐसी चीज़ बनते हैं जिसे आप बेच या इस्तेमाल कर सकें। क्रम से काम करें और निशान में जल्दबाज़ी न करें।",
+      "steps": [
+        "कट-लिस्ट बनाएँ: एक सीट, चार पाए, और पायों को जोड़ने वाली रेल। दो बार नापें और हर टुकड़ा काटें (L2, L4)।",
+        "पायों को सीधा-चौकोर और सीट को समतल रंदें (L4)। आधार सतहों से गुनिया लगाकर जोड़ों के निशान बनाएँ।",
+        "पाया-रेल जोड़ काटें (L5 का हाफ-लैप या साधारण मोर्टिस-टेनन) और गोंद से पहले पूरे फ्रेम को सूखा फिट करें।",
+        "फ्रेम चौकोर है जाँचें — दोनों विकर्ण नापें; बराबर मतलब चौकोर। ठीक करके गोंद लगाकर क्लैंप करें (L6)।",
+        "सीट लगाएँ, किनारे flush रंदें, ग्रिट क्रम से रेगमाल करें (L8), और फिनिश करें। समतल फर्श पर खड़ा करें — हिले नहीं।"
+      ],
+      "practice": "इसी क्रम से पाइन में एक स्टूल बनाएँ। नोट करें अगली बार ऊँची चौकी के लिए कट-लिस्ट या जोड़ कहाँ बदलेंगे।",
+      "safetyNote": "आरी और छीलते समय हर टुकड़ा क्लैंप करें; पकड़ने वाला हाथ छेनी के पीछे और आरी की सीध से बाहर रखें (L0)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Before gluing the frame, how do you check it's square?",
+        "hi": "फ्रेम को गोंद लगाने से पहले चौकोर कैसे जाँचें?"
+      },
+      "options": [
+        { "en": "Look at it from the front", "hi": "सामने से देखें" },
+        { "en": "Measure both diagonals — equal means square", "hi": "दोनों विकर्ण नापें — बराबर मतलब चौकोर" },
+        { "en": "Push on it hard", "hi": "इस पर ज़ोर से दबाएँ" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Equal diagonals prove a rectangle is square — the quickest reliable check before the glue sets.",
+        "hi": "बराबर विकर्ण साबित करते हैं कि आयत चौकोर है — गोंद जमने से पहले सबसे तेज़ भरोसेमंद जाँच।"
+      }
+    }
+  ]
+}

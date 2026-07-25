@@ -1,0 +1,71 @@
+{
+  "id": "l03-sharpen-edge-tools",
+  "level": 3,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 15,
+  "tags": ["hand-tools"],
+  "tools": ["sharpening-stone", "chisel-firmer", "hand-plane"],
+  "hazards": ["chisel-cut"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "fGS_3o1xVPs", "lang": "en", "role": "primary", "credit": "Sawdust Solutions with Buck", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Sharpen your chisels & plane iron",
+      "objectives": [
+        "Hold a steady bevel angle while honing",
+        "Raise a burr, then remove it for a keen edge",
+        "Test sharpness safely — never on your thumb"
+      ],
+      "summary": "A sharp tool is safer than a blunt one: it cuts where you aim with less force, so it slips less. Ten minutes on the stone changes everything.",
+      "steps": [
+        "Flatten the back of the blade first — a hollow back never gets truly sharp.",
+        "Hold the bevel flat on the stone at a steady angle (about 25–30°). Consistency matters more than the exact number.",
+        "Work from a coarse stone to a fine one, keeping the same angle, until you feel a tiny burr on the back edge.",
+        "Flip the blade flat and take one or two light strokes to remove the burr.",
+        "Test on end grain or by slicing paper — a sharp edge cuts cleanly. Never test on your thumb."
+      ],
+      "practice": "Sharpen one chisel until it slices a curl off the corner of a softwood block. Compare how it cuts before and after.",
+      "safetyNote": "A freshly sharpened edge is very keen — clamp the work, keep fingers behind the edge, and store the tool with the edge guarded."
+    },
+    "hi": {
+      "title": "छेनी और रंदे के ब्लेड की धार करें",
+      "objectives": [
+        "धार लगाते समय बेवल का कोण एक-सा रखें",
+        "पहले बर (barb) उठाएँ, फिर हटाकर तेज़ धार पाएँ",
+        "धार सुरक्षित तरीके से जाँचें — कभी अंगूठे पर नहीं"
+      ],
+      "summary": "तेज़ औज़ार कुंद से ज़्यादा सुरक्षित है: कम ज़ोर में वहीं काटता है जहाँ आप चाहें, इसलिए कम फिसलता है। पत्थर पर दस मिनट सब बदल देते हैं।",
+      "steps": [
+        "पहले ब्लेड का पिछला हिस्सा (back) समतल करें — गड्ढेदार बैक कभी सच में तेज़ नहीं होता।",
+        "बेवल को पत्थर पर एक-से कोण (लगभग 25–30°) पर सपाट रखें। सही नंबर से ज़्यादा एक-सा रखना ज़रूरी है।",
+        "मोटे पत्थर से बारीक की तरफ बढ़ें, वही कोण रखते हुए, जब तक पीछे किनारे पर हल्का बर महसूस न हो।",
+        "ब्लेड को पलटकर सपाट रखें और एक-दो हल्के स्ट्रोक से बर हटा दें।",
+        "एंड-ग्रेन पर या कागज़ काटकर जाँचें — तेज़ धार साफ काटती है। कभी अंगूठे पर न जाँचें।"
+      ],
+      "practice": "एक छेनी को इतना तेज़ करें कि नरम लकड़ी के कोने से छिलका उतार दे। पहले और बाद में कटाई की तुलना करें।",
+      "safetyNote": "ताज़ी धार बहुत तेज़ होती है — काम को क्लैंप करें, उँगलियाँ धार के पीछे रखें, और औज़ार को धार ढककर रखें।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Why is a sharp chisel safer than a blunt one?",
+        "hi": "तेज़ छेनी कुंद से ज़्यादा सुरक्षित क्यों है?"
+      },
+      "options": [
+        { "en": "It looks better", "hi": "यह बेहतर दिखती है" },
+        { "en": "It needs less force, so it slips less", "hi": "इसमें कम ज़ोर लगता है, इसलिए कम फिसलती है" },
+        { "en": "It is heavier", "hi": "यह भारी होती है" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "A blunt tool needs you to push hard — and that force is what makes it slip and cut you.",
+        "hi": "कुंद औज़ार में ज़ोर लगाना पड़ता है — वही ज़ोर उसे फिसलाकर चोट पहुँचाता है।"
+      }
+    }
+  ]
+}

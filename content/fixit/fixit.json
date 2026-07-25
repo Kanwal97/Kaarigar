@@ -1,0 +1,114 @@
+[
+  {
+    "id": "tear-out",
+    "category": "cutting",
+    "relatedLessons": ["l01-identify-timbers"],
+    "i18n": {
+      "en": {
+        "title": "The surface tore out while planing",
+        "problem": "Instead of a clean surface, the wood chipped and lifted in patches.",
+        "cause": "You planed against the grain, or the blade was blunt.",
+        "fix": "Read the grain and plane the other way (with it). Sharpen the blade and take thinner shavings. On wild grain, dampen slightly and go slow."
+      },
+      "hi": {
+        "title": "रंदते समय सतह फट गई",
+        "problem": "साफ सतह की जगह लकड़ी जगह-जगह से उखड़ी और छिली।",
+        "cause": "आपने रेशे के उल्टा रंदा, या ब्लेड कुंद था।",
+        "fix": "रेशा पढ़ें और दूसरी तरफ (रेशे के साथ) रंदें। ब्लेड की धार तेज़ करें और पतले छिलके लें। उलझे रेशे पर हल्का गीला करके धीरे चलें।"
+      }
+    }
+  },
+  {
+    "id": "saw-drift",
+    "category": "cutting",
+    "relatedLessons": ["l02-squaring-and-marking"],
+    "i18n": {
+      "en": {
+        "title": "The cut wandered off the line",
+        "problem": "The saw drifted so the cut isn't square or straight.",
+        "cause": "You forced the saw, or weren't watching the line on both faces.",
+        "fix": "Let the saw do the work — light strokes, follow the line. Mark the cut on two faces with a gunia and check both as you go."
+      },
+      "hi": {
+        "title": "कटाई लकीर से भटक गई",
+        "problem": "आरी भटक गई जिससे कटाई चौकोर या सीधी नहीं है।",
+        "cause": "आपने आरी पर ज़ोर लगाया, या दोनों तरफ की लकीर नहीं देखी।",
+        "fix": "आरी को काम करने दें — हल्के स्ट्रोक, लकीर के साथ। गुनिया से दो तरफ लकीर लगाएँ और चलते हुए दोनों जाँचें।"
+      }
+    }
+  },
+  {
+    "id": "loose-joint",
+    "category": "joinery",
+    "i18n": {
+      "en": {
+        "title": "The joint is loose / has gaps",
+        "problem": "The parts don't sit tight; you can see light through the joint.",
+        "cause": "Marked or cut on the wrong side of the line, so the socket is too big.",
+        "fix": "Cut to the waste side of the line and test-fit before glue. For an existing gap, glue in a thin matching sliver, or use a filler made from the same sawdust + glue."
+      },
+      "hi": {
+        "title": "जोड़ ढीला है / उसमें गैप है",
+        "problem": "टुकड़े कसकर नहीं बैठते; जोड़ में से रोशनी दिखती है।",
+        "cause": "लकीर के गलत तरफ निशान या कटाई की, जिससे खाँचा बड़ा हो गया।",
+        "fix": "लकीर के बेकार तरफ काटें और गोंद से पहले फिट करके देखें। मौजूदा गैप के लिए उसी लकड़ी की पतली फाँक चिपकाएँ, या उसी बुरादे + गोंद का भराव बनाएँ।"
+      }
+    }
+  },
+  {
+    "id": "out-of-square-carcass",
+    "category": "joinery",
+    "relatedLessons": ["l02-squaring-and-marking"],
+    "i18n": {
+      "en": {
+        "title": "The cabinet is out of square (racked)",
+        "problem": "The carcass leans; doors won't sit evenly.",
+        "cause": "Assembled without checking diagonals; or the wall you fitted to isn't square.",
+        "fix": "Before the glue sets, measure both diagonals — equal = square. Clamp a diagonal to pull it true. On site, scribe the panel to the crooked wall instead of forcing the box."
+      },
+      "hi": {
+        "title": "कैबिनेट चौकोर नहीं है (तिरछा)",
+        "problem": "ढाँचा झुका है; दरवाज़े एक-से नहीं बैठते।",
+        "cause": "बिना विकर्ण (डायगोनल) जाँचे जोड़ा; या जिस दीवार पर फिट किया वह चौकोर नहीं।",
+        "fix": "गोंद जमने से पहले दोनों विकर्ण नापें — बराबर = चौकोर। एक विकर्ण पर क्लैंप लगाकर सीधा करें। साइट पर, बॉक्स को ज़ोर लगाने की जगह पैनल को टेढ़ी दीवार पर स्क्राइब करें।"
+      }
+    }
+  },
+  {
+    "id": "laminate-bubble",
+    "category": "finishing",
+    "i18n": {
+      "en": {
+        "title": "The laminate bubbled / lifted",
+        "problem": "The Sunmica has a bubble or a lifting edge.",
+        "cause": "Too little adhesive, uneven pressure, or you pressed before the glue tacked.",
+        "fix": "Warm the bubble gently and roller it down; if it won't hold, slit it, work fresh adhesive under, and roller from the centre out. Always press the whole sheet with even weight."
+      },
+      "hi": {
+        "title": "लैमिनेट में बुलबुला / उखड़ना",
+        "problem": "सनमाइका में बुलबुला है या किनारा उखड़ रहा है।",
+        "cause": "कम गोंद, असमान दबाव, या गोंद के पकड़ने से पहले दबा दिया।",
+        "fix": "बुलबुले को हल्का गरम करके रोलर से बैठाएँ; न टिके तो चीरा लगाकर नीचे ताज़ा गोंद लगाएँ और बीच से किनारे की तरफ रोलर करें। पूरी शीट पर बराबर वज़न से दबाएँ।"
+      }
+    }
+  },
+  {
+    "id": "board-swelled",
+    "category": "boards",
+    "relatedLessons": ["l01-choose-sheet-goods"],
+    "i18n": {
+      "en": {
+        "title": "The board swelled in a wet area",
+        "problem": "The panel puffed up and delaminated near water.",
+        "cause": "MR ply or particle board was used in a wet zone.",
+        "fix": "You can't un-swell it — replace with BWP/marine ply (IS:710) or WPC. Next time, match the board grade to the location (see L1)."
+      },
+      "hi": {
+        "title": "बोर्ड गीली जगह पर फूल गया",
+        "problem": "पैनल पानी के पास फूल गया और परतें अलग हो गईं।",
+        "cause": "गीले हिस्से में MR प्लाई या पार्टिकल बोर्ड इस्तेमाल हुआ।",
+        "fix": "फूला बोर्ड ठीक नहीं होता — BWP/मरीन प्लाई (IS:710) या WPC से बदलें। अगली बार बोर्ड का ग्रेड जगह से मिलाएँ (देखें L1)।"
+      }
+    }
+  }
+]

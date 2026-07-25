@@ -1,0 +1,17 @@
+{
+  "id": "l09",
+  "number": 9,
+  "joint": "carcass",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Real projects",
+      "outcome": "Put every skill together to build real furniture — from a first stool to a paying wardrobe — start to finish."
+    },
+    "hi": {
+      "title": "असली प्रोजेक्ट",
+      "outcome": "हर कौशल जोड़कर असली फर्नीचर बनाएँ — पहले स्टूल से लेकर पैसे वाली अलमारी तक — शुरू से अंत तक।"
+    }
+  },
+  "lessons": ["l09-build-a-stool", "l09-build-a-wardrobe"]
+}

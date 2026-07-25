@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kaarigar/schema/hazards.schema.json",
+  "title": "Hazards",
+  "description": "Array of hazard entries. content/hazards/hazards.json. EVERY hazard MUST carry a citable source (OSHA/ILO/HSE/manufacturer/NCVT-ITI/NSDC-FFSC). No safety claim from our own head.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "i18n", "source", "reviewStatus"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "e.g. chisel-cut, workpiece-slip, spray-fumes, unguarded-blade" },
+      "severity": { "enum": ["low", "medium", "high", "critical"] },
+      "i18n": {
+        "type": "object", "additionalProperties": false, "required": ["en"],
+        "properties": {
+          "en": { "$ref": "#/$defs/hazardText" },
+          "hi": { "$ref": "#/$defs/hazardText" },
+          "pa": { "$ref": "#/$defs/hazardText" },
+          "bgc": { "$ref": "#/$defs/hazardText" }
+        }
+      },
+      "source": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["org", "url"],
+          "properties": {
+            "org": { "type": "string", "description": "e.g. OSHA, ILO, HSE, NCVT ITI Carpenter, NSDC FFSC, manufacturer manual." },
+            "url": { "type": "string" },
+            "ref": { "type": "string", "description": "Section/standard/page reference." }
+          }
+        },
+        "description": "At least one citable source. CI fails if a hazard has no source."
+      },
+      "reviewStatus": { "enum": ["needs-expert-review", "expert-reviewed"] },
+      "reviewedBy": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "hazardText": {
+      "type": "object", "additionalProperties": false, "required": ["label", "control"],
+      "properties": {
+        "label": { "type": "string", "description": "Short hazard name." },
+        "risk": { "type": "string", "description": "What can go wrong." },
+        "control": { "type": "string", "description": "How to prevent/mitigate — the actionable part." }
+      }
+    }
+  }
+}

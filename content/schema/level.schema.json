@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kaarigar/schema/level.schema.json",
+  "title": "Level",
+  "description": "Level metadata + ordered lesson ids. One file per level at content/levels/<id>.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "number", "i18n", "lessons", "joint"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^l[0-9]{2}$", "description": "e.g. l05" },
+    "number": { "type": "number", "minimum": 0, "maximum": 10 },
+    "joint": {
+      "type": "string",
+      "description": "The joinery-spine motif for this level (DESIGN §Signature).",
+      "enum": ["anchor", "marking", "sawn-edge", "butt", "lap", "dado", "mortise-tenon", "dovetail", "carcass", "finished-piece"]
+    },
+    "icon": { "type": "string", "description": "Icon id for nav/spine." },
+    "i18n": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en"],
+      "properties": {
+        "en": { "$ref": "#/$defs/levelText" },
+        "hi": { "$ref": "#/$defs/levelText" },
+        "pa": { "$ref": "#/$defs/levelText" },
+        "bgc": { "$ref": "#/$defs/levelText" }
+      }
+    },
+    "lessons": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^l[0-9]{2}[a-z0-9-]+$" },
+      "description": "Ordered lesson ids belonging to this level; validated to exist in CI."
+    }
+  },
+  "$defs": {
+    "levelText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "outcome"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "outcome": { "type": "string", "description": "One line: what you can do after this level." }
+      }
+    }
+  }
+}

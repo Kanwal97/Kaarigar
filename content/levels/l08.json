@@ -1,0 +1,17 @@
+{
+  "id": "l08",
+  "number": 8,
+  "joint": "finished-piece",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Sanding & finishing",
+      "outcome": "Prepare a surface properly and choose the right finish — French polish, melamine, PU, Duco or wax — and spray it safely."
+    },
+    "hi": {
+      "title": "रेगमाल और फिनिशिंग",
+      "outcome": "सतह ठीक से तैयार करें और सही फिनिश चुनें — फ्रेंच पॉलिश, मेलामाइन, PU, डुको या मोम — और उसे सुरक्षित स्प्रे करें।"
+    }
+  },
+  "lessons": ["l08-sanding-and-prep", "l08-finishes"]
+}

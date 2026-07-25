@@ -1,0 +1,73 @@
+{
+  "id": "l05-mortise-tenon",
+  "level": 5,
+  "order": 2,
+  "difficulty": "intermediate",
+  "estMinutes": 30,
+  "tags": ["joinery"],
+  "prerequisites": ["l05-butt-and-lap"],
+  "tools": ["chisel-firmer", "mallet", "tenon-saw", "marking-gauge"],
+  "materials": ["sheesham"],
+  "hazards": ["chisel-cut", "workpiece-slip"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "aBodzmUGtdw", "lang": "en", "role": "primary", "credit": "Paul Sellers", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Mortise & tenon",
+      "objectives": [
+        "Mark a matching mortise and tenon from the same gauge setting",
+        "Chop a clean, square mortise",
+        "Saw a tenon that fits snug — not forced, not loose"
+      ],
+      "summary": "The mortise and tenon is the strongest everyday frame joint — beds, doors, chairs all rely on it. It rewards careful marking more than force.",
+      "steps": [
+        "Set the marking gauge to about one-third of the stock thickness and mark the tenon on the rail from the face side.",
+        "Without changing the gauge, mark the mortise on the leg from its face side — this guarantees they match.",
+        "Chop the mortise: start in the middle, drive the chisel with a mallet, and work out toward the ends, taking small bites. Lever waste out; keep the walls square.",
+        "Saw the tenon cheeks and shoulders on the waste side of your lines; pare to the line if needed.",
+        "Dry-fit: the tenon should push home with hand pressure and stay put — snug, not hammered. Then glue and clamp square (check diagonals)."
+      ],
+      "practice": "Cut one mortise and tenon in sheesham. Aim for a fit you can push together by hand that doesn't fall apart when you lift it. If it's loose, glue in a veneer shim on the tenon.",
+      "safetyNote": "Chopping a mortise sends the chisel down with force — clamp the leg, keep your holding hand behind the chisel, and never steady the work in the line of the cut."
+    },
+    "hi": {
+      "title": "मोर्टिस और टेनन",
+      "objectives": [
+        "एक ही गेज सेटिंग से मिलते-जुलते मोर्टिस और टेनन के निशान लगाएँ",
+        "साफ, चौकोर मोर्टिस काटें (चॉप करें)",
+        "टेनन ऐसा काटें जो कसकर बैठे — न ठुँका हुआ, न ढीला"
+      ],
+      "summary": "मोर्टिस-टेनन रोज़ के फ्रेम का सबसे मज़बूत जोड़ है — पलंग, दरवाज़े, कुर्सियाँ सब इसी पर टिके हैं। यह ज़ोर से ज़्यादा सावधान निशान माँगता है।",
+      "steps": [
+        "मार्किंग गेज को मोटाई के लगभग एक-तिहाई पर सेट करें और रेल पर फेस साइड से टेनन के निशान लगाएँ।",
+        "गेज बदले बिना, पाए (leg) पर उसी फेस साइड से मोर्टिस के निशान लगाएँ — इससे दोनों मिलते हैं।",
+        "मोर्टिस चॉप करें: बीच से शुरू करें, छेनी को मैलेट से चलाएँ, छोटे-छोटे टुकड़े लेते हुए किनारों की तरफ बढ़ें। बेकार निकालें; दीवारें चौकोर रखें।",
+        "टेनन की चीक और शोल्डर लकीरों के बेकार तरफ आरी चलाएँ; ज़रूरत हो तो लकीर तक छीलें।",
+        "सूखा फिट करें: टेनन हाथ के दबाव से अंदर जाए और टिका रहे — कसा हुआ, ठोका हुआ नहीं। फिर गोंद लगाकर चौकोर क्लैंप करें (विकर्ण जाँचें)।"
+      ],
+      "practice": "शीशम में एक मोर्टिस-टेनन काटें। ऐसा फिट लक्ष्य रखें जो हाथ से जुड़ जाए और उठाने पर अलग न हो। ढीला हो तो टेनन पर विनियर की पतली फाँक चिपकाएँ।",
+      "safetyNote": "मोर्टिस चॉप करने में छेनी ज़ोर से नीचे जाती है — पाया क्लैंप करें, पकड़ने वाला हाथ छेनी के पीछे रखें, और कटाई की सीध में काम न थामें।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "A good tenon fit should be…",
+        "hi": "अच्छा टेनन फिट कैसा होना चाहिए…"
+      },
+      "options": [
+        { "en": "So tight you hammer it in", "hi": "इतना कसा कि हथौड़े से ठोकना पड़े" },
+        { "en": "Snug — pushes in by hand and stays", "hi": "कसा हुआ — हाथ से अंदर जाए और टिका रहे" },
+        { "en": "Loose so glue fills the gap", "hi": "ढीला ताकि गोंद गैप भरे" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Hammered-in joints split the wood; loose joints rely on glue alone and fail. Snug is strongest.",
+        "hi": "ठोका जोड़ लकड़ी फाड़ता है; ढीला सिर्फ गोंद पर टिकता है और टूटता है। कसा हुआ सबसे मज़बूत।"
+      }
+    }
+  ]
+}

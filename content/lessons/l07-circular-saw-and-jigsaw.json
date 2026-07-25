@@ -1,0 +1,74 @@
+{
+  "id": "l07-circular-saw-and-jigsaw",
+  "level": 7,
+  "order": 2,
+  "difficulty": "intermediate",
+  "estMinutes": 18,
+  "tags": ["power-tools"],
+  "prerequisites": ["l07-drill-and-driver", "l00-machine-safety"],
+  "tools": ["circular-saw", "jigsaw", "push-stick"],
+  "materials": ["commercial-ply"],
+  "hazards": ["eye-injury", "hearing-loss", "unguarded-blade", "electric-shock"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "c3K-rDS6oP8", "lang": "hi", "role": "primary", "credit": "Dakshu Techno Tips", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "WUyL92r20UA", "lang": "en", "role": "deep-dive", "credit": "Howcast", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Circular saw & jigsaw",
+      "objectives": [
+        "Set blade depth and make guided straight cuts",
+        "Cut curves and cut-outs with a jigsaw",
+        "Support the work so the cut doesn't pinch and kick back"
+      ],
+      "summary": "The circular saw breaks down sheets fast; the jigsaw shapes curves and sink cut-outs. Both are safe with a guard, a guide, and proper support — and dangerous without.",
+      "steps": [
+        "Set the circular-saw blade so it projects just past the underside of the board — deeper than needed only adds risk.",
+        "Clamp a straightedge as a guide and run the saw's shoe against it for a clean straight cut. Let the blade reach full speed before it touches the wood.",
+        "Support both the keeper and the offcut so the cut can't close and pinch the blade — that pinch is what causes kickback. Stand slightly to the side, not behind the line.",
+        "For curves and sink cut-outs, use the jigsaw; let the blade do the work and steer gently — forcing it snaps blades.",
+        "Keep guards in place, wear glasses and ear protection, check the lead, and unplug before changing a blade."
+      ],
+      "practice": "Break a ply sheet into two straight pieces with a clamped guide, then cut a curved offcut with the jigsaw. Check the straight cut against a gunia.",
+      "safetyNote": "Safety-critical and unverified. Do not run any machine without its guard. Learn these first alongside an experienced mistri — see L0 Machine safety, which this lesson assumes."
+    },
+    "hi": {
+      "title": "गोल आरी और जिगसॉ",
+      "objectives": [
+        "ब्लेड की गहराई सेट करें और गाइड से सीधी कटाई करें",
+        "जिगसॉ से घुमाव और कटे-आकार काटें",
+        "काम को ऐसे सहारा दें कि कटाई जकड़कर किकबैक न करे"
+      ],
+      "summary": "गोल आरी शीट को तेज़ी से काटती है; जिगसॉ घुमाव और अंदर के कट बनाता है। गार्ड, गाइड और सही सहारे के साथ दोनों सुरक्षित — बिना इनके खतरनाक।",
+      "steps": [
+        "गोल आरी का ब्लेड इतना रखें कि बोर्ड के नीचे बस थोड़ा निकले — ज़रूरत से गहरा सिर्फ खतरा बढ़ाता है।",
+        "एक सीधी पट्टी क्लैंप करके गाइड बनाएँ और आरी का शू उस पर चलाएँ — साफ सीधी कटाई। लकड़ी छूने से पहले ब्लेड पूरी स्पीड पर आ जाए।",
+        "रखने वाले और कटने वाले, दोनों टुकड़ों को सहारा दें ताकि कटाई बंद होकर ब्लेड न जकड़े — वही जकड़न किकबैक करती है। लकीर के पीछे नहीं, थोड़ा किनारे खड़े हों।",
+        "घुमाव और अंदर के कट के लिए जिगसॉ इस्तेमाल करें; ब्लेड को काम करने दें और हल्के से दिशा दें — ज़ोर लगाने से ब्लेड टूटते हैं।",
+        "गार्ड लगे रहने दें, चश्मा व कान की सुरक्षा पहनें, तार जाँचें, और ब्लेड बदलने से पहले प्लग निकालें।"
+      ],
+      "practice": "क्लैंप की गाइड से एक प्लाई शीट को दो सीधे टुकड़ों में काटें, फिर जिगसॉ से एक घुमावदार कतरन काटें। सीधी कटाई गुनिया से जाँचें।",
+      "safetyNote": "सुरक्षा-महत्वपूर्ण और असत्यापित। किसी भी मशीन को बिना गार्ड न चलाएँ। इन्हें पहले अनुभवी मिस्त्री के साथ सीखें — देखें L0 मशीन सुरक्षा, जिसे यह पाठ मानकर चलता है।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "What most often causes a circular saw to kick back?",
+        "hi": "गोल आरी में किकबैक अक्सर किससे होता है?"
+      },
+      "options": [
+        { "en": "The cut closing and pinching the blade", "hi": "कटाई का बंद होकर ब्लेड जकड़ना" },
+        { "en": "A blade that's too sharp", "hi": "ब्लेड का बहुत तेज़ होना" },
+        { "en": "Cutting too slowly", "hi": "बहुत धीरे काटना" }
+      ],
+      "answerIndex": 0,
+      "explain": {
+        "en": "If the offcut isn't supported, the kerf closes and grabs the blade, throwing the saw or work back. Support both sides.",
+        "hi": "कटने वाले टुकड़े को सहारा न हो तो कर्फ बंद होकर ब्लेड पकड़ लेता है और आरी/काम को पीछे फेंकता है। दोनों तरफ सहारा दें।"
+      }
+    }
+  ]
+}

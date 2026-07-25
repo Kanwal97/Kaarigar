@@ -1,0 +1,74 @@
+{
+  "id": "l04-chiselling-technique",
+  "level": 4,
+  "order": 3,
+  "difficulty": "beginner",
+  "estMinutes": 14,
+  "tags": ["hand-tools"],
+  "prerequisites": ["l03-sharpen-edge-tools"],
+  "tools": ["chisel-firmer", "mallet", "gunia"],
+  "materials": ["pine"],
+  "hazards": ["chisel-cut", "workpiece-slip"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "x0p25MtMOY4", "lang": "en", "role": "primary", "credit": "Kaer Pis", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "ipG50d_ZvBY", "lang": "en", "role": "deep-dive", "credit": "RobCosman.com", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Pare & chop with a chisel",
+      "objectives": [
+        "Pare thin, controlled cuts to a line",
+        "Chop out waste cleanly with a mallet",
+        "Keep both hands behind the edge, always"
+      ],
+      "summary": "The chisel does the fine, accurate work no saw can — trimming a joint to fit, cleaning a corner, chopping a mortise. Control comes from a sharp edge and a registered back.",
+      "steps": [
+        "Start with a sharp chisel (L3) — a blunt one forces you to push harder and slip.",
+        "To pare, take thin slices with the flat back registered against the surface; bevel up for control on the flat, bevel down to follow a gentle curve.",
+        "To chop waste, hold the chisel vertical and drive it with a mallet in small bites, working back to your line — never try to remove it all in one blow.",
+        "Cut to the line, not past it: sneak up on a tight fit with light paring cuts and test often.",
+        "Clamp the work, and keep both hands behind the cutting edge — never pare toward the hand holding the piece."
+      ],
+      "practice": "Chop a shallow square recess in a pine offcut to a gunia-marked line, then pare its floor flat. Check the walls are square and the floor is even.",
+      "safetyNote": "A slipping chisel travels in the direction you push it — clamp the work, keep hands behind the edge, and keep the tool sharp so it needs less force (L0)."
+    },
+    "hi": {
+      "title": "छेनी से छीलना और चॉप करना",
+      "objectives": [
+        "पतली, काबू में कटाई लकीर तक करें (पेयरिंग)",
+        "मैलेट से बेकार साफ चॉप करें",
+        "दोनों हाथ हमेशा धार के पीछे रखें"
+      ],
+      "summary": "छेनी वह बारीक, सही काम करती है जो कोई आरी नहीं कर सकती — जोड़ फिट करना, कोना साफ करना, मोर्टिस चॉप करना। काबू तेज़ धार और सतह पर टिके back से आता है।",
+      "steps": [
+        "तेज़ छेनी से शुरू करें (L3) — कुंद छेनी ज़्यादा ज़ोर लगवाती और फिसलाती है।",
+        "छीलने के लिए पतली परतें लें, सपाट back सतह पर टिकाकर; समतल पर काबू के लिए bevel ऊपर, हल्के घुमाव के लिए bevel नीचे।",
+        "बेकार चॉप करने के लिए छेनी सीधी पकड़ें और मैलेट से छोटे-छोटे टुकड़े लेते हुए अपनी लकीर तक बढ़ें — एक ही चोट में सब निकालने की कोशिश न करें।",
+        "लकीर तक काटें, आगे नहीं: कसे फिट पर हल्की पेयरिंग से धीरे पहुँचें और बार-बार जाँचें।",
+        "काम क्लैंप करें, और दोनों हाथ धार के पीछे रखें — पकड़ने वाले हाथ की तरफ कभी न छीलें।"
+      ],
+      "practice": "पाइन कतरन में गुनिया की लकीर तक एक उथला चौकोर खाँचा चॉप करें, फिर उसका तल समतल छीलें। दीवारें चौकोर और तल एक-सा है, जाँचें।",
+      "safetyNote": "फिसलती छेनी उसी दिशा में जाती है जिधर आप धकेलते हैं — काम क्लैंप करें, हाथ धार के पीछे रखें, और औज़ार तेज़ रखें ताकि कम ज़ोर लगे (L0)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "How should you remove waste when chopping to a line with a mallet?",
+        "hi": "मैलेट से लकीर तक चॉप करते समय बेकार कैसे निकालें?"
+      },
+      "options": [
+        { "en": "One big blow to save time", "hi": "समय बचाने को एक बड़ी चोट" },
+        { "en": "Small bites, working back to the line", "hi": "छोटे-छोटे टुकड़े, लकीर तक बढ़ते हुए" },
+        { "en": "Pull the chisel toward your hand", "hi": "छेनी को अपने हाथ की तरफ खींचें" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Small bites keep control and leave a clean line; one big blow splits past the line and is dangerous.",
+        "hi": "छोटे टुकड़े काबू रखते और साफ लकीर छोड़ते हैं; एक बड़ी चोट लकीर से आगे फाड़ देती है और खतरनाक है।"
+      }
+    }
+  ]
+}

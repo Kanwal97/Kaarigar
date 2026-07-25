@@ -1,0 +1,17 @@
+{
+  "id": "l03",
+  "number": 3,
+  "joint": "sawn-edge",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Hand tools — sharpen, tune, use",
+      "outcome": "Put a keen edge on your chisels and plane, tune the plane so it takes clean shavings, and keep both working."
+    },
+    "hi": {
+      "title": "हाथ के औज़ार — धार, ट्यूनिंग, इस्तेमाल",
+      "outcome": "छेनी और रंदे पर तेज़ धार लगाएँ, रंदे को इतना सेट करें कि साफ छिलके उतरें, और दोनों को चलता रखें।"
+    }
+  },
+  "lessons": ["l03-sharpen-edge-tools", "l03-tune-a-plane"]
+}

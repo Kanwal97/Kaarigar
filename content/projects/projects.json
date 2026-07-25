@@ -1,0 +1,87 @@
+[
+  {
+    "id": "patra-stool",
+    "difficulty": "beginner",
+    "estHours": 4,
+    "skillsNeeded": ["l02-measuring-basics", "l02-squaring-and-marking", "l01-identify-timbers"],
+    "tools": ["measuring-tape", "gunia", "handsaw", "hand-plane"],
+    "materials": ["pine", "sheesham"],
+    "estimateHint": {
+      "en": "A first paid job. Quote by the piece, not per sq ft. Count wood + a little glue/screws + your day.",
+      "hi": "पहला पैसे वाला काम। प्रति टुकड़ा कोट करें, प्रति वर्ग फुट नहीं। लकड़ी + थोड़ा गोंद/पेंच + आपका दिन गिनें।"
+    },
+    "i18n": {
+      "en": { "title": "Patra / low stool", "summary": "A four-leg stool — your first real joinery and a clean way to practice squaring and sawing.", "outcome": "Build a sturdy stool that doesn't wobble." },
+      "hi": { "title": "पटरा / छोटा स्टूल", "summary": "चार पाए वाला स्टूल — आपकी पहली असली जोड़ाई और गुनिया व आरी का साफ अभ्यास।", "outcome": "मज़बूत स्टूल बनाएँ जो हिले नहीं।" }
+    },
+    "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" }
+  },
+  {
+    "id": "chowki",
+    "difficulty": "beginner",
+    "estHours": 8,
+    "skillsNeeded": ["l01-identify-timbers", "l02-squaring-and-marking"],
+    "tools": ["measuring-tape", "gunia", "handsaw", "chisel-firmer", "mallet"],
+    "materials": ["sheesham", "commercial-ply"],
+    "estimateHint": {
+      "en": "Quote per piece. A chowki uses more timber than a stool — price the wood first, then labour.",
+      "hi": "प्रति टुकड़ा कोट करें। चौकी में स्टूल से ज़्यादा लकड़ी लगती है — पहले लकड़ी का दाम, फिर मज़दूरी।"
+    },
+    "i18n": {
+      "en": { "title": "Chowki / low table", "summary": "A low platform table — bigger surface, wider joints, a step up from the stool.", "outcome": "Build a flat, stable chowki with square legs." },
+      "hi": { "title": "चौकी / नीची मेज़", "summary": "नीची चौकोर मेज़ — बड़ी सतह, चौड़े जोड़, स्टूल से एक कदम आगे।", "outcome": "समतल, स्थिर चौकी बनाएँ जिसके पाए चौकोर हों।" }
+    },
+    "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" }
+  },
+  {
+    "id": "palang",
+    "difficulty": "intermediate",
+    "estHours": 24,
+    "skillsNeeded": ["l01-identify-timbers", "l01-choose-sheet-goods", "l02-squaring-and-marking"],
+    "tools": ["measuring-tape", "gunia", "handsaw", "chisel-firmer", "mallet", "hand-plane"],
+    "materials": ["sheesham", "teak", "commercial-ply"],
+    "estimateHint": {
+      "en": "A real income job. Price the frame timber, the ply base, hardware (bolts), finish, and 3–4 days labour.",
+      "hi": "असली कमाई वाला काम। फ्रेम की लकड़ी, प्लाई बेस, हार्डवेयर (बोल्ट), फिनिश, और 3–4 दिन मज़दूरी का दाम लगाएँ।"
+    },
+    "i18n": {
+      "en": { "title": "Palang / bed", "summary": "A double-bed frame — strong corner joints, a ply base, and the first project people pay proper money for.", "outcome": "Build a bed frame that carries weight without racking." },
+      "hi": { "title": "पलंग / बेड", "summary": "डबल-बेड फ्रेम — मज़बूत कोने के जोड़, प्लाई बेस, और पहला काम जिसके लोग सही पैसे देते हैं।", "outcome": "ऐसा बेड फ्रेम बनाएँ जो वज़न सहे और तिरछा न हो।" }
+    },
+    "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" }
+  },
+  {
+    "id": "almirah",
+    "difficulty": "intermediate",
+    "estHours": 40,
+    "skillsNeeded": ["l01-choose-sheet-goods", "l02-measuring-basics", "l02-squaring-and-marking"],
+    "tools": ["measuring-tape", "gunia", "handsaw", "hand-plane"],
+    "materials": ["commercial-ply", "bwr-ply", "laminate"],
+    "estimateHint": {
+      "en": "The bread-and-butter job. Quote per sq ft and STATE face vs developed area in writing (see L2). Add ply + laminate + hardware + labour.",
+      "hi": "रोज़ी-रोटी वाला काम। प्रति वर्ग फुट कोट करें और फेस बनाम डेवलप्ड एरिया लिखकर बताएँ (देखें L2)। प्लाई + लैमिनेट + हार्डवेयर + मज़दूरी जोड़ें।"
+    },
+    "i18n": {
+      "en": { "title": "Almirah / wardrobe", "summary": "A ply-carcass wardrobe faced with laminate — the core paid job in Indian workshops.", "outcome": "Build a square, well-faced wardrobe and quote it correctly." },
+      "hi": { "title": "अलमारी / वार्डरोब", "summary": "लैमिनेट लगी प्लाई-ढाँचे की अलमारी — भारतीय वर्कशॉप का मुख्य पैसे वाला काम।", "outcome": "चौकोर, अच्छी फिनिश वाली अलमारी बनाएँ और सही कोट करें।" }
+    },
+    "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" }
+  },
+  {
+    "id": "modular-kitchen",
+    "difficulty": "advanced",
+    "estHours": 120,
+    "skillsNeeded": ["l01-choose-sheet-goods", "l02-measuring-basics", "l02-squaring-and-marking"],
+    "tools": ["measuring-tape", "gunia", "hand-plane"],
+    "materials": ["marine-ply", "bwr-ply", "wpc", "laminate", "commercial-ply"],
+    "estimateHint": {
+      "en": "The top-paying job. Waterproof board near the sink, lots of hardware (hinges/channels), on-site fitting to un-square walls. Detailed written quote is essential.",
+      "hi": "सबसे ज़्यादा पैसे वाला काम। सिंक के पास वॉटरप्रूफ बोर्ड, बहुत सारा हार्डवेयर (हिंज/चैनल), टेढ़ी दीवारों पर साइट फिटिंग। विस्तृत लिखित कोट ज़रूरी है।"
+    },
+    "i18n": {
+      "en": { "title": "Modular kitchen", "summary": "The most valuable job: waterproof boards, hardware systems, and fitting to real (never-square) walls.", "outcome": "Plan, quote and build a modular kitchen that survives the wet zone." },
+      "hi": { "title": "मॉड्यूलर किचन", "summary": "सबसे कीमती काम: वॉटरप्रूफ बोर्ड, हार्डवेयर सिस्टम, और असली (कभी चौकोर न होने वाली) दीवारों पर फिटिंग।", "outcome": "ऐसी मॉड्यूलर किचन प्लान, कोट और बनाएँ जो गीले हिस्से में टिके।" }
+    },
+    "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" }
+  }
+]

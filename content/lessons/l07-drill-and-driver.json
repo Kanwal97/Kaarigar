@@ -1,0 +1,72 @@
+{
+  "id": "l07-drill-and-driver",
+  "level": 7,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 12,
+  "tags": ["power-tools"],
+  "tools": ["power-drill"],
+  "hazards": ["eye-injury"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "fUm7oGhAEYE", "lang": "hi", "role": "primary", "credit": "Uncle gyan", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "-zS9Lxj5PDE", "lang": "en", "role": "deep-dive", "credit": "Let's Talk Tools", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Use a drill / driver",
+      "objectives": [
+        "Match the bit and speed to the material",
+        "Drill straight, and drive screws without stripping them",
+        "Keep hair, sleeves and cords clear of the chuck"
+      ],
+      "summary": "The drill/driver is usually a carpenter's first power tool and the most-used. A few habits make it accurate and safe.",
+      "steps": [
+        "Fit the right bit: wood/HSS bits for wood, and the matching driver bit for the screw head. Tighten the chuck firmly.",
+        "Hold the drill square to the surface — sight from two sides — so holes go in straight.",
+        "For screws, drill a pilot + countersink first, then drive. Set the clutch/torque low so it stops before stripping the head or sinking too deep.",
+        "Let the tool do the work at a steady speed; forcing it overheats the bit and wanders.",
+        "Tie back hair, roll up sleeves, and keep the cord behind you. Wear safety glasses — chips fly."
+      ],
+      "practice": "Drive ten screws into scrap: five without a pilot hole, five with. Note how the clutch setting and pilot holes stop you stripping heads and splitting the board.",
+      "safetyNote": "A spinning chuck grabs hair, cloth and gloves — keep them clear. Unplug or remove the battery before changing bits."
+    },
+    "hi": {
+      "title": "ड्रिल / ड्राइवर इस्तेमाल करें",
+      "objectives": [
+        "बिट और स्पीड को सामग्री से मिलाएँ",
+        "सीधा ड्रिल करें, और पेंच बिना घिसे (strip) कसें",
+        "बाल, आस्तीन और तार को चक से दूर रखें"
+      ],
+      "summary": "ड्रिल/ड्राइवर आमतौर पर बढ़ई का पहला और सबसे ज़्यादा इस्तेमाल होने वाला पावर टूल है। कुछ आदतें इसे सही और सुरक्षित बनाती हैं।",
+      "steps": [
+        "सही बिट लगाएँ: लकड़ी/HSS बिट लकड़ी के लिए, और पेंच के सिर से मिलता ड्राइवर बिट। चक मज़बूती से कसें।",
+        "ड्रिल को सतह के चौकोर रखें — दो तरफ से देखें — ताकि छेद सीधे जाएँ।",
+        "पेंच के लिए पहले पायलट + काउंटरसिंक करें, फिर कसें। क्लच/टॉर्क कम रखें ताकि सिर घिसने या ज़्यादा धँसने से पहले रुक जाए।",
+        "एक-सी स्पीड पर औज़ार को काम करने दें; ज़ोर लगाने से बिट गरम होकर भटकता है।",
+        "बाल बाँधें, आस्तीन चढ़ाएँ, तार पीछे रखें। सेफ्टी चश्मा पहनें — छिलके उड़ते हैं।"
+      ],
+      "practice": "कतरन में दस पेंच कसें: पाँच बिना पायलट छेद, पाँच के साथ। देखें क्लच सेटिंग और पायलट छेद कैसे सिर घिसने और बोर्ड फटने से रोकते हैं।",
+      "safetyNote": "घूमता चक बाल, कपड़ा और दस्ताने पकड़ लेता है — दूर रखें। बिट बदलने से पहले प्लग निकालें या बैटरी हटाएँ।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "What stops a driver from stripping the screw head or over-sinking it?",
+        "hi": "ड्राइवर को पेंच का सिर घिसने या ज़्यादा धँसाने से क्या रोकता है?"
+      },
+      "options": [
+        { "en": "Higher speed", "hi": "ज़्यादा स्पीड" },
+        { "en": "Setting the clutch / torque low", "hi": "क्लच / टॉर्क कम रखना" },
+        { "en": "A longer screw", "hi": "लंबा पेंच" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "The clutch slips once it reaches the set torque, so it stops driving before it damages the head or the wood.",
+        "hi": "सेट टॉर्क पर पहुँचते ही क्लच फिसल जाता है, इसलिए सिर या लकड़ी खराब होने से पहले कसना रुक जाता है।"
+      }
+    }
+  ]
+}

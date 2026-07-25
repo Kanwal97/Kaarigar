@@ -1,0 +1,73 @@
+{
+  "id": "l04-sawing-technique",
+  "level": 4,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 14,
+  "tags": ["hand-tools"],
+  "tools": ["handsaw", "tenon-saw", "gunia"],
+  "materials": ["pine"],
+  "hazards": ["workpiece-slip"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "OaX_Xu2CFuw", "lang": "hi", "role": "primary", "credit": "SUPER WOODWORK", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "DYphfFimT8E", "lang": "en", "role": "deep-dive", "credit": "Woodworking Masterclass", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Saw to a line",
+      "objectives": [
+        "Start a cut without the saw jumping",
+        "Saw on the waste side of the line",
+        "Keep the cut square through the whole thickness"
+      ],
+      "summary": "Sawing to a line is a skill you build fast with a few rules. Get this right and every joint after it is easier.",
+      "steps": [
+        "Mark the cut with a gunia on the top face and one side, so you can watch both.",
+        "Clamp or hold the work firmly. Start the cut with light back-strokes, thumb guiding the blade (knuckle clear of the teeth).",
+        "Once the kerf is started, let the saw's own weight do the cutting — long, easy strokes, don't force it.",
+        "Watch the line on the top and the side at the same time; steer with tiny twists, not force.",
+        "Near the end, support the offcut so it doesn't break and tear the fibres."
+      ],
+      "practice": "Draw ten square lines on a pine board and saw them, always on the waste side. Check each cut with a gunia — are they square? They'll get better down the row.",
+      "safetyNote": "Keep the hand holding the work well clear of the cut line, and secure the piece so it can't slip into the blade."
+    },
+    "hi": {
+      "title": "लकीर तक आरी चलाएँ",
+      "objectives": [
+        "आरी को बिना उछले शुरू करें",
+        "लकीर के बेकार वाले हिस्से पर काटें",
+        "पूरी मोटाई में कटाई चौकोर रखें"
+      ],
+      "summary": "लकीर तक आरी चलाना कुछ नियमों से जल्दी आ जाता है। यह सही हुआ तो आगे हर जोड़ आसान।",
+      "steps": [
+        "गुनिया से ऊपरी सतह और एक साइड पर लकीर लगाएँ, ताकि दोनों देख सकें।",
+        "काम को कसकर पकड़ें/क्लैंप करें। हल्के बैक-स्ट्रोक से शुरू करें, अंगूठा ब्लेड को गाइड करे (पोर दाँतों से दूर)।",
+        "कर्फ शुरू होने पर आरी के अपने वज़न से कटने दें — लंबे, आराम के स्ट्रोक, ज़ोर न लगाएँ।",
+        "ऊपर और साइड की लकीर एक साथ देखें; ज़ोर नहीं, हल्के घुमाव से दिशा ठीक करें।",
+        "अंत के पास कटने वाले टुकड़े को सहारा दें ताकि वह टूटकर रेशे न फाड़े।"
+      ],
+      "practice": "पाइन बोर्ड पर दस चौकोर लकीरें बनाएँ और हमेशा बेकार तरफ काटें। हर कटाई गुनिया से जाँचें — चौकोर हैं? पंक्ति में आगे बेहतर होती जाएँगी।",
+      "safetyNote": "काम पकड़ने वाला हाथ कटाई की लकीर से दूर रखें, और टुकड़े को ऐसे कसें कि वह ब्लेड में न फिसले।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Once the cut is started, how much force should you use?",
+        "hi": "कटाई शुरू होने के बाद कितना ज़ोर लगाना चाहिए?"
+      },
+      "options": [
+        { "en": "Push down hard to go faster", "hi": "तेज़ चलने के लिए ज़ोर से दबाएँ" },
+        { "en": "Let the saw's weight do the work", "hi": "आरी के वज़न से कटने दें" },
+        { "en": "Twist the saw side to side", "hi": "आरी को इधर-उधर मोड़ें" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Forcing a saw makes it wander and bind. Long, easy strokes cut straighter.",
+        "hi": "ज़ोर लगाने से आरी भटकती और जकड़ती है। लंबे, आराम के स्ट्रोक ज़्यादा सीधा काटते हैं।"
+      }
+    }
+  ]
+}

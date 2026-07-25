@@ -1,0 +1,71 @@
+{
+  "id": "l01-seasoning-and-treatment",
+  "level": 1,
+  "order": 3,
+  "difficulty": "beginner",
+  "estMinutes": 12,
+  "tags": ["wood"],
+  "prerequisites": ["l01-identify-timbers"],
+  "materials": ["sheesham", "pine", "mango", "rubberwood"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "4ZXFh__v3go", "lang": "hi", "role": "primary", "credit": "GIS Services", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Seasoning & protecting timber",
+      "objectives": [
+        "Understand why unseasoned wood ruins furniture",
+        "Judge whether timber is dry enough to use",
+        "Protect timber against termite and borer"
+      ],
+      "summary": "In the Indian climate, wood that isn't properly dried will move after you build with it — the almirah door that won't close in the monsoon started as wet timber. Seasoning and treatment prevent the callback.",
+      "steps": [
+        "Unseasoned (green) wood shrinks, warps and cracks as it dries — always ask the timber dealer whether it is seasoned before you buy.",
+        "Air-dry boards stacked flat with spacer sticks between them, off the ground and out of the rain, for several months; or buy kiln-dried stock.",
+        "Judge dryness by weight and feel — green wood is noticeably heavier and cool/damp; a moisture meter is more reliable if you have one.",
+        "Sapwood and timbers like mango and rubberwood are prone to borer — treat susceptible wood with a suitable wood preservative before finishing.",
+        "Keep finished pieces off damp floors and away from standing water, and seal end grain, which soaks up moisture fastest."
+      ],
+      "practice": "Weigh a fresh offcut, then weigh it again after a week in a dry, airy spot. The weight it loses is water leaving — that's the movement you avoid by using seasoned wood.",
+      "safetyNote": "Wood preservatives are chemicals — follow the product label, wear gloves, and apply with ventilation."
+    },
+    "hi": {
+      "title": "लकड़ी की सीज़निंग और बचाव",
+      "objectives": [
+        "समझें कि बिना सूखी लकड़ी फर्नीचर क्यों बिगाड़ती है",
+        "परखें कि लकड़ी इस्तेमाल लायक सूखी है या नहीं",
+        "लकड़ी को दीमक और घुन से बचाएँ"
+      ],
+      "summary": "भारतीय मौसम में ठीक से न सूखी लकड़ी बनाने के बाद हिलती है — बरसात में न बंद होने वाला अलमारी का दरवाज़ा गीली लकड़ी से ही शुरू हुआ था। सीज़निंग और उपचार वापसी (callback) रोकते हैं।",
+      "steps": [
+        "बिना सूखी (हरी) लकड़ी सूखते हुए सिकुड़ती, मुड़ती और चटकती है — खरीदने से पहले हमेशा डीलर से पूछें कि सीज़न्ड है या नहीं।",
+        "बोर्ड को समतल, बीच में स्पेसर पट्टियाँ रखकर, ज़मीन से ऊपर और बारिश से बचाकर कई महीने हवा में सुखाएँ; या किल्न-ड्राइड लें।",
+        "सूखापन वज़न और स्पर्श से परखें — हरी लकड़ी साफ़ भारी और ठंडी/नम लगती है; मॉइस्चर मीटर हो तो ज़्यादा भरोसेमंद।",
+        "सैपवुड और आम, रबरवुड जैसी लकड़ी में घुन जल्दी लगता है — फिनिश से पहले ऐसी लकड़ी पर सही वुड-प्रिज़र्वेटिव लगाएँ।",
+        "तैयार सामान नम फर्श और खड़े पानी से दूर रखें, और सिरे (end grain) सील करें, जो नमी सबसे तेज़ सोखते हैं।"
+      ],
+      "practice": "एक ताज़ी कतरन तौलें, फिर एक हफ्ते सूखी, हवादार जगह रखकर दोबारा तौलें। जो वज़न घटा वह पानी है — यही हलचल सीज़न्ड लकड़ी इस्तेमाल कर आप बचाते हैं।",
+      "safetyNote": "वुड-प्रिज़र्वेटिव रसायन हैं — उत्पाद के लेबल का पालन करें, दस्ताने पहनें, और हवादार जगह में लगाएँ।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "What happens if you build a wardrobe from unseasoned timber?",
+        "hi": "बिना सूखी लकड़ी से अलमारी बनाएँ तो क्या होता है?"
+      },
+      "options": [
+        { "en": "It gets stronger over time", "hi": "यह समय के साथ मज़बूत होती है" },
+        { "en": "It shrinks, warps and cracks as it dries", "hi": "सूखते हुए सिकुड़ती, मुड़ती और चटकती है" },
+        { "en": "Nothing, if you paint it", "hi": "कुछ नहीं, अगर पेंट कर दें" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "The wood keeps drying after it's built, so it moves — doors jam, joints open, panels split. Season first.",
+        "hi": "लकड़ी बनने के बाद भी सूखती रहती है, इसलिए हिलती है — दरवाज़े जाम, जोड़ खुलना, पैनल फटना। पहले सीज़न करें।"
+      }
+    }
+  ]
+}

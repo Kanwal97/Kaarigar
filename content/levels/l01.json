@@ -1,0 +1,17 @@
+{
+  "id": "l01",
+  "number": 1,
+  "joint": "marking",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Wood & sheet goods",
+      "outcome": "Identify the timbers and boards used in Indian workshops, and choose the right one for a job and a budget."
+    },
+    "hi": {
+      "title": "लकड़ी और बोर्ड (शीट गुड्स)",
+      "outcome": "भारतीय वर्कशॉप में इस्तेमाल होने वाली लकड़ियाँ और बोर्ड पहचानें, और काम व बजट के हिसाब से सही चुनें।"
+    }
+  },
+  "lessons": ["l01-identify-timbers", "l01-choose-sheet-goods", "l01-seasoning-and-treatment", "l01-cut-and-edgeband"]
+}

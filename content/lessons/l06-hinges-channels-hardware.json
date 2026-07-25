@@ -1,0 +1,72 @@
+{
+  "id": "l06-hinges-channels-hardware",
+  "level": 6,
+  "order": 2,
+  "difficulty": "intermediate",
+  "estMinutes": 20,
+  "tags": ["hardware", "business"],
+  "prerequisites": ["l06-glue-and-fasteners"],
+  "tools": ["power-drill", "screwdriver"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "_mvOzgSXSJc", "lang": "hi", "role": "primary", "credit": "interior wood designer", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "MJd3YlzAiIs", "lang": "hi", "role": "deep-dive", "credit": "FURNITURE RAYAT", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Hinges, channels & fittings",
+      "objectives": [
+        "Know the three hardware names every carpenter uses (Hettich, Ebco, Godrej)",
+        "Fit and adjust a soft-close concealed hinge",
+        "Mount a telescopic drawer channel that runs smooth"
+      ],
+      "summary": "Hardware is where the money and the reputation are. A wardrobe is judged by whether the doors and drawers glide — and that's fitting, not luck.",
+      "steps": [
+        "Learn the trade's shared names: Hettich (premium), Ebco (India's largest, mid-range), Godrej (locks & fittings). Customers ask for these.",
+        "Concealed hinge: bore the 35 mm cup hole at the marked setback, screw the cup to the door and the plate to the carcass, then adjust the three screws for height, depth and side alignment.",
+        "Telescopic channel: mount the two rails level and perfectly parallel — a few mm out and the drawer binds. Check the drawer runs the full travel smoothly.",
+        "For flat-pack / knock-down carcasses, use minifix (cam-lock) and dowels so it assembles on site without glue.",
+        "Buy quality soft-close where the client will use it daily — cheap hardware failing is the most common callback."
+      ],
+      "practice": "Fit one concealed hinge to a scrap door and a carcass offcut. Adjust it until the door closes flush and even on all sides.",
+      "safetyNote": "Reviewed content pending — confirm current hinge/channel fitting specs against the manufacturer's own installation sheet (Hettich/Ebco/Godrej)."
+    },
+    "hi": {
+      "title": "हिंज, चैनल और फिटिंग",
+      "objectives": [
+        "हर बढ़ई के तीन हार्डवेयर नाम जानें (Hettich, Ebco, Godrej)",
+        "सॉफ्ट-क्लोज़ छुपा हिंज लगाएँ और सेट करें",
+        "टेलिस्कोपिक ड्रॉअर चैनल लगाएँ जो साफ चले"
+      ],
+      "summary": "हार्डवेयर में ही पैसा और नाम है। अलमारी इसी से परखी जाती है कि दरवाज़े-दराज़ फिसलते हैं या नहीं — और यह फिटिंग है, किस्मत नहीं।",
+      "steps": [
+        "बाज़ार के साझा नाम सीखें: Hettich (प्रीमियम), Ebco (भारत का सबसे बड़ा, मिड-रेंज), Godrej (लॉक व फिटिंग)। ग्राहक इन्हीं को माँगते हैं।",
+        "छुपा हिंज: तय सेटबैक पर 35 मिमी कप होल करें, कप दरवाज़े पर और प्लेट ढाँचे पर पेंच करें, फिर तीन पेंच से ऊँचाई, गहराई और साइड सेट करें।",
+        "टेलिस्कोपिक चैनल: दोनों रेल एक-लेवल और बिल्कुल समानांतर लगाएँ — कुछ मिमी इधर-उधर तो दराज़ अटकती है। दराज़ पूरी लंबाई साफ चले, जाँचें।",
+        "फ्लैट-पैक/खुलने वाले ढाँचे के लिए मिनिफिक्स (कैम-लॉक) और डौवल इस्तेमाल करें ताकि साइट पर बिना गोंद जुड़े।",
+        "जहाँ ग्राहक रोज़ इस्तेमाल करे वहाँ अच्छा सॉफ्ट-क्लोज़ लें — सस्ता हार्डवेयर खराब होना सबसे आम वापसी (callback) है।"
+      ],
+      "practice": "एक कतरन दरवाज़े और ढाँचे की कतरन पर एक छुपा हिंज लगाएँ। इतना सेट करें कि दरवाज़ा हर तरफ बराबर और flush बंद हो।",
+      "safetyNote": "समीक्षा बाकी — हिंज/चैनल फिटिंग के मौजूदा नाप निर्माता (Hettich/Ebco/Godrej) की अपनी इंस्टॉलेशन शीट से मिलाएँ।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "A drawer binds and won't slide fully. What's the most likely fitting error?",
+        "hi": "दराज़ अटकती है और पूरी नहीं सरकती। सबसे संभावित फिटिंग गलती?"
+      },
+      "options": [
+        { "en": "The channels aren't level and parallel", "hi": "चैनल एक-लेवल और समानांतर नहीं हैं" },
+        { "en": "The drawer is too light", "hi": "दराज़ बहुत हल्की है" },
+        { "en": "Wrong colour laminate", "hi": "गलत रंग का लैमिनेट" }
+      ],
+      "answerIndex": 0,
+      "explain": {
+        "en": "Telescopic channels must be level and parallel to each other; a few mm of misalignment makes the drawer bind.",
+        "hi": "टेलिस्कोपिक चैनल आपस में एक-लेवल और समानांतर होने चाहिए; कुछ मिमी का फर्क दराज़ को अटका देता है।"
+      }
+    }
+  ]
+}

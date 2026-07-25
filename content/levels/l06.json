@@ -1,0 +1,17 @@
+{
+  "id": "l06",
+  "number": 6,
+  "joint": "butt",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Adhesives, fasteners & hardware",
+      "outcome": "Glue and fasten joints that hold, and fit the hinges, channels and locks that most paid jobs are really about."
+    },
+    "hi": {
+      "title": "गोंद, फास्टनर और हार्डवेयर",
+      "outcome": "ऐसे जोड़ चिपकाएँ-कसें जो टिकें, और वे हिंज, चैनल व लॉक लगाएँ जिन पर ज़्यादातर पैसे वाले काम असल में टिके होते हैं।"
+    }
+  },
+  "lessons": ["l06-glue-and-fasteners", "l06-hinges-channels-hardware"]
+}

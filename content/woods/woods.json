@@ -1,0 +1,166 @@
+[
+  {
+    "id": "pine",
+    "kind": "solid-timber",
+    "names": { "en": "Pine (chir)", "hi": "चीड़ (पाइन)" },
+    "botanical": "Pinus roxburghii",
+    "priceTier": "low",
+    "workability": { "en": "Soft, easy to cut and sand; good for practice.", "hi": "नरम, काटना-रगड़ना आसान; अभ्यास के लिए अच्छी।" },
+    "typicalUses": { "en": "Cheap frames, crates, practice pieces.", "hi": "सस्ते फ्रेम, पेटियाँ, अभ्यास के टुकड़े।" },
+    "verified": true,
+    "source": "https://www.wood-database.com/"
+  },
+  {
+    "id": "sheesham",
+    "kind": "solid-timber",
+    "names": { "en": "Sheesham / Shisham", "hi": "शीशम (टाली)" },
+    "botanical": "Dalbergia sissoo",
+    "priceTier": "mid-high",
+    "workability": { "en": "Hard, dense; excellent finish but the dust can irritate.", "hi": "कठोर, घनी; फिनिश बढ़िया पर इसका बुरादा परेशान कर सकता है।" },
+    "typicalUses": { "en": "Beds, almirah frames, doors, carving — the North Indian default.", "hi": "पलंग, अलमारी फ्रेम, दरवाज़े, नक्काशी — उत्तर भारत की पहली पसंद।" },
+    "verified": true,
+    "source": "https://blog.urbanwood.in/sheesham-wood-best-for-furniture"
+  },
+  {
+    "id": "teak",
+    "kind": "solid-timber",
+    "names": { "en": "Teak (sagwan)", "hi": "सागौन (सागवान)" },
+    "botanical": "Tectona grandis",
+    "priceTier": "high",
+    "workability": { "en": "Very stable and durable; works well, holds finish; premium price.", "hi": "बहुत स्थिर और टिकाऊ; अच्छा कटता है, फिनिश पकड़ता है; ऊँचा दाम।" },
+    "typicalUses": { "en": "Premium doors, windows, beds, wardrobes; humid-climate longevity.", "hi": "प्रीमियम दरवाज़े, खिड़कियाँ, पलंग, अलमारी; नमी में लंबा टिकाव।" },
+    "verified": true,
+    "source": "https://www.barenest.in/blog/sheesham-vs-teak-vs-mango-wood-comparison"
+  },
+  {
+    "id": "mango",
+    "kind": "solid-timber",
+    "names": { "en": "Mango (aam)", "hi": "आम की लकड़ी" },
+    "botanical": "Mangifera indica",
+    "priceTier": "low-mid",
+    "workability": { "en": "Softer than sheesham, works easily; a fruiting byproduct (sustainable).", "hi": "शीशम से नरम, आसानी से बनती है; फल देने के बाद की लकड़ी (टिकाऊ विकल्प)।" },
+    "typicalUses": { "en": "Tabletops, shelving, dressers, budget & export furniture.", "hi": "टेबल-टॉप, शेल्फ, ड्रेसर, बजट व निर्यात फर्नीचर।" },
+    "verified": true,
+    "source": "https://www.radiantfurn.com/blogs/news/sheesham-vs-teak-vs-mango-wood-commercial-furniture-india"
+  },
+  {
+    "id": "babool",
+    "kind": "solid-timber",
+    "names": { "en": "Babool / Kikar", "hi": "बबूल / कीकर" },
+    "botanical": "Acacia nilotica",
+    "priceTier": "low",
+    "workability": { "en": "Very hard and termite-resistant; tough to work; warps if poorly seasoned.", "hi": "बहुत कठोर व दीमक-रोधी; बनाना कठिन; ठीक न सूखी हो तो मुड़ जाती है।" },
+    "typicalUses": { "en": "Structural frames, legs, tool handles, agricultural implements.", "hi": "ढाँचे, पाए, औज़ार के हैंडल, खेती के औज़ार।" },
+    "verified": true,
+    "source": "https://furnishack.com/how-good-is-babool-wood-for-furniture/"
+  },
+  {
+    "id": "rubberwood",
+    "kind": "solid-timber",
+    "names": { "en": "Rubberwood", "hi": "रबरवुड" },
+    "botanical": "Hevea brasiliensis",
+    "priceTier": "low-mid",
+    "workability": { "en": "Works well, stains/polishes evenly; needs anti-borer treatment.", "hi": "अच्छा बनता है, रंग-पॉलिश एक-सी चढ़ती है; घुन-रोधी उपचार ज़रूरी।" },
+    "typicalUses": { "en": "Budget beds, tables, chairs; export & flat-pack furniture.", "hi": "बजट पलंग, टेबल, कुर्सियाँ; निर्यात व फ्लैट-पैक फर्नीचर।" },
+    "verified": true,
+    "source": "https://www.wood-database.com/rubberwood/"
+  },
+  {
+    "id": "commercial-ply",
+    "kind": "sheet-good",
+    "names": { "en": "Commercial ply (MR)", "hi": "कमर्शियल प्लाई (MR)" },
+    "isStandard": "IS:303 (MR grade)",
+    "grade": "MR",
+    "priceTier": "low-mid",
+    "waterResistance": "moisture-resistant",
+    "typicalUses": { "en": "Interior wardrobes, boxes, general carcass — the everyday workhorse.", "hi": "अंदरूनी अलमारी, बॉक्स, सामान्य ढाँचा — रोज़ का काम।" },
+    "verified": true,
+    "source": "https://www.greenply.com/blogs/types-of-plywood-in-india-explained-mr-bwr-bwp-marine-commercial-grades"
+  },
+  {
+    "id": "bwr-ply",
+    "kind": "sheet-good",
+    "names": { "en": "BWR ply", "hi": "BWR प्लाई" },
+    "isStandard": "IS:303 (BWR grade)",
+    "grade": "BWR",
+    "priceTier": "mid",
+    "waterResistance": "boiling-water-resistant",
+    "typicalUses": { "en": "Kitchens and semi-wet zones; better carcass work.", "hi": "रसोई व अर्ध-गीले हिस्से; बेहतर ढाँचा।" },
+    "verified": true,
+    "source": "https://mccoymart.com/post/difference-between-303-and-710-grade-plywood/"
+  },
+  {
+    "id": "marine-ply",
+    "kind": "sheet-good",
+    "names": { "en": "Marine / BWP ply", "hi": "मरीन / BWP प्लाई" },
+    "isStandard": "IS:710 (BWP grade)",
+    "grade": "BWP",
+    "priceTier": "high",
+    "waterResistance": "waterproof",
+    "typicalUses": { "en": "Top-tier kitchens, bathrooms, exterior; overspec for dry interiors.", "hi": "टॉप रसोई, बाथरूम, बाहरी काम; सूखे अंदरूनी काम के लिए ज़रूरत से ज़्यादा।" },
+    "verified": true,
+    "source": "https://www.clyfthome.com/blogs/articles/plywood-grades-in-india-mr-vs-bwr-vs-bwp-marine-and-how-to-pick-the-right-one"
+  },
+  {
+    "id": "blockboard",
+    "kind": "sheet-good",
+    "names": { "en": "Blockboard", "hi": "ब्लॉकबोर्ड" },
+    "priceTier": "mid",
+    "waterResistance": "moisture-resistant",
+    "typicalUses": { "en": "Shutters, doors, long tabletops — light and stiff over spans.", "hi": "शटर, दरवाज़े, लंबे टेबल-टॉप — हल्का और बड़े हिस्सों पर मज़बूत।" },
+    "verified": true,
+    "source": "https://asherspaces.com/difference-between-plywood-block-board-particle-board-mdf-hdf-hdhmr-and-wpc/"
+  },
+  {
+    "id": "mdf",
+    "kind": "sheet-good",
+    "names": { "en": "MDF", "hi": "एमडीएफ (MDF)" },
+    "isStandard": "IS 12406",
+    "priceTier": "low-mid",
+    "waterResistance": "none",
+    "typicalUses": { "en": "Shutters, TV units, routed/membrane-press & painted panels; smooth, no grain.", "hi": "शटर, टीवी यूनिट, राउटेड/मेम्ब्रेन-प्रेस व पेंट पैनल; चिकना, बिना ग्रेन।" },
+    "verified": false,
+    "source": "https://oxterstock.com/blog/mdf-board-vs-hdf-board-vs-hdhmr-understanding-the-differences-uses-and-prices-in-india-35"
+  },
+  {
+    "id": "particle-board",
+    "kind": "sheet-good",
+    "names": { "en": "Particle board", "hi": "पार्टिकल बोर्ड" },
+    "isStandard": "IS 3087 / 3097",
+    "priceTier": "low",
+    "waterResistance": "none",
+    "typicalUses": { "en": "Ready-to-assemble furniture, false ceilings, dry-zone wall units — cheap, moisture-weak.", "hi": "रेडी-टू-असेंबल फर्नीचर, फॉल्स सीलिंग, सूखे हिस्सों की वॉल यूनिट — सस्ता, नमी में कमज़ोर।" },
+    "verified": false,
+    "source": "https://asherspaces.com/difference-between-plywood-block-board-particle-board-mdf-hdf-hdhmr-and-wpc/"
+  },
+  {
+    "id": "wpc",
+    "kind": "sheet-good",
+    "names": { "en": "WPC board", "hi": "WPC बोर्ड" },
+    "priceTier": "mid",
+    "waterResistance": "waterproof",
+    "typicalUses": { "en": "Wet zones, bathroom vanities, louvers — water & termite proof.", "hi": "गीले हिस्से, बाथरूम वैनिटी, लौवर — पानी व दीमक रोधी।" },
+    "verified": true,
+    "source": "https://asherspaces.com/difference-between-plywood-block-board-particle-board-mdf-hdf-hdhmr-and-wpc/"
+  },
+  {
+    "id": "laminate",
+    "kind": "surfacing",
+    "names": { "en": "Laminate (Sunmica)", "hi": "लैमिनेट (सनमाइका)" },
+    "priceTier": "low-mid",
+    "waterResistance": "moisture-resistant",
+    "typicalUses": { "en": "The decorative top surface on almost every visible cabinet; ~1 mm standard, ~0.8 mm liner.", "hi": "लगभग हर दिखने वाली कैबिनेट की सजावटी ऊपरी सतह; ~1 मिमी स्टैंडर्ड, ~0.8 मिमी लाइनर।" },
+    "verified": false,
+    "source": "https://royaletouche.com/blog/difference-between-sunmica-and-laminate-sheets/"
+  },
+  {
+    "id": "veneer",
+    "kind": "surfacing",
+    "names": { "en": "Veneer", "hi": "विनियर" },
+    "priceTier": "mid-high",
+    "waterResistance": "na",
+    "typicalUses": { "en": "A thin slice of real wood over ply/MDF for a natural-wood look; needs polish on top.", "hi": "असली लकड़ी की पतली परत, प्लाई/MDF पर, प्राकृतिक लुक के लिए; ऊपर पॉलिश चाहिए।" },
+    "verified": true,
+    "source": "https://www.sainik710.com/blog/laminate-vs-veneer-vs-sunmica-comparison"
+  }
+]

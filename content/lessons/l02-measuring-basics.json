@@ -1,0 +1,68 @@
+{
+  "id": "l02-measuring-basics",
+  "level": 2,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 12,
+  "tags": ["measuring"],
+  "tools": ["measuring-tape", "carpenter-pencil"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "qI1iAqk6e48", "lang": "hi", "role": "primary", "credit": "SHARMA JI ONLINE 1", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Measure twice, cut once",
+      "objectives": [
+        "Read a tape in both millimetres and inches",
+        "Mark on the waste side of the line and allow for the saw kerf",
+        "Build the habit of measuring twice before every cut"
+      ],
+      "summary": "Most wasted wood comes from one careless measurement. A minute checking the number saves a whole board — and boards cost money.",
+      "steps": [
+        "Read the tape square-on, not at an angle, so you don't misread by a millimetre or two.",
+        "Mark a thin, sharp pencil line — a fat line hides 2–3 mm of error.",
+        "Decide which side is the keeper and which is waste; always cut on the waste side of the line.",
+        "Remember the kerf: the blade removes ~2–4 mm. If you cut on the line, the piece ends up short.",
+        "Measure twice (or check against the mating part) before you start the cut."
+      ],
+      "practice": "Mark a board to 300 mm, then measure it again from the other end. Do the two marks agree? Cut it and measure the finished piece — is it 300 mm or did the kerf steal a few mm?"
+    },
+    "hi": {
+      "title": "दो बार नापो, एक बार काटो",
+      "objectives": [
+        "टेप को मिलीमीटर और इंच दोनों में पढ़ें",
+        "लकीर के बेकार वाले हिस्से पर निशान लगाएँ और आरी के कर्फ का ध्यान रखें",
+        "हर कटाई से पहले दो बार नापने की आदत बनाएँ"
+      ],
+      "summary": "ज़्यादातर लकड़ी एक लापरवाह नाप से बर्बाद होती है। एक मिनट नंबर जाँचना पूरा बोर्ड बचाता है — और बोर्ड महँगे हैं।",
+      "steps": [
+        "टेप को सीधा देखें, टेढ़ा नहीं, ताकि एक-दो मिमी की गलती न हो।",
+        "पतली, तेज़ पेंसिल लकीर लगाएँ — मोटी लकीर 2–3 मिमी गलती छुपा देती है।",
+        "तय करें कौन-सा हिस्सा रखना है और कौन बेकार; हमेशा लकीर के बेकार हिस्से पर काटें।",
+        "कर्फ याद रखें: ब्लेड ~2–4 मिमी हटाता है। लकीर पर ही काटा तो टुकड़ा छोटा रह जाएगा।",
+        "कटाई शुरू करने से पहले दो बार नापें (या मिलने वाले हिस्से से मिलाएँ)।"
+      ],
+      "practice": "एक बोर्ड पर 300 मिमी का निशान लगाएँ, फिर दूसरे सिरे से दोबारा नापें। दोनों निशान मिलते हैं? काटें और तैयार टुकड़ा नापें — 300 मिमी है या कर्फ ने कुछ मिमी ले लिए?"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "You need a 300 mm piece. Where do you cut relative to your 300 mm mark?",
+        "hi": "आपको 300 मिमी का टुकड़ा चाहिए। 300 मिमी के निशान के सापेक्ष कहाँ काटेंगे?"
+      },
+      "options": [
+        { "en": "Right on the line", "hi": "ठीक लकीर पर" },
+        { "en": "On the waste side, just touching the line", "hi": "बेकार वाले हिस्से पर, लकीर को छूते हुए" },
+        { "en": "A few mm past the line into the keeper", "hi": "लकीर से कुछ मिमी आगे रखने वाले हिस्से में" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Cut on the waste side so the kerf eats the waste, not your piece — leaving a full 300 mm.",
+        "hi": "बेकार वाले हिस्से पर काटें ताकि कर्फ बेकार को खाए, आपके टुकड़े को नहीं — पूरा 300 मिमी बचे।"
+      }
+    }
+  ]
+}

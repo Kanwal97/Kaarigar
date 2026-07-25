@@ -1,0 +1,17 @@
+{
+  "id": "l10",
+  "number": 10,
+  "joint": "finished-piece",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "The trade",
+      "outcome": "Estimate and quote a job so you don't lose money, deal fairly with clients and contractors, and invest in tools in the right order."
+    },
+    "hi": {
+      "title": "पेशा (बिज़नेस)",
+      "outcome": "काम का ऐसा एस्टिमेट और कोट करें कि नुकसान न हो, ग्राहक-ठेकेदार से सही व्यवहार करें, और औज़ारों में सही क्रम से पैसा लगाएँ।"
+    }
+  },
+  "lessons": ["l10-estimating-and-quoting", "l10-clients-and-tools"]
+}

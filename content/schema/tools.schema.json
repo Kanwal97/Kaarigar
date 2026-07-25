@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kaarigar/schema/tools.schema.json",
+  "title": "Tools",
+  "description": "Array of tool entries. content/tools/tools.json.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "names", "verified"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "e.g. hand-plane, chisel-firmer" },
+      "names": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["en"],
+        "description": "Workshop names per language. pa/bgc left empty until a human translator fills them — never machine-translate.",
+        "properties": {
+          "en": { "type": "string" },
+          "hi": { "type": "string", "description": "Devanagari, plus roman in parentheses if useful (e.g. रंदा)" },
+          "pa": { "type": "string" },
+          "bgc": { "type": "string" }
+        }
+      },
+      "roman": { "type": "string", "description": "Common roman workshop term, e.g. randa, aari, rukhani." },
+      "category": { "enum": ["measuring-marking", "cutting", "planing", "chisel", "striking", "boring", "holding", "fastening", "power", "machine", "finishing", "safety"] },
+      "image": { "type": "string", "description": "Path/icon id." },
+      "audio": {
+        "type": "object", "additionalProperties": false,
+        "properties": { "en": {"type":"string"}, "hi": {"type":"string"}, "pa": {"type":"string"}, "bgc": {"type":"string"} }
+      },
+      "use": { "$ref": "#/$defs/localizedString", "description": "One-line: what it does." },
+      "usedInLessons": { "type": "array", "items": { "type": "string", "pattern": "^l[0-9]{2}[a-z0-9-]+$" } },
+      "verified": {
+        "type": "boolean",
+        "description": "true = the local-term↔tool mapping is source-cited; false = trade knowledge pending confirmation (do not present as fact)."
+      },
+      "source": { "type": "string", "description": "Citation URL when verified." }
+    }
+  },
+  "$defs": {
+    "localizedString": {
+      "type": "object", "additionalProperties": false, "required": ["en"],
+      "properties": { "en": {"type":"string"}, "hi": {"type":"string"}, "pa": {"type":"string"}, "bgc": {"type":"string"} }
+    }
+  }
+}

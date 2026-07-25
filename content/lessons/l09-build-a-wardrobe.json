@@ -1,0 +1,73 @@
+{
+  "id": "l09-build-a-wardrobe",
+  "level": 9,
+  "order": 2,
+  "difficulty": "advanced",
+  "estMinutes": 60,
+  "tags": ["project"],
+  "prerequisites": ["l01-choose-sheet-goods", "l06-hinges-channels-hardware", "l10-estimating-and-quoting"],
+  "tools": ["measuring-tape", "gunia", "circular-saw", "power-drill", "screwdriver"],
+  "materials": ["commercial-ply", "bwr-ply", "laminate"],
+  "hazards": ["wood-dust", "unguarded-blade", "eye-injury"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "6fyDM7hwAyg", "lang": "hi", "role": "primary", "credit": "SUPER WOODWORK", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Build a wardrobe (almirah)",
+      "objectives": [
+        "Plan a ply carcass from a cutting list and a quote",
+        "Cut, edge-band and assemble a square carcass",
+        "Face it with laminate and fit doors that hang true"
+      ],
+      "summary": "The wardrobe is the bread-and-butter paying job. It brings together board choice, accurate cutting, hardware fitting and finishing — and it must be quoted right (L10) to make money.",
+      "steps": [
+        "From the quote and cut-list, choose the board (MR ply body is enough; BWR near damp) and cut the panels with a guided circular saw (L1, L7).",
+        "Edge-band the exposed edges and dry-assemble the carcass; check it's square by the diagonals before fixing.",
+        "Fix the carcass with glue + screws (pilot holes, L6); add the back panel to lock it square.",
+        "Face the visible surfaces with laminate, rolling out every bubble (see Fix It), and trim the edges clean.",
+        "Fit soft-close concealed hinges and drawer channels, then adjust the doors until every gap is even (L6). Fit the handles and lock last."
+      ],
+      "practice": "Plan a small two-door wardrobe: write the cut-list and a quote (L10), then build the carcass and hang one door until the gaps are even all round.",
+      "safetyNote": "Cutting ply throws heavy dust and uses machines — wear a mask and glasses, keep the saw guard on, and support offcuts so the cut can't pinch (L0, L7)."
+    },
+    "hi": {
+      "title": "अलमारी बनाएँ",
+      "objectives": [
+        "कट-लिस्ट और कोट से प्लाई ढाँचा प्लान करें",
+        "काटें, एज-बैंड करें और चौकोर ढाँचा जोड़ें",
+        "लैमिनेट लगाएँ और दरवाज़े ऐसे लगाएँ कि सीधे लटकें"
+      ],
+      "summary": "अलमारी रोज़ी-रोटी वाला पैसे का काम है। इसमें बोर्ड चुनना, सही कटाई, हार्डवेयर फिटिंग और फिनिशिंग साथ आते हैं — और पैसे के लिए इसे सही कोट (L10) करना ज़रूरी है।",
+      "steps": [
+        "कोट और कट-लिस्ट से बोर्ड चुनें (MR प्लाई बॉडी काफी; नमी के पास BWR) और गाइड वाली गोल आरी से पैनल काटें (L1, L7)।",
+        "खुले किनारों पर एज-बैंडिंग करें और ढाँचा सूखा जोड़ें; फिक्स करने से पहले विकर्ण से चौकोर जाँचें।",
+        "ढाँचे को गोंद + पेंच (पायलट छेद, L6) से फिक्स करें; चौकोर बंद करने के लिए पीछे का पैनल लगाएँ।",
+        "दिखने वाली सतहों पर लैमिनेट लगाएँ, हर बुलबुला रोलर से निकालें (देखें Fix It), और किनारे साफ ट्रिम करें।",
+        "सॉफ्ट-क्लोज़ छुपे हिंज और ड्रॉअर चैनल लगाएँ, फिर दरवाज़े सेट करें जब तक हर गैप बराबर न हो (L6)। हैंडल और लॉक आख़िर में लगाएँ।"
+      ],
+      "practice": "एक छोटी दो-दरवाज़े अलमारी प्लान करें: कट-लिस्ट और कोट लिखें (L10), फिर ढाँचा बनाएँ और एक दरवाज़ा तब तक लगाएँ जब तक चारों ओर गैप बराबर न हों।",
+      "safetyNote": "प्लाई काटने से भारी बुरादा उड़ता है और मशीनें चलती हैं — मास्क और चश्मा पहनें, आरी का गार्ड लगा रखें, और कटने वाले टुकड़े को सहारा दें ताकि कटाई जकड़े नहीं (L0, L7)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "What locks a wardrobe carcass square and stops it racking?",
+        "hi": "अलमारी के ढाँचे को चौकोर बाँधकर तिरछा होने से क्या रोकता है?"
+      },
+      "options": [
+        { "en": "The handles", "hi": "हैंडल" },
+        { "en": "The fitted back panel", "hi": "पीछे का लगा पैनल" },
+        { "en": "The laminate", "hi": "लैमिनेट" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "A back panel fixed to a square carcass triangulates it, so it can't rack out of square later.",
+        "hi": "चौकोर ढाँचे पर लगा पीछे का पैनल उसे बाँध देता है, जिससे वह बाद में तिरछा नहीं होता।"
+      }
+    }
+  ]
+}

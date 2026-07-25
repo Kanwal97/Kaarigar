@@ -1,0 +1,180 @@
+/* Base styles — M1 skeleton. Minimal, mobile-first, accessible defaults.
+   Full component styles land in M2. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.25;
+  /* padding so Devanagari/Gurmukhi matras never clip against the line above */
+  padding-block: 0.1em;
+}
+
+a {
+  color: var(--info);
+}
+
+code {
+  background: var(--surface-sunk);
+  padding: 0 var(--sp-1);
+  border-radius: var(--r-sm);
+  font-size: 0.9em;
+}
+
+/* Visible focus for keyboard users (WCAG 2.4.7). */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+/* Respect reduced-motion everywhere (WCAG 2.3.3). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.app-shell {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  padding: var(--sp-4);
+  background: var(--primary);
+  color: var(--primary-ink);
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.brand-sub {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.app-main {
+  flex: 1;
+  width: min(66ch, 100%);
+  margin-inline: auto;
+  padding: var(--sp-6) var(--sp-4);
+}
+
+.app-footer {
+  padding: var(--sp-4);
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* Language select splash */
+.lang-select__title {
+  font-size: 2.25rem;
+  margin-block: 0 var(--sp-2);
+}
+.lang-select__tagline {
+  color: var(--ink-soft);
+}
+.lang-select__prompt {
+  margin-top: var(--sp-6);
+  font-weight: 700;
+}
+.lang-select__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-3);
+}
+.lang-select__btn,
+.notfound__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px; /* primary target 56–64px, thumb-friendly */
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface);
+  border: 2px solid var(--border-strong); /* interactive control edge — ≥3:1 (WCAG 1.4.11) */
+  border-radius: var(--r-md);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  text-decoration: none;
+}
+.lang-select__btn:hover,
+.notfound__btn:hover {
+  border-color: var(--cta);
+  background: var(--surface-sunk);
+}
+
+.crumbs {
+  margin-top: 0;
+  color: var(--ink-soft);
+}
+.home__levels {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-2);
+}
+.home__level-link {
+  display: block;
+  min-height: 48px;
+  padding: var(--sp-3);
+  background: var(--surface);
+  border: 1px solid var(--border-strong); /* interactive control edge — ≥3:1 */
+  border-radius: var(--r-md);
+  text-decoration: none;
+  color: var(--ink);
+}
+/* The active "start" action — energetic orange CTA with dark ink (accessible + motivating). */
+.home__level-link--start {
+  background: var(--cta);
+  color: var(--cta-ink);
+  border-color: var(--cta);
+  font-family: var(--font-display);
+  font-weight: 700;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+}
+.home__level-link--start:hover {
+  filter: brightness(1.05);
+}
+.home__level-muted {
+  padding: var(--sp-3);
+  color: var(--ink-soft);
+}
+.level-stub__todo,
+.home__note {
+  color: var(--ink-soft);
+}

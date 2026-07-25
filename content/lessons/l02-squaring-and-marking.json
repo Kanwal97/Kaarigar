@@ -1,0 +1,71 @@
+{
+  "id": "l02-squaring-and-marking",
+  "level": 2,
+  "order": 2,
+  "difficulty": "beginner",
+  "estMinutes": 15,
+  "tags": ["measuring", "business"],
+  "prerequisites": ["l02-measuring-basics"],
+  "tools": ["gunia", "marking-gauge", "carpenter-pencil"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "179YTkoLYmI", "lang": "en", "role": "primary", "credit": "SIKANA English", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Square, scribe & quote by area",
+      "objectives": [
+        "Use a try square (gunia) to mark and check a true 90°",
+        "Scribe a line parallel to an edge with a marking gauge",
+        "Quote a job by area the way the trade does — and know face vs developed area"
+      ],
+      "summary": "A joint is only as good as your marking. And on the money side, most carpentry disputes come from one thing: which area was quoted. Learn both.",
+      "steps": [
+        "Hold the gunia's stock firm against a straight edge; mark along the blade for a true 90° line.",
+        "Check a board is square: mark from both edges — if the lines don't meet, the edge isn't straight.",
+        "Set a marking gauge to the width you need and scribe with the stock pressed to the edge — same distance every time.",
+        "Estimating: work is quoted per square foot. Face/front area = height × width of the front only.",
+        "Developed (unfolded) area counts every shelf, partition and internal surface — always more. Always state which method your quote uses, in writing."
+      ],
+      "practice": "Quote a simple 7 ft × 3 ft wardrobe front two ways: face area (7×3 = 21 sq ft) and then add two shelves and a partition as developed area. See how different the two numbers are — that gap is where disputes start.",
+      "safetyNote": "This is a commercial skill as much as a technical one — a clear written quote (with the area method named) protects both you and the client."
+    },
+    "hi": {
+      "title": "गुनिया, निशान और क्षेत्रफल का हिसाब",
+      "objectives": [
+        "गुनिया से सच्चा 90° बनाएँ और जाँचें",
+        "मार्किंग गेज से किनारे के समानांतर लकीर खींचें",
+        "जिस तरह बाज़ार में क्षेत्रफल से हिसाब होता है वैसे कोट करें — और फेस बनाम डेवलप्ड एरिया समझें"
+      ],
+      "summary": "जोड़ उतना ही अच्छा होगा जितना आपका निशान। और पैसे की तरफ, बढ़ईगीरी के ज़्यादातर झगड़े एक ही बात से होते हैं: कौन-सा क्षेत्रफल कोट हुआ। दोनों सीखें।",
+      "steps": [
+        "गुनिया के डंडे को सीधे किनारे पर मज़बूती से टिकाएँ; ब्लेड के साथ सच्ची 90° लकीर लगाएँ।",
+        "बोर्ड चौकोर है या नहीं जाँचें: दोनों किनारों से निशान लगाएँ — लकीरें न मिलें तो किनारा सीधा नहीं है।",
+        "मार्किंग गेज को ज़रूरी चौड़ाई पर सेट करें और डंडा किनारे से दबाकर लकीर खींचें — हर बार एक ही दूरी।",
+        "एस्टिमेट: काम प्रति वर्ग फुट कोट होता है। फेस/सामने का क्षेत्रफल = सिर्फ सामने की ऊँचाई × चौड़ाई।",
+        "डेवलप्ड (खुला) क्षेत्रफल हर शेल्फ, पार्टिशन और अंदरूनी सतह गिनता है — हमेशा ज़्यादा। अपने कोट में कौन-सा तरीका है, लिखकर बताएँ।"
+      ],
+      "practice": "एक साधारण 7 फुट × 3 फुट अलमारी सामने को दो तरीकों से कोट करें: फेस एरिया (7×3 = 21 वर्ग फुट), फिर दो शेल्फ और एक पार्टिशन जोड़कर डेवलप्ड एरिया। देखें दोनों नंबर कितने अलग हैं — यही फर्क झगड़े की जड़ है।",
+      "safetyNote": "यह तकनीकी जितना व्यापारिक कौशल भी है — साफ लिखित कोट (क्षेत्रफल का तरीका बताते हुए) आपको और ग्राहक दोनों को बचाता है।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Two carpenters quote 'the same' wardrobe very differently. What is the most likely reason?",
+        "hi": "दो बढ़ई 'एक ही' अलमारी के बहुत अलग दाम बताते हैं। सबसे संभावित कारण क्या है?"
+      },
+      "options": [
+        { "en": "One used face area, the other developed area", "hi": "एक ने फेस एरिया लिया, दूसरे ने डेवलप्ड एरिया" },
+        { "en": "Different tape measures", "hi": "अलग-अलग टेप" },
+        { "en": "One measured in inches", "hi": "एक ने इंच में नापा" }
+      ],
+      "answerIndex": 0,
+      "explain": {
+        "en": "Developed area counts internal shelves and partitions, so it's always higher than face area — the #1 source of quoting disputes.",
+        "hi": "डेवलप्ड एरिया अंदरूनी शेल्फ-पार्टिशन गिनता है, इसलिए हमेशा फेस एरिया से ज़्यादा — कोटिंग झगड़ों का सबसे बड़ा कारण।"
+      }
+    }
+  ]
+}

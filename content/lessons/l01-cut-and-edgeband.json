@@ -1,0 +1,73 @@
+{
+  "id": "l01-cut-and-edgeband",
+  "level": 1,
+  "order": 4,
+  "difficulty": "intermediate",
+  "estMinutes": 18,
+  "tags": ["sheet-goods"],
+  "prerequisites": ["l01-choose-sheet-goods"],
+  "tools": ["circular-saw", "handsaw", "measuring-tape"],
+  "materials": ["commercial-ply", "laminate"],
+  "hazards": ["wood-dust", "unguarded-blade", "eye-injury"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "XvTSZW4lL8Y", "lang": "hi", "role": "primary", "credit": "BK Carpenter", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Cut, edge-band & laminate sheet goods",
+      "objectives": [
+        "Cut ply and boards with a clean, chip-free edge",
+        "Apply edge-banding to hide and protect raw edges",
+        "Paste laminate flat, without bubbles"
+      ],
+      "summary": "Most paid work is board work: cut clean, cover the raw edges, and face it with laminate. Doing these three well is the difference between a finished job and a rough one.",
+      "steps": [
+        "Support the whole sheet so it can't sag or pinch the blade. Mark the line and cut with a guide; a fine-tooth blade and the good face DOWN (for a circular saw) reduces chip-out.",
+        "Edge-band the exposed raw edges: iron-on veneer banding or PVC banding with adhesive, pressed down firm, then trim flush and ease the corner.",
+        "For laminate, spread contact adhesive on both the board and the laminate back, and let it go touch-dry (tacky) before joining.",
+        "Lay the laminate down from one end onto the tacky board and roller it firmly from the centre outward, pushing air out as you go (a bubble now is a callback later — see Fix It).",
+        "Trim the overhang flush with a file or laminate trimmer, and clean off any squeezed adhesive."
+      ],
+      "practice": "Cut a small ply panel, edge-band one edge, and laminate one face. Check the cut is chip-free, the banding is flush, and the laminate has no bubbles.",
+      "safetyNote": "Cutting ply and MDF throws heavy, fine dust and uses machines — wear a mask and glasses, keep the saw guard on, and support offcuts so the cut can't pinch (L0, L7)."
+    },
+    "hi": {
+      "title": "शीट गुड्स: कटाई, एज-बैंडिंग और लैमिनेट",
+      "objectives": [
+        "प्लाई और बोर्ड को साफ, बिना छिलके (chip) वाली कटाई करें",
+        "खुले किनारों को छुपाने-बचाने के लिए एज-बैंडिंग लगाएँ",
+        "लैमिनेट समतल, बिना बुलबुले चिपकाएँ"
+      ],
+      "summary": "ज़्यादातर पैसे वाला काम बोर्ड का है: साफ काटें, खुले किनारे ढकें, और लैमिनेट लगाएँ। ये तीन अच्छे से करना ही तैयार और खुरदरे काम का फर्क है।",
+      "steps": [
+        "पूरी शीट को सहारा दें ताकि झुके या ब्लेड न जकड़े। लकीर लगाकर गाइड से काटें; बारीक दाँतों का ब्लेड और अच्छी सतह नीचे (गोल आरी के लिए) चिप-आउट कम करता है।",
+        "खुले किनारों पर एज-बैंडिंग करें: आयरन-ऑन विनियर बैंडिंग या गोंद वाली PVC बैंडिंग, मज़बूती से दबाकर, फिर flush ट्रिम करें और कोना हल्का घिस दें।",
+        "लैमिनेट के लिए बोर्ड और लैमिनेट के पीछे दोनों पर कॉन्टैक्ट अडहेसिव लगाएँ, और जोड़ने से पहले उसे छूने पर सूखा (tacky) होने दें।",
+        "लैमिनेट को एक सिरे से tacky बोर्ड पर रखें और बीच से किनारे की तरफ मज़बूती से रोलर करें, हवा निकालते हुए (अभी बुलबुला बाद की वापसी है — देखें Fix It)।",
+        "बाहर निकला हिस्सा रेती या लैमिनेट ट्रिमर से flush ट्रिम करें, और बाहर आया गोंद साफ करें।"
+      ],
+      "practice": "एक छोटा प्लाई पैनल काटें, एक किनारे एज-बैंडिंग करें, और एक सतह पर लैमिनेट लगाएँ। जाँचें कटाई बिना छिलके, बैंडिंग flush, और लैमिनेट बिना बुलबुले।",
+      "safetyNote": "प्लाई और MDF काटने से भारी, बारीक बुरादा उड़ता है और मशीनें चलती हैं — मास्क व चश्मा पहनें, आरी का गार्ड लगा रखें, और कटने वाले टुकड़े को सहारा दें (L0, L7)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Rolling laminate from the centre outward mainly prevents what?",
+        "hi": "लैमिनेट को बीच से किनारे रोलर करना मुख्यतः किससे बचाता है?"
+      },
+      "options": [
+        { "en": "Using too much adhesive", "hi": "ज़्यादा गोंद लगने से" },
+        { "en": "Trapping air bubbles under the laminate", "hi": "लैमिनेट के नीचे हवा के बुलबुले फँसने से" },
+        { "en": "The wrong colour", "hi": "गलत रंग से" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Pushing from the centre out drives trapped air to the edges so it can escape — no bubble left behind.",
+        "hi": "बीच से किनारे धकेलने से फँसी हवा किनारों तक जाकर निकल जाती है — कोई बुलबुला नहीं बचता।"
+      }
+    }
+  ]
+}

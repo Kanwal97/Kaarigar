@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ppe",
+    "term": { "en": "PPE (personal protective equipment)", "hi": "PPE (निजी सुरक्षा उपकरण)" },
+    "roman": "suraksha upkaran",
+    "definition": {
+      "en": "Gear you wear to protect yourself — safety glasses, dust mask, ear protection, safe footwear.",
+      "hi": "अपनी रक्षा के लिए पहने जाने वाले उपकरण — सेफ्टी चश्मा, धूल मास्क, कान की सुरक्षा, सुरक्षित जूते।"
+    },
+    "category": "safety",
+    "verified": true
+  },
+  {
+    "id": "riving-knife",
+    "term": { "en": "Riving knife", "hi": "राइविंग नाइफ" },
+    "roman": "riving knife",
+    "definition": {
+      "en": "A curved plate behind a saw blade that stops the cut closing and pinching the blade — a key anti-kickback guard.",
+      "hi": "आरी ब्लेड के पीछे लगी घुमावदार प्लेट जो कटाई को बंद होकर ब्लेड को जकड़ने से रोकती है — किकबैक से बचाने वाला अहम गार्ड।"
+    },
+    "category": "safety",
+    "relatedIds": ["kickback", "unguarded-blade"],
+    "verified": true
+  },
+  {
+    "id": "kickback",
+    "term": { "en": "Kickback", "hi": "किकबैक (झटका)" },
+    "roman": "kickback",
+    "definition": {
+      "en": "When a saw throws the workpiece back at the operator fast — often from a pinched blade or no riving knife.",
+      "hi": "जब आरी काम के टुकड़े को तेज़ी से चलाने वाले की तरफ फेंक देती है — अक्सर ब्लेड जकड़ने या राइविंग नाइफ न होने से।"
+    },
+    "category": "safety",
+    "relatedIds": ["riving-knife"],
+    "verified": true
+  },
+  {
+    "id": "grain",
+    "term": { "en": "Grain", "hi": "ग्रेन (रेशा)" },
+    "roman": "resha",
+    "definition": {
+      "en": "The direction the wood fibres run. Cutting and planing with the grain gives a clean surface; against it tears out.",
+      "hi": "लकड़ी के रेशों की दिशा। रेशे के साथ काटने-रंदने से सतह साफ बनती है; उल्टा करने पर फट जाती है।"
+    },
+    "category": "wood",
+    "verified": true
+  },
+  {
+    "id": "seasoning",
+    "term": { "en": "Seasoning (drying)", "hi": "सीज़निंग (सुखाई)" },
+    "roman": "sukhai",
+    "definition": {
+      "en": "Drying timber to a stable moisture level before use. Unseasoned wood shrinks, warps and cracks after you build with it.",
+      "hi": "इस्तेमाल से पहले लकड़ी को सही नमी तक सुखाना। बिना सुखाई लकड़ी बनाने के बाद सिकुड़ती, मुड़ती और चटकती है।"
+    },
+    "category": "wood",
+    "verified": true
+  },
+  {
+    "id": "ply-grades",
+    "term": { "en": "MR / BWR / BWP grades", "hi": "MR / BWR / BWP ग्रेड" },
+    "roman": "ply grade",
+    "definition": {
+      "en": "Plywood water-resistance grades: MR (moisture-resistant, dry interiors), BWR (survives boiling water ~8 hrs, kitchens), BWP/Marine (fully waterproof, IS:710).",
+      "hi": "प्लाईवुड की पानी-रोधकता के ग्रेड: MR (नमी-रोधी, सूखे अंदरूनी), BWR (~8 घंटे उबलते पानी में टिके, रसोई), BWP/मरीन (पूरी तरह वॉटरप्रूफ, IS:710)।"
+    },
+    "category": "material",
+    "verified": true,
+    "source": "https://mccoymart.com/post/difference-between-303-and-710-grade-plywood/"
+  },
+  {
+    "id": "kerf",
+    "term": { "en": "Kerf", "hi": "कर्फ (कटाई की चौड़ाई)" },
+    "roman": "kerf",
+    "definition": {
+      "en": "The slot a saw blade removes as it cuts. Always cut on the waste side of your line so the piece keeps its full size.",
+      "hi": "आरी काटते समय जितनी चौड़ाई हटाती है वह दरार। हमेशा लकीर के बेकार वाले हिस्से पर काटें ताकि टुकड़ा पूरा नाप रहे।"
+    },
+    "category": "technique",
+    "verified": true
+  },
+  {
+    "id": "edge-banding",
+    "term": { "en": "Edge banding", "hi": "एज बैंडिंग" },
+    "roman": "edge banding",
+    "definition": {
+      "en": "A thin strip glued to the raw edge of ply/MDF to hide the layers and protect against moisture.",
+      "hi": "प्लाई/MDF के खुले किनारे पर चिपकाई पतली पट्टी जो परतें छुपाती और नमी से बचाती है।"
+    },
+    "category": "technique",
+    "verified": true
+  }
+]

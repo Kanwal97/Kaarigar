@@ -1,0 +1,72 @@
+{
+  "id": "l03-tune-a-plane",
+  "level": 3,
+  "order": 2,
+  "difficulty": "beginner",
+  "estMinutes": 12,
+  "tags": ["hand-tools"],
+  "prerequisites": ["l03-sharpen-edge-tools"],
+  "tools": ["hand-plane", "sharpening-stone"],
+  "hazards": ["chisel-cut"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "01b98l12Qbk", "lang": "hi", "role": "primary", "credit": "Basant Art woodwork", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Tune your randa (plane)",
+      "objectives": [
+        "Set the blade to take thin, even shavings",
+        "Square the blade to the sole so it doesn't dig on one side",
+        "Clear a choking mouth and keep the sole smooth"
+      ],
+      "summary": "A well-tuned randa is the difference between a clean, flat surface and a torn, dished one. Most planing problems are really setup problems.",
+      "steps": [
+        "With a sharp iron, retract the blade fully, then advance it slowly until it just barely cuts.",
+        "Sight down the sole from the front: the edge should show an even, thin line. Use the lateral lever to square it.",
+        "Take a test shaving on scrap — aim for a thin, continuous curl, the same width across.",
+        "If it chokes, the shaving is too thick or the mouth is clogged — back off the blade and clear it.",
+        "Rub a little wax or candle on the sole so it glides instead of dragging."
+      ],
+      "practice": "Set your plane until it makes one long, translucent shaving the full width of the blade. If it tears or skips, re-check the blade square and depth.",
+      "safetyNote": "Retract the blade before you set the plane down or adjust it, so you don't run a hand over the exposed edge."
+    },
+    "hi": {
+      "title": "अपना रंदा सेट करें",
+      "objectives": [
+        "ब्लेड को पतले, एक-से छिलके लेने पर सेट करें",
+        "ब्लेड को तले (sole) के चौकोर रखें ताकि एक तरफ न धँसे",
+        "जाम होते मुँह (mouth) को साफ करें और तला चिकना रखें"
+      ],
+      "summary": "अच्छा सेट रंदा ही साफ, समतल सतह और फटी, गड्ढेदार सतह के बीच का फर्क है। रंदने की ज़्यादातर दिक्कतें असल में सेटअप की दिक्कतें हैं।",
+      "steps": [
+        "तेज़ ब्लेड के साथ, ब्लेड को पूरा पीछे करें, फिर धीरे-धीरे आगे बढ़ाएँ जब तक बस हल्का कटने लगे।",
+        "आगे से तले की सीध में देखें: किनारा एक-सी पतली लकीर दिखाए। लेटरल लीवर से चौकोर करें।",
+        "कतरन पर टेस्ट छिलका लें — पतला, लगातार कर्ल, पूरी चौड़ाई में एक-सा।",
+        "जाम हो तो छिलका मोटा है या मुँह भरा है — ब्लेड थोड़ा पीछे करें और साफ करें।",
+        "तले पर थोड़ा मोम या मोमबत्ती रगड़ें ताकि खिंचने की जगह फिसले।"
+      ],
+      "practice": "रंदे को इतना सेट करें कि पूरे ब्लेड की चौड़ाई में एक लंबा, पारदर्शी छिलका उतरे। फटे या स्किप करे तो ब्लेड का चौकोरपन और गहराई फिर जाँचें।",
+      "safetyNote": "रंदा रखने या सेट करने से पहले ब्लेड पीछे कर लें, ताकि खुली धार पर हाथ न लगे।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Your plane keeps digging in on the left side only. What's the most likely cause?",
+        "hi": "आपका रंदा बस बायीं तरफ धँसता रहता है। सबसे संभावित कारण?"
+      },
+      "options": [
+        { "en": "The wood is too hard", "hi": "लकड़ी बहुत कठोर है" },
+        { "en": "The blade isn't square to the sole", "hi": "ब्लेड तले के चौकोर नहीं है" },
+        { "en": "The sole needs wax", "hi": "तले पर मोम चाहिए" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "If one corner cuts deeper, the blade is skewed — use the lateral lever to even it up.",
+        "hi": "अगर एक कोना गहरा काटे तो ब्लेड टेढ़ा है — लेटरल लीवर से बराबर करें।"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "l05-butt-and-lap",
+  "level": 5,
+  "order": 1,
+  "difficulty": "intermediate",
+  "tags": ["joinery"],
+  "estMinutes": 18,
+  "prerequisites": ["l04-sawing-technique"],
+  "tools": ["handsaw", "chisel-firmer", "gunia", "marking-gauge"],
+  "materials": ["pine"],
+  "hazards": ["chisel-cut", "workpiece-slip"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "LVfQmRu5Igg", "lang": "en", "role": "primary", "credit": "BCDesign", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "B1A3aiEHIzk", "lang": "en", "role": "deep-dive", "credit": "Make Something", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Butt & half-lap joints",
+      "objectives": [
+        "Make a square, reinforced butt joint",
+        "Cut a half-lap so both faces sit flush",
+        "Test-fit before glue every time"
+      ],
+      "summary": "The butt joint is the simplest join; the half-lap is the first 'real' joint where the parts interlock. Master these two and most frames are within reach.",
+      "steps": [
+        "Butt joint: square both mating ends with a gunia so they meet with no gap. A plain butt is weak — reinforce it with glue plus screws or dowels.",
+        "Half-lap: set a marking gauge to half the stock thickness and scribe the cheek line on both pieces from the same face.",
+        "Saw down the shoulder lines to the gauge line, on the waste side.",
+        "Pare the cheek away with a chisel, working to the gauge line until flat — check with a gunia.",
+        "Dry-fit the two halves: the faces should sit flush and square. Adjust, then glue and clamp."
+      ],
+      "practice": "Cut one butt joint (glued + 2 screws) and one half-lap in pine. Try to pull each apart by hand — feel how much stronger the interlocking lap is.",
+      "safetyNote": "When paring, clamp the work and keep both hands behind the chisel edge — never pare toward your holding hand."
+    },
+    "hi": {
+      "title": "बट और हाफ-लैप जोड़",
+      "objectives": [
+        "चौकोर, मज़बूत किया हुआ बट जोड़ बनाएँ",
+        "हाफ-लैप ऐसा काटें कि दोनों सतहें एक-सी (flush) बैठें",
+        "गोंद से पहले हर बार फिट करके देखें"
+      ],
+      "summary": "बट सबसे सरल जोड़ है; हाफ-लैप पहला 'असली' जोड़ है जहाँ टुकड़े आपस में फँसते हैं। ये दो आ गए तो ज़्यादातर फ्रेम पहुँच में हैं।",
+      "steps": [
+        "बट जोड़: दोनों मिलने वाले सिरे गुनिया से चौकोर करें ताकि बिना गैप मिलें। सादा बट कमज़ोर है — गोंद के साथ पेंच या डौवल से मज़बूत करें।",
+        "हाफ-लैप: मार्किंग गेज को मोटाई के आधे पर सेट करें और दोनों टुकड़ों पर एक ही सतह से चीक-लाइन खींचें।",
+        "शोल्डर लकीरों तक गेज-लाइन तक, बेकार तरफ आरी चलाएँ।",
+        "छेनी से चीक हटाएँ, गेज-लाइन तक समतल करते हुए — गुनिया से जाँचें।",
+        "दोनों हिस्से सूखे फिट करें: सतहें एक-सी और चौकोर बैठें। ठीक करके गोंद लगाकर क्लैंप करें।"
+      ],
+      "practice": "पाइन में एक बट जोड़ (गोंद + 2 पेंच) और एक हाफ-लैप काटें। दोनों को हाथ से खींचकर देखें — फँसने वाला लैप कितना ज़्यादा मज़बूत है, महसूस करें।",
+      "safetyNote": "छीलते समय काम क्लैंप करें और दोनों हाथ छेनी की धार के पीछे रखें — कभी पकड़ने वाले हाथ की तरफ न छीलें।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "To what depth do you cut each half of a half-lap joint?",
+        "hi": "हाफ-लैप जोड़ के हर हिस्से को कितनी गहराई तक काटते हैं?"
+      },
+      "options": [
+        { "en": "The full thickness", "hi": "पूरी मोटाई" },
+        { "en": "Half the thickness", "hi": "आधी मोटाई" },
+        { "en": "A quarter of the thickness", "hi": "मोटाई का एक-चौथाई" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Each piece loses half its thickness, so together the faces end up flush.",
+        "hi": "हर टुकड़ा आधी मोटाई खोता है, इसलिए मिलकर सतहें एक-सी बैठती हैं।"
+      }
+    }
+  ]
+}

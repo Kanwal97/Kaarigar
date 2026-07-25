@@ -1,0 +1,17 @@
+{
+  "id": "l05",
+  "number": 5,
+  "joint": "mortise-tenon",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Joinery",
+      "outcome": "Cut the joints that hold furniture together — from a simple butt and lap to a tight mortise and tenon."
+    },
+    "hi": {
+      "title": "जोड़ाई (जॉइनरी)",
+      "outcome": "वे जोड़ काटें जो फर्नीचर को जोड़े रखते हैं — साधारण बट और लैप से लेकर कसे मोर्टिस-टेनन तक।"
+    }
+  },
+  "lessons": ["l05-butt-and-lap", "l05-mortise-tenon", "l05-dovetail"]
+}

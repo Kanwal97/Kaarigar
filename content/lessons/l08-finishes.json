@@ -1,0 +1,73 @@
+{
+  "id": "l08-finishes",
+  "level": 8,
+  "order": 2,
+  "difficulty": "intermediate",
+  "estMinutes": 18,
+  "tags": ["finishing"],
+  "prerequisites": ["l08-sanding-and-prep"],
+  "materials": ["sheesham"],
+  "hazards": ["spray-fumes", "wood-dust"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "649UOl3Gpt0", "lang": "hi", "role": "primary", "credit": "Anil AKV videos", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "4RTwtt484yI", "lang": "hi", "role": "deep-dive", "credit": "Ashok Painter", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Choose & apply a finish",
+      "objectives": [
+        "Match the finish to the job, budget and durability needed",
+        "Know French polish, melamine, PU, Duco and wax",
+        "Spray safely — fumes are the real hazard here"
+      ],
+      "summary": "The finish is what the customer sees and touches every day. Each option is a trade-off of look, durability, cost and safety.",
+      "steps": [
+        "French polish (shellac, hand-rubbed): traditional, warm, repairable, but low durability — good for heritage/solid-wood pieces.",
+        "Melamine: the affordable shop mid-tier; decent sheen, but scratches and fades faster than PU.",
+        "PU (polyurethane): the premium standard — hard, water/heat/scratch resistant — for modular kitchens, wardrobes and doors.",
+        "Duco (NC paint): opaque, any colour, smooth — but peels in sun/heat, so it's being replaced by PU. Wax: low-sheen, natural feel, for rustic low-traffic work.",
+        "Whatever you spray (PU/Duco/melamine), do it in ventilation with a proper respirator — the mist, not the dust, is the danger."
+      ],
+      "practice": "Finish two sanded sheesham offcuts differently — say melamine vs PU — and scratch/wet-test each after they cure. Note which suits a kitchen and which a display piece.",
+      "safetyNote": "Spray finishes give off harmful, flammable fumes (PU contains isocyanates). A dust mask does NOT protect you — use a respirator rated for organic vapours, ventilate, and keep flames away. Safety content pending expert review."
+    },
+    "hi": {
+      "title": "फिनिश चुनें और लगाएँ",
+      "objectives": [
+        "फिनिश को काम, बजट और ज़रूरी टिकाव से मिलाएँ",
+        "फ्रेंच पॉलिश, मेलामाइन, PU, डुको और मोम जानें",
+        "सुरक्षित स्प्रे करें — असली खतरा यहाँ धुआँ है"
+      ],
+      "summary": "फिनिश वही है जो ग्राहक रोज़ देखता-छूता है। हर विकल्प लुक, टिकाव, दाम और सुरक्षा का संतुलन है।",
+      "steps": [
+        "फ्रेंच पॉलिश (शेलैक, हाथ से): पारंपरिक, गर्म लुक, ठीक होने योग्य, पर कम टिकाऊ — विरासती/ठोस लकड़ी के लिए अच्छी।",
+        "मेलामाइन: किफ़ायती मिड-टियर; ठीक चमक, पर PU से जल्दी खरोंच और फीका।",
+        "PU (पॉलीयूरेथेन): प्रीमियम मानक — कठोर, पानी/गर्मी/खरोंच रोधी — मॉड्यूलर किचन, अलमारी, दरवाज़ों के लिए।",
+        "डुको (NC पेंट): अपारदर्शी, कोई भी रंग, चिकना — पर धूप/गर्मी में उखड़ता है, इसलिए PU इसे बदल रहा है। मोम: कम चमक, प्राकृतिक स्पर्श, कम इस्तेमाल वाले रस्टिक काम के लिए।",
+        "जो भी स्प्रे करें (PU/डुको/मेलामाइन), हवादार जगह में सही रेस्पिरेटर के साथ करें — खतरा धूल नहीं, धुंध है।"
+      ],
+      "practice": "दो रेगमाल की शीशम कतरनों पर अलग फिनिश लगाएँ — जैसे मेलामाइन बनाम PU — और जमने पर हर पर खरोंच/पानी टेस्ट करें। नोट करें कौन-सा रसोई के लिए और कौन-सा दिखावटी टुकड़े के लिए।",
+      "safetyNote": "स्प्रे फिनिश हानिकारक, ज्वलनशील धुआँ छोड़ते हैं (PU में आइसोसाइनेट)। धूल मास्क आपको नहीं बचाता — ऑर्गैनिक वेपर के लिए रेस्पिरेटर पहनें, हवा रखें, आग दूर रखें। सुरक्षा सामग्री की समीक्षा बाकी।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Which finish is the right choice for a modular-kitchen shutter that must resist water and scratches?",
+        "hi": "मॉड्यूलर किचन के शटर के लिए, जिसे पानी और खरोंच सहनी हो, कौन-सा फिनिश सही है?"
+      },
+      "options": [
+        { "en": "Wax", "hi": "मोम" },
+        { "en": "PU (polyurethane)", "hi": "PU (पॉलीयूरेथेन)" },
+        { "en": "French polish", "hi": "फ्रेंच पॉलिश" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "PU is hard and resists water, heat and scratches — the standard for kitchens. Wax and French polish are too soft for a wet, high-use surface.",
+        "hi": "PU कठोर है और पानी, गर्मी व खरोंच सहता है — रसोई का मानक। मोम और फ्रेंच पॉलिश गीली, ज़्यादा इस्तेमाल वाली सतह के लिए बहुत नरम हैं।"
+      }
+    }
+  ]
+}

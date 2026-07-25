@@ -1,0 +1,129 @@
+{
+  "id": "l00-ppe-and-dust",
+  "level": 0,
+  "order": 2,
+  "difficulty": "beginner",
+  "estMinutes": 12,
+  "tags": ["safety"],
+  "prerequisites": ["l00-workshop-setup"],
+  "tools": ["safety-glasses", "dust-mask", "ear-protection"],
+  "materials": [],
+  "hazards": ["wood-dust", "eye-injury", "hearing-loss"],
+  "reviewStatus": "needs-expert-review",
+  "audio": {},
+  "videos": [
+    {
+      "videoId": "NKKr7He6bFo",
+      "lang": "en",
+      "role": "primary",
+      "credit": "Mick's Woodwork Wonders",
+      "verifiedAt": "2026-07-24T00:00:00Z",
+      "embeddable": true
+    },
+    {
+      "videoId": "TWNyk0ZeeVA",
+      "lang": "en",
+      "role": "deep-dive",
+      "credit": "Mike Peace Woodturning",
+      "verifiedAt": "2026-07-24T00:00:00Z",
+      "embeddable": true
+    }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "machine-draft", "bgc": "machine-draft" },
+  "i18n": {
+    "en": {
+      "title": "Protect your eyes, lungs and ears",
+      "objectives": [
+        "Wear the right protection for eyes, lungs and ears — every time, not just when it looks risky",
+        "Understand why fine wood dust is a long-term health risk",
+        "Keep dust down at the source, not just off the floor"
+      ],
+      "summary": "The damage from dust and noise builds up quietly over years. Cheap protection worn consistently is what saves your health — and sheesham dust in particular can cause asthma.",
+      "steps": [
+        "Put on impact-rated safety glasses whenever you cut, grind or machine.",
+        "Wear a fitted FFP2/FFP3 dust mask for sanding, sawing and machining — a loose surgical mask does not protect the lungs.",
+        "Wear ear-plugs or muffs near running machines; if you must shout at arm's length, it's too loud.",
+        "Catch dust at the machine with extraction where you can; sweep with a brush, never blow dust off with compressed air.",
+        "Change or clean masks and keep glasses scratch-free so you actually wear them."
+      ],
+      "practice": "Do one sanding job wearing glasses + a fitted mask + ear protection. Note what felt different, and whether your workspace had visible airborne dust afterwards.",
+      "safetyNote": "Some hardwood dusts, including sheesham/shisham, are respiratory sensitisers and are treated as carcinogenic — take dust seriously even when it doesn't bother you today."
+    },
+    "hi": {
+      "title": "अपनी आँख, फेफड़े और कान बचाएँ",
+      "objectives": [
+        "आँख, फेफड़े और कान के लिए सही बचाव पहनें — हर बार, सिर्फ खतरा दिखने पर नहीं",
+        "समझें कि बारीक बुरादा लंबे समय में सेहत के लिए क्यों खतरनाक है",
+        "धूल को स्रोत पर ही रोकें, सिर्फ फर्श से न हटाएँ"
+      ],
+      "summary": "धूल और शोर का नुकसान सालों में चुपचाप बढ़ता है। लगातार पहना गया सस्ता बचाव ही सेहत बचाता है — और खासकर शीशम का बुरादा दमा कर सकता है।",
+      "steps": [
+        "जब भी काटें, घिसें या मशीन चलाएँ, सेफ्टी चश्मा पहनें।",
+        "रेगमाल, आरी और मशीन के काम के लिए सही नाप का FFP2/FFP3 मास्क पहनें — ढीला सर्जिकल मास्क फेफड़े नहीं बचाता।",
+        "चलती मशीन के पास कान के प्लग या मफ पहनें; अगर एक हाथ की दूरी पर चिल्लाना पड़े तो शोर बहुत ज़्यादा है।",
+        "जहाँ हो सके मशीन पर ही धूल खींचें; ब्रश से झाड़ें, हवा के प्रेशर से धूल कभी न उड़ाएँ।",
+        "मास्क बदलें/साफ रखें और चश्मे पर खरोंच न आने दें ताकि आप उन्हें सच में पहनें।"
+      ],
+      "practice": "एक रेगमाल का काम चश्मा + सही मास्क + कान की सुरक्षा पहनकर करें। नोट करें क्या फर्क लगा, और बाद में हवा में धूल दिखी या नहीं।",
+      "safetyNote": "कुछ कठोर लकड़ी का बुरादा, जैसे शीशम, साँस की एलर्जी करता है और कैंसरकारी माना जाता है — भले आज परेशानी न हो, धूल को गंभीरता से लें।"
+    },
+    "pa": {
+      "title": "ਆਪਣੀਆਂ ਅੱਖਾਂ, ਫੇਫੜੇ ਤੇ ਕੰਨ ਬਚਾਓ",
+      "objectives": [
+        "ਅੱਖਾਂ, ਫੇਫੜਿਆਂ ਤੇ ਕੰਨਾਂ ਲਈ ਸਹੀ ਬਚਾਅ ਪਾਓ — ਹਰ ਵਾਰ, ਸਿਰਫ਼ ਖ਼ਤਰਾ ਦਿੱਸਣ ਤੇ ਨਹੀਂ",
+        "ਸਮਝੋ ਕਿ ਬਾਰੀਕ ਲੱਕੜ ਦਾ ਬੂਰਾ ਲੰਮੇ ਸਮੇਂ ਵਿੱਚ ਸਿਹਤ ਲਈ ਖ਼ਤਰਾ ਕਿਉਂ ਹੈ",
+        "ਧੂੜ ਨੂੰ ਸਰੋਤ ਤੇ ਹੀ ਰੋਕੋ, ਸਿਰਫ਼ ਫ਼ਰਸ਼ ਤੋਂ ਨਹੀਂ"
+      ],
+      "summary": "ਧੂੜ ਤੇ ਸ਼ੋਰ ਦਾ ਨੁਕਸਾਨ ਸਾਲਾਂ ਵਿੱਚ ਚੁੱਪ-ਚਾਪ ਵਧਦਾ ਹੈ। ਲਗਾਤਾਰ ਪਾਇਆ ਸਸਤਾ ਬਚਾਅ ਹੀ ਸਿਹਤ ਬਚਾਉਂਦਾ ਹੈ — ਤੇ ਖ਼ਾਸ ਕਰਕੇ ਸ਼ੀਸ਼ਮ ਦਾ ਬੂਰਾ ਦਮਾ ਕਰ ਸਕਦਾ ਹੈ।",
+      "steps": [
+        "ਜਦੋਂ ਵੀ ਕੱਟੋ, ਘਸਾਓ ਜਾਂ ਮਸ਼ੀਨ ਚਲਾਓ, ਸੁਰੱਖਿਆ ਐਨਕ ਪਾਓ।",
+        "ਰੇਗਮਾਰ, ਆਰੀ ਤੇ ਮਸ਼ੀਨ ਦੇ ਕੰਮ ਲਈ ਸਹੀ ਨਾਪ ਦਾ FFP2/FFP3 ਮਾਸਕ ਪਾਓ — ਢਿੱਲਾ ਸਰਜੀਕਲ ਮਾਸਕ ਫੇਫੜੇ ਨਹੀਂ ਬਚਾਉਂਦਾ।",
+        "ਚੱਲਦੀ ਮਸ਼ੀਨ ਕੋਲ ਕੰਨ ਦੇ ਪਲੱਗ ਜਾਂ ਮਫ਼ ਪਾਓ; ਜੇ ਇੱਕ ਬਾਂਹ ਦੀ ਦੂਰੀ ਤੇ ਉੱਚਾ ਬੋਲਣਾ ਪਵੇ ਤਾਂ ਸ਼ੋਰ ਬਹੁਤ ਹੈ।",
+        "ਜਿੱਥੇ ਹੋ ਸਕੇ ਮਸ਼ੀਨ ਤੇ ਹੀ ਧੂੜ ਖਿੱਚੋ; ਬੁਰਸ਼ ਨਾਲ ਝਾੜੋ, ਹਵਾ ਦੇ ਪ੍ਰੈਸ਼ਰ ਨਾਲ ਧੂੜ ਕਦੇ ਨਾ ਉਡਾਓ।",
+        "ਮਾਸਕ ਬਦਲੋ/ਸਾਫ਼ ਰੱਖੋ ਤੇ ਐਨਕ ਤੇ ਖਰੋਚ ਨਾ ਆਉਣ ਦਿਓ ਤਾਂ ਜੋ ਤੁਸੀਂ ਸੱਚਮੁੱਚ ਪਾਓ।"
+      ],
+      "practice": "ਇੱਕ ਰੇਗਮਾਰ ਦਾ ਕੰਮ ਐਨਕ + ਸਹੀ ਮਾਸਕ + ਕੰਨ ਦੀ ਸੁਰੱਖਿਆ ਪਾ ਕੇ ਕਰੋ। ਨੋਟ ਕਰੋ ਕੀ ਫ਼ਰਕ ਲੱਗਾ, ਤੇ ਬਾਅਦ ਵਿੱਚ ਹਵਾ ਵਿੱਚ ਧੂੜ ਦਿੱਸੀ ਜਾਂ ਨਹੀਂ।",
+      "safetyNote": "ਕੁਝ ਸਖ਼ਤ ਲੱਕੜ ਦਾ ਬੂਰਾ, ਜਿਵੇਂ ਸ਼ੀਸ਼ਮ, ਸਾਹ ਦੀ ਐਲਰਜੀ ਕਰਦਾ ਹੈ ਤੇ ਕੈਂਸਰ-ਕਾਰਕ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ — ਭਾਵੇਂ ਅੱਜ ਤਕਲੀਫ਼ ਨਾ ਹੋਵੇ, ਧੂੜ ਨੂੰ ਗੰਭੀਰਤਾ ਨਾਲ ਲਓ।"
+    },
+    "bgc": {
+      "title": "अपणी आँख, फेफड़े अर कान बचाओ",
+      "objectives": [
+        "आँख, फेफड़े अर कान खातर सही बचाव पहरो — हर बार, बस खतरा दिखण पै न्ही",
+        "समझो के बारीक बुरादा लम्बे बखत म्ह सेहत खातर क्यूँ खतरनाक सै",
+        "धूळ नै सोत्तर पै ए रोको, बस फर्श तै न्ही"
+      ],
+      "summary": "धूळ अर शोर का नुकसान सालां म्ह चुपचाप बढ़ै सै। लगातार पहरया सस्ता बचाव ए सेहत बचावै सै — अर खासकर शीशम का बुरादा दमा कर सकै सै।",
+      "steps": [
+        "जिब भी काटो, घिसो या मशीन चलाओ, सेफ्टी चश्मा पहरो।",
+        "रेगमाल, आरी अर मशीन के काम खातर सही नाप का FFP2/FFP3 मास्क पहरो — ढीला सर्जिकल मास्क फेफड़े न्ही बचावै।",
+        "चालू मशीन कै लोवै कान के प्लग या मफ पहरो; जै एक बाँह की दूरी पै ऊँचा बोलणा पड़ै तो शोर घणा सै।",
+        "जड़ै हो सकै मशीन पै ए धूळ खींचो; ब्रश तै झाड़ो, हवा कै प्रेशर तै धूळ कदे न्ही उड़ाओ।",
+        "मास्क बदलो/साफ राखो अर चश्मे पै खरोंच न्ही आण द्यो ताके थम सच म्ह पहरो।"
+      ],
+      "practice": "एक रेगमाल का काम चश्मा + सही मास्क + कान की सुरक्षा पहरकै करो। नोट करो के फर्क लाग्या, अर पाच्छै हवा म्ह धूळ दिक्खी या न्ही।",
+      "safetyNote": "कुछ सख्त लकड़ी का बुरादा, जिसा शीशम, साँस की एलर्जी करै अर कैंसर करण आळा मान्या जावै — चाहे आज तकलीफ न्ही हो, धूळ नै गंभीरता तै ल्यो।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Why is a fitted FFP2/FFP3 mask better than a loose surgical mask for sanding?",
+        "hi": "रेगमाल के लिए सही नाप का FFP2/FFP3 मास्क ढीले सर्जिकल मास्क से बेहतर क्यों है?",
+        "pa": "ਰੇਗਮਾਰ ਲਈ ਸਹੀ ਨਾਪ ਦਾ FFP2/FFP3 ਮਾਸਕ ਢਿੱਲੇ ਸਰਜੀਕਲ ਮਾਸਕ ਤੋਂ ਵਧੀਆ ਕਿਉਂ ਹੈ?",
+        "bgc": "रेगमाल खातर सही नाप का FFP2/FFP3 मास्क ढीले सर्जिकल मास्क तै बढ़िया क्यूँ सै?"
+      },
+      "options": [
+        { "en": "It is cheaper", "hi": "यह सस्ता है", "pa": "ਇਹ ਸਸਤਾ ਹੈ", "bgc": "यो सस्ता सै" },
+        { "en": "It seals to the face and filters fine dust", "hi": "यह चेहरे पर सील होता है और बारीक धूल छानता है", "pa": "ਇਹ ਚਿਹਰੇ ਤੇ ਸੀਲ ਹੁੰਦਾ ਹੈ ਤੇ ਬਾਰੀਕ ਧੂੜ ਛਾਣਦਾ ਹੈ", "bgc": "यो चेहरे पै सील होवै अर बारीक धूळ छाणै" },
+        { "en": "It looks more professional", "hi": "यह ज़्यादा पेशेवर दिखता है", "pa": "ਇਹ ਵੱਧ ਪੇਸ਼ੇਵਰ ਦਿੱਸਦਾ ਹੈ", "bgc": "यो घणा पेशेवर दिक्खै" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Fine wood dust leaks around a loose mask; an FFP2/FFP3 seals and filters the particles that reach the lungs.",
+        "hi": "बारीक बुरादा ढीले मास्क के किनारों से घुस जाता है; FFP2/FFP3 सील होकर फेफड़ों तक पहुँचने वाले कणों को छानता है।",
+        "pa": "ਬਾਰੀਕ ਬੂਰਾ ਢਿੱਲੇ ਮਾਸਕ ਦੇ ਕਿਨਾਰਿਓਂ ਲੰਘ ਜਾਂਦਾ ਹੈ; FFP2/FFP3 ਸੀਲ ਹੋ ਕੇ ਫੇਫੜਿਆਂ ਤਕ ਪਹੁੰਚਣ ਵਾਲੇ ਕਣ ਛਾਣ ਲੈਂਦਾ ਹੈ।",
+        "bgc": "बारीक बुरादा ढीले मास्क कै किनारां तै घुस ज्या; FFP2/FFP3 सील होकै फेफड़ां तक पहुँचण आळे कण छाण लेवै।"
+      }
+    }
+  ]
+}

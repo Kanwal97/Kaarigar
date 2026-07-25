@@ -1,0 +1,128 @@
+{
+  "id": "l00-workshop-setup",
+  "level": 0,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 12,
+  "tags": ["safety"],
+  "tools": ["first-aid-kit", "chisel-firmer"],
+  "materials": [],
+  "hazards": ["workpiece-slip", "electric-shock"],
+  "reviewStatus": "needs-expert-review",
+  "audio": {},
+  "videos": [
+    {
+      "videoId": "X-H3Urf6SrM",
+      "lang": "hi",
+      "role": "primary",
+      "credit": "SIKANA Hindi",
+      "verifiedAt": "2026-07-24T00:00:00Z",
+      "embeddable": true
+    },
+    {
+      "videoId": "tKWs5tcvlII",
+      "lang": "en",
+      "role": "deep-dive",
+      "credit": "Steve Ramsey — Woodworking for Mere Mortals",
+      "verifiedAt": "2026-07-24T00:00:00Z",
+      "embeddable": true
+    }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "machine-draft", "bgc": "machine-draft" },
+  "i18n": {
+    "en": {
+      "title": "Set up a safe workshop",
+      "objectives": [
+        "Lay out an uncluttered work area with a clear path",
+        "Keep a stocked first-aid box within reach",
+        "Run a 5-point check before you start any job"
+      ],
+      "summary": "Most workshop injuries happen before the tool touches the wood — in a cramped, dark, tangled space. A few minutes of setup prevents most of them.",
+      "steps": [
+        "Clear the floor and bench: no offcuts underfoot, no loose wires across the walkway.",
+        "Give yourself light you can see the cut line by, and room to stand square to the work.",
+        "Fix a first-aid box on the wall where everyone can reach it; keep it stocked.",
+        "Secure the work in a vice or with clamps before you cut — never hold small pieces by hand against a tool.",
+        "Before starting: check leads and plugs, guards in place, sharp tools, clear path, PPE on."
+      ],
+      "practice": "Set up your own bench to this standard, then photograph it. Fix one hazard you find (a trailing wire, a blocked path, an empty first-aid box).",
+      "safetyNote": "Loose workpieces and damaged electrical leads are the two setup hazards that most often turn into injuries — deal with both before the first cut."
+    },
+    "hi": {
+      "title": "सुरक्षित वर्कशॉप तैयार करें",
+      "objectives": [
+        "बिना भीड़-भाड़ वाला काम का क्षेत्र और साफ रास्ता बनाएँ",
+        "भरा हुआ फर्स्ट-एड बॉक्स पहुँच में रखें",
+        "कोई भी काम शुरू करने से पहले 5 बातें जाँचें"
+      ],
+      "summary": "ज़्यादातर वर्कशॉप की चोटें औज़ार के लकड़ी छूने से पहले ही होती हैं — तंग, अंधेरी, उलझी हुई जगह में। कुछ मिनट की तैयारी इनमें से अधिकतर को रोक देती है।",
+      "steps": [
+        "फर्श और बेंच साफ करें: पैरों के नीचे कतरन न हो, रास्ते पर ढीले तार न हों।",
+        "इतनी रोशनी रखें कि कटाई की लकीर दिखे, और सीधे खड़े होकर काम करने की जगह हो।",
+        "फर्स्ट-एड बॉक्स दीवार पर ऐसी जगह लगाएँ जहाँ सब पहुँच सकें; उसे भरा रखें।",
+        "काटने से पहले काम को शिकंजे या क्लैंप से पकड़ें — छोटे टुकड़े औज़ार पर हाथ से न पकड़ें।",
+        "शुरू करने से पहले जाँचें: तार-प्लग, गार्ड अपनी जगह, धार तेज़, रास्ता साफ, PPE पहना हुआ।"
+      ],
+      "practice": "अपनी बेंच को इसी मानक पर तैयार करें, फिर उसकी फोटो लें। जो एक खतरा दिखे उसे ठीक करें (ढीला तार, बंद रास्ता, खाली फर्स्ट-एड बॉक्स)।",
+      "safetyNote": "ढीला काम और खराब बिजली के तार — ये दो सेटअप खतरे सबसे ज़्यादा चोट का कारण बनते हैं; पहली कटाई से पहले दोनों ठीक करें।"
+    },
+    "pa": {
+      "title": "ਸੁਰੱਖਿਅਤ ਵਰਕਸ਼ਾਪ ਤਿਆਰ ਕਰੋ",
+      "objectives": [
+        "ਖੁੱਲ੍ਹੀ, ਬਿਨਾਂ ਭੀੜ ਵਾਲੀ ਕੰਮ ਵਾਲੀ ਥਾਂ ਤੇ ਸਾਫ਼ ਰਾਹ ਬਣਾਓ",
+        "ਭਰਿਆ ਹੋਇਆ ਫ਼ਸਟ-ਏਡ ਬਾਕਸ ਪਹੁੰਚ ਵਿੱਚ ਰੱਖੋ",
+        "ਕੋਈ ਵੀ ਕੰਮ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ 5 ਗੱਲਾਂ ਜਾਂਚੋ"
+      ],
+      "summary": "ਜ਼ਿਆਦਾਤਰ ਵਰਕਸ਼ਾਪ ਦੀਆਂ ਸੱਟਾਂ ਔਜ਼ਾਰ ਦੇ ਲੱਕੜ ਨੂੰ ਛੂਹਣ ਤੋਂ ਪਹਿਲਾਂ ਹੀ ਹੁੰਦੀਆਂ ਹਨ — ਤੰਗ, ਹਨੇਰੀ, ਉਲਝੀ ਹੋਈ ਥਾਂ ਵਿੱਚ। ਕੁਝ ਮਿੰਟਾਂ ਦੀ ਤਿਆਰੀ ਇਹਨਾਂ ਵਿੱਚੋਂ ਬਹੁਤੀਆਂ ਨੂੰ ਰੋਕ ਦਿੰਦੀ ਹੈ।",
+      "steps": [
+        "ਫ਼ਰਸ਼ ਤੇ ਬੈਂਚ ਸਾਫ਼ ਕਰੋ: ਪੈਰਾਂ ਹੇਠ ਕਤਰਨ ਨਾ ਹੋਵੇ, ਰਾਹ ਵਿੱਚ ਢਿੱਲੀਆਂ ਤਾਰਾਂ ਨਾ ਹੋਣ।",
+        "ਇੰਨੀ ਰੌਸ਼ਨੀ ਰੱਖੋ ਕਿ ਕੱਟ ਦੀ ਲਕੀਰ ਦਿੱਸੇ, ਅਤੇ ਸਿੱਧੇ ਖੜ੍ਹ ਕੇ ਕੰਮ ਕਰਨ ਦੀ ਥਾਂ ਹੋਵੇ।",
+        "ਫ਼ਸਟ-ਏਡ ਬਾਕਸ ਕੰਧ ਤੇ ਅਜਿਹੀ ਥਾਂ ਲਾਓ ਜਿੱਥੇ ਸਾਰੇ ਪਹੁੰਚ ਸਕਣ; ਇਸਨੂੰ ਭਰਿਆ ਰੱਖੋ।",
+        "ਕੱਟਣ ਤੋਂ ਪਹਿਲਾਂ ਕੰਮ ਨੂੰ ਸ਼ਿਕੰਜੇ ਜਾਂ ਕਲੈਂਪ ਨਾਲ ਫੜੋ — ਛੋਟੇ ਟੁਕੜੇ ਔਜ਼ਾਰ ਤੇ ਹੱਥ ਨਾਲ ਨਾ ਫੜੋ।",
+        "ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੋ: ਤਾਰ-ਪਲੱਗ, ਗਾਰਡ ਆਪਣੀ ਥਾਂ, ਤਿੱਖੇ ਔਜ਼ਾਰ, ਸਾਫ਼ ਰਾਹ, PPE ਪਾਇਆ ਹੋਇਆ।"
+      ],
+      "practice": "ਆਪਣੀ ਬੈਂਚ ਨੂੰ ਇਸੇ ਮਿਆਰ ਤੇ ਤਿਆਰ ਕਰੋ, ਫਿਰ ਉਸਦੀ ਫ਼ੋਟੋ ਲਓ। ਜੋ ਇੱਕ ਖ਼ਤਰਾ ਦਿੱਸੇ ਉਸਨੂੰ ਠੀਕ ਕਰੋ (ਢਿੱਲੀ ਤਾਰ, ਬੰਦ ਰਾਹ, ਖਾਲੀ ਫ਼ਸਟ-ਏਡ ਬਾਕਸ)।",
+      "safetyNote": "ਢਿੱਲੇ ਟੁਕੜੇ ਅਤੇ ਖ਼ਰਾਬ ਬਿਜਲੀ ਦੀਆਂ ਤਾਰਾਂ — ਇਹ ਦੋ ਸੈੱਟਅੱਪ ਖ਼ਤਰੇ ਸਭ ਤੋਂ ਵੱਧ ਸੱਟ ਬਣਦੇ ਹਨ; ਪਹਿਲੇ ਕੱਟ ਤੋਂ ਪਹਿਲਾਂ ਦੋਵੇਂ ਠੀਕ ਕਰੋ।"
+    },
+    "bgc": {
+      "title": "सुरक्षित वर्कशॉप त्यार करो",
+      "objectives": [
+        "बिना भीड़ की काम की जगह अर साफ रास्ता बणाओ",
+        "भरया होया फर्स्ट-एड बॉक्स पहुँच म्ह राखो",
+        "कोई भी काम शुरू करण तै पहलम 5 बात जाँच लो"
+      ],
+      "summary": "जादातर वर्कशॉप की चोट औजार के लकड़ी नै छूण तै पहलम ए हो ज्या सैं — तंग, अन्धेरी, उलझी होई जगह म्ह। थोड़े मिनट की त्यारी इन म्ह तै घणी नै रोक द्या सै।",
+      "steps": [
+        "फर्श अर बेंच साफ करो: पैरां तळै कतरन ना हो, रास्ते म्ह ढीली तार ना हों।",
+        "इतनी रोशनी राखो के कटाई की लकीर दिखै, अर सीधे खड़े होकै काम करण की जगह हो।",
+        "फर्स्ट-एड बॉक्स दीवार पै उस जगह लगाओ जड़ै सारे पहुँच सकैं; उसनै भरया राखो।",
+        "काटण तै पहलम काम नै शिकंजे या क्लैंप तै पकड़ो — छोटे टुकड़े औजार पै हाथ तै ना पकड़ो।",
+        "शुरू करण तै पहलम जाँचो: तार-प्लग, गार्ड अपणी जगह, तेज औजार, साफ रास्ता, PPE पहरया होया।"
+      ],
+      "practice": "अपणी बेंच नै इसे मानक पै त्यार करो, फेर उसकी फोटो ल्यो। जो एक खतरा दिखै उसनै ठीक करो (ढीली तार, बंद रास्ता, खाली फर्स्ट-एड बॉक्स)।",
+      "safetyNote": "ढीले टुकड़े अर खराब बिजली की तार — ये दो सेटअप खतरे सबतै जादा चोट बणैं सैं; पहली कटाई तै पहलम दोनूँ ठीक करो।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Before making the first cut, what should hold a small workpiece?",
+        "hi": "पहली कटाई से पहले छोटे काम को किससे पकड़ना चाहिए?",
+        "pa": "ਪਹਿਲਾ ਕੱਟ ਲਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਛੋਟੇ ਟੁਕੜੇ ਨੂੰ ਕਿਸ ਨਾਲ ਫੜਨਾ ਚਾਹੀਦਾ ਹੈ?",
+        "bgc": "पहली कटाई तै पहलम छोटे टुकड़े नै किसतै पकड़णा चाहिए?"
+      },
+      "options": [
+        { "en": "Your hand, held firmly", "hi": "अपना हाथ, मज़बूती से", "pa": "ਆਪਣਾ ਹੱਥ, ਮਜ਼ਬੂਤੀ ਨਾਲ", "bgc": "अपणा हाथ, मजबूती तै" },
+        { "en": "A vice or clamps", "hi": "शिकंजा या क्लैंप", "pa": "ਸ਼ਿਕੰਜਾ ਜਾਂ ਕਲੈਂਪ", "bgc": "शिकंजा या क्लैंप" },
+        { "en": "Nothing — just cut carefully", "hi": "कुछ नहीं — बस ध्यान से काटें", "pa": "ਕੁਝ ਨਹੀਂ — ਬੱਸ ਧਿਆਨ ਨਾਲ ਕੱਟੋ", "bgc": "कुछ ना — बस ध्यान तै काटो" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Clamped work can't spin or shift into the tool; hand-holding small pieces is a top cause of cuts.",
+        "hi": "पकड़ा हुआ काम घूमकर या खिसककर औज़ार में नहीं जाता; छोटे टुकड़े हाथ से पकड़ना कटने का बड़ा कारण है।",
+        "pa": "ਫੜਿਆ ਹੋਇਆ ਕੰਮ ਘੁੰਮ ਜਾਂ ਖਿਸਕ ਕੇ ਔਜ਼ਾਰ ਵਿੱਚ ਨਹੀਂ ਜਾਂਦਾ; ਛੋਟੇ ਟੁਕੜੇ ਹੱਥ ਨਾਲ ਫੜਨਾ ਸੱਟ ਦਾ ਵੱਡਾ ਕਾਰਨ ਹੈ।",
+        "bgc": "पकड़या होया काम घूमकै या खिसककै औजार म्ह ना जावै; छोटे टुकड़े हाथ तै पकड़णा चोट का बड़ा कारण सै।"
+      }
+    }
+  ]
+}

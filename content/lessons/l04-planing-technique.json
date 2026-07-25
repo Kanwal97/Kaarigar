@@ -1,0 +1,73 @@
+{
+  "id": "l04-planing-technique",
+  "level": 4,
+  "order": 2,
+  "difficulty": "beginner",
+  "estMinutes": 14,
+  "tags": ["hand-tools"],
+  "prerequisites": ["l03-tune-a-plane"],
+  "tools": ["hand-plane", "gunia"],
+  "materials": ["pine", "sheesham"],
+  "hazards": ["wood-dust"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "BGYoZE9WYqs", "lang": "en", "role": "primary", "credit": "RobCosman.com", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Plane a face flat & an edge square",
+      "objectives": [
+        "Read grain direction and plane with it",
+        "Flatten a face, then plane an edge square to it",
+        "Check your work for flat, square and twist"
+      ],
+      "summary": "A flat face and a square edge are the reference surfaces every measurement and joint is taken from. This is the most-used hand skill in the shop.",
+      "steps": [
+        "Look at the edge grain and plane 'downhill' with it — if it tears, plane the other direction.",
+        "Secure the board. Take overlapping strokes across the whole face with even pressure, front to back.",
+        "Check flat with a straightedge and for twist by sighting across two winding sticks (or two straight offcuts).",
+        "Now plane one edge, checking with a gunia held against the flat face until the edge is 90°.",
+        "Mark the flat face and square edge — these become your reference for the rest of the job."
+      ],
+      "practice": "Take a rough pine board to one flat face and one square edge. Confirm both with a straightedge and gunia before you call it done.",
+      "safetyNote": "Planing hardwood like sheesham throws fine dust — work in the open or with extraction and wear a mask (L0)."
+    },
+    "hi": {
+      "title": "एक सतह समतल और एक किनारा चौकोर रंदें",
+      "objectives": [
+        "रेशे की दिशा पढ़ें और उसी के साथ रंदें",
+        "एक सतह समतल करें, फिर उसके चौकोर एक किनारा रंदें",
+        "समतल, चौकोर और मरोड़ (twist) के लिए काम जाँचें"
+      ],
+      "summary": "समतल सतह और चौकोर किनारा वे आधार-सतह हैं जिनसे हर नाप और जोड़ लिया जाता है। यह दुकान का सबसे इस्तेमाल होने वाला हाथ-कौशल है।",
+      "steps": [
+        "किनारे का रेशा देखें और उसके साथ 'ढलान की तरफ' रंदें — फटे तो दूसरी दिशा में रंदें।",
+        "बोर्ड कसें। पूरी सतह पर आगे से पीछे, एक-से दबाव के साथ ओवरलैप करते स्ट्रोक लें।",
+        "समतल जाँचें सीधी पट्टी से, और मरोड़ जाँचें दो winding sticks (या दो सीधी कतरनों) की सीध में देखकर।",
+        "अब एक किनारा रंदें, समतल सतह पर गुनिया लगाकर जाँचते हुए, जब तक किनारा 90° न हो।",
+        "समतल सतह और चौकोर किनारे पर निशान लगाएँ — यही बाकी काम का आधार बनते हैं।"
+      ],
+      "practice": "एक खुरदरे पाइन बोर्ड को एक समतल सतह और एक चौकोर किनारे तक लाएँ। दोनों सीधी पट्टी और गुनिया से पक्का करें।",
+      "safetyNote": "शीशम जैसी कठोर लकड़ी रंदने से बारीक बुरादा उड़ता है — खुले में या एक्सट्रैक्शन के साथ काम करें और मास्क पहनें (L0)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "The surface tears out no matter how sharp the plane is. What should you try?",
+        "hi": "रंदा चाहे कितना तेज़ हो, सतह फटती रहती है। क्या करें?"
+      },
+      "options": [
+        { "en": "Push harder", "hi": "ज़्यादा ज़ोर लगाएँ" },
+        { "en": "Plane in the other direction (with the grain)", "hi": "दूसरी दिशा में रंदें (रेशे के साथ)" },
+        { "en": "Use a wider blade", "hi": "चौड़ा ब्लेड लगाएँ" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Tear-out means you're going against the grain — reverse direction and it planes clean.",
+        "hi": "फटना यानी आप रेशे के उल्टा जा रहे हैं — दिशा उलटें और साफ रंदेगा।"
+      }
+    }
+  ]
+}

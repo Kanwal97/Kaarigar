@@ -1,0 +1,50 @@
+name: CI
+
+# Fast checks on every PR and push. Content-specific jobs (video oEmbed verification,
+# JSON Schema validation, i18n coverage, Lighthouse budgets, link check) are added in
+# their respective milestones (see docs/PLAN.md §2.7) as the features they guard land.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:content
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: npm run check:budget
+
+  lighthouse:
+    # Full mobile audit with budgets (a11y gate is an error; perf/BP warn to avoid
+    # flaky CI failures — tune in lighthouserc.json). Serves the real base path via
+    # `vite preview`, so /Kaarigar/ asset paths resolve correctly.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npx --yes @lhci/cli@0.14.x autorun
+
+  verify-videos:
+    # Isolated so a transient YouTube/network hiccup fails only this job, not the build.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/verify-videos.mjs

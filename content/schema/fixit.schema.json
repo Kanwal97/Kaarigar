@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kaarigar/schema/fixit.schema.json",
+  "title": "Fix It",
+  "description": "Common mistakes and how to recover. content/fixit/fixit.json.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "i18n"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "category": { "enum": ["cutting", "joinery", "finishing", "boards", "measuring", "general"] },
+      "relatedLessons": { "type": "array", "items": { "type": "string" } },
+      "i18n": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["en"],
+        "properties": {
+          "en": { "$ref": "#/$defs/fix" },
+          "hi": { "$ref": "#/$defs/fix" },
+          "pa": { "$ref": "#/$defs/fix" },
+          "bgc": { "$ref": "#/$defs/fix" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "fix": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "problem", "fix"],
+      "properties": {
+        "title": { "type": "string" },
+        "problem": { "type": "string", "description": "What the learner sees going wrong." },
+        "cause": { "type": "string", "description": "Why it happens." },
+        "fix": { "type": "string", "description": "How to recover / prevent it." }
+      }
+    }
+  }
+}

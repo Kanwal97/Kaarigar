@@ -1,0 +1,17 @@
+{
+  "id": "l07",
+  "number": 7,
+  "joint": "dado",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Power tools & machines",
+      "outcome": "Use a drill/driver, circular saw and jigsaw safely and accurately — the tools that turn a day's work into an hour's."
+    },
+    "hi": {
+      "title": "पावर टूल और मशीनें",
+      "outcome": "ड्रिल/ड्राइवर, गोल आरी और जिगसॉ को सुरक्षित और सही इस्तेमाल करें — वे औज़ार जो दिन भर का काम घंटे भर में करते हैं।"
+    }
+  },
+  "lessons": ["l07-drill-and-driver", "l07-circular-saw-and-jigsaw"]
+}

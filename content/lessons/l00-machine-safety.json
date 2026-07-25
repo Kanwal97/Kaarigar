@@ -1,0 +1,129 @@
+{
+  "id": "l00-machine-safety",
+  "level": 0,
+  "order": 3,
+  "difficulty": "beginner",
+  "estMinutes": 15,
+  "tags": ["safety"],
+  "prerequisites": ["l00-ppe-and-dust"],
+  "tools": ["table-saw", "push-stick"],
+  "materials": [],
+  "hazards": ["unguarded-blade", "eye-injury"],
+  "reviewStatus": "needs-expert-review",
+  "audio": {},
+  "videos": [
+    {
+      "videoId": "Q343AGb8v0E",
+      "lang": "en",
+      "role": "primary",
+      "credit": "The Honest Carpenter",
+      "verifiedAt": "2026-07-24T00:00:00Z",
+      "embeddable": true
+    },
+    {
+      "videoId": "uU-4p-X8AOg",
+      "lang": "en",
+      "role": "deep-dive",
+      "credit": "WoodWorkWeb",
+      "verifiedAt": "2026-07-24T00:00:00Z",
+      "embeddable": true
+    }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "machine-draft", "bgc": "machine-draft" },
+  "i18n": {
+    "en": {
+      "title": "Work safely around machines",
+      "objectives": [
+        "Never run a machine whose guard or belt cover is missing",
+        "Use a push-stick for the last part of every rip cut",
+        "Recognise and avoid kickback"
+      ],
+      "summary": "Open belt-driven machines and hand-fed 'patti' saws without guards are the biggest cause of serious injury in Indian workshops. The rules here are few, but they are not optional.",
+      "steps": [
+        "Before switching on: confirm the blade guard, riving knife and belt/pulley cover are all fitted.",
+        "Stand slightly to the side of the blade line, never directly behind the cut — that is where kickback throws the work.",
+        "Feed steadily; use a push-stick for the last 150 mm so your hand never passes near the blade.",
+        "Keep the riving knife in place — it stops the cut closing and pinching the blade (the usual kickback cause).",
+        "If a machine has no guard, do not run it. Get it guarded first — no job is worth a finger."
+      ],
+      "practice": "Inspect one machine in your shop. List what guards it has and what is missing. Do not operate it until the missing guard is fitted.",
+      "safetyNote": "This lesson is safety-critical and unverified by an expert. Do not treat it as a substitute for hands-on training from an experienced mistri or a certified course."
+    },
+    "hi": {
+      "title": "मशीनों के पास सुरक्षित काम करें",
+      "objectives": [
+        "जिस मशीन का गार्ड या बेल्ट कवर न हो, उसे कभी न चलाएँ",
+        "हर चीर-कटाई के आखिरी हिस्से के लिए पुश-स्टिक इस्तेमाल करें",
+        "किकबैक को पहचानें और उससे बचें"
+      ],
+      "summary": "बिना गार्ड की खुली बेल्ट वाली मशीनें और हाथ से चलाई जाने वाली 'पट्टी' आरी भारतीय वर्कशॉप में गंभीर चोट का सबसे बड़ा कारण हैं। नियम थोड़े हैं, पर ये मर्ज़ी की बात नहीं।",
+      "steps": [
+        "चालू करने से पहले: ब्लेड गार्ड, राइविंग नाइफ और बेल्ट/पुली कवर — तीनों लगे होना पक्का करें।",
+        "ब्लेड की सीध से थोड़ा किनारे खड़े हों, कटाई के ठीक पीछे कभी नहीं — वहीं किकबैक काम को फेंकता है।",
+        "एक-सी रफ्तार से धकेलें; आखिरी 150 मिमी के लिए पुश-स्टिक इस्तेमाल करें ताकि हाथ ब्लेड के पास न जाए।",
+        "राइविंग नाइफ लगी रहने दें — यह कटाई को बंद होकर ब्लेड जकड़ने से रोकती है (किकबैक का आम कारण)।",
+        "अगर मशीन पर गार्ड नहीं है, तो उसे न चलाएँ। पहले गार्ड लगवाएँ — कोई काम उँगली से बढ़कर नहीं।"
+      ],
+      "practice": "अपनी दुकान की एक मशीन जाँचें। लिखें उस पर कौन-से गार्ड हैं और क्या गायब है। गायब गार्ड लगने तक उसे न चलाएँ।",
+      "safetyNote": "यह पाठ सुरक्षा-महत्वपूर्ण है और किसी विशेषज्ञ द्वारा जाँचा नहीं गया। इसे अनुभवी मिस्त्री या प्रमाणित कोर्स से व्यावहारिक प्रशिक्षण का विकल्प न समझें।"
+    },
+    "pa": {
+      "title": "ਮਸ਼ੀਨਾਂ ਦੇ ਕੋਲ ਸੁਰੱਖਿਅਤ ਕੰਮ ਕਰੋ",
+      "objectives": [
+        "ਜਿਸ ਮਸ਼ੀਨ ਦਾ ਗਾਰਡ ਜਾਂ ਬੈਲਟ ਕਵਰ ਨਾ ਹੋਵੇ, ਉਸਨੂੰ ਕਦੇ ਨਾ ਚਲਾਓ",
+        "ਹਰ ਚੀਰ-ਕਟਾਈ ਦੇ ਆਖ਼ਰੀ ਹਿੱਸੇ ਲਈ ਪੁਸ਼-ਸਟਿੱਕ ਵਰਤੋ",
+        "ਕਿੱਕਬੈਕ ਨੂੰ ਪਛਾਣੋ ਤੇ ਉਸ ਤੋਂ ਬਚੋ"
+      ],
+      "summary": "ਬਿਨਾਂ ਗਾਰਡ ਵਾਲੀਆਂ ਖੁੱਲ੍ਹੀਆਂ ਬੈਲਟ ਵਾਲੀਆਂ ਮਸ਼ੀਨਾਂ ਤੇ ਹੱਥ ਨਾਲ ਚਲਾਈ ਜਾਣ ਵਾਲੀ 'ਪੱਟੀ' ਆਰੀ ਭਾਰਤੀ ਵਰਕਸ਼ਾਪਾਂ ਵਿੱਚ ਗੰਭੀਰ ਸੱਟ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਕਾਰਨ ਹਨ। ਨਿਯਮ ਥੋੜ੍ਹੇ ਹਨ, ਪਰ ਇਹ ਮਰਜ਼ੀ ਦੀ ਗੱਲ ਨਹੀਂ।",
+      "steps": [
+        "ਚਾਲੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ: ਬਲੇਡ ਗਾਰਡ, ਰਾਈਵਿੰਗ ਨਾਈਫ਼ ਤੇ ਬੈਲਟ/ਪੁਲੀ ਕਵਰ — ਤਿੰਨੇ ਲੱਗੇ ਹੋਣ ਪੱਕਾ ਕਰੋ।",
+        "ਬਲੇਡ ਦੀ ਸਿੱਧ ਤੋਂ ਥੋੜ੍ਹਾ ਪਾਸੇ ਖੜ੍ਹੋ, ਕਟਾਈ ਦੇ ਠੀਕ ਪਿੱਛੇ ਕਦੇ ਨਹੀਂ — ਉੱਥੇ ਹੀ ਕਿੱਕਬੈਕ ਕੰਮ ਨੂੰ ਸੁੱਟਦਾ ਹੈ।",
+        "ਇੱਕ-ਸਾਰ ਧੱਕੋ; ਆਖ਼ਰੀ 150 ਮਿਲੀਮੀਟਰ ਲਈ ਪੁਸ਼-ਸਟਿੱਕ ਵਰਤੋ ਤਾਂ ਜੋ ਹੱਥ ਬਲੇਡ ਕੋਲ ਨਾ ਜਾਵੇ।",
+        "ਰਾਈਵਿੰਗ ਨਾਈਫ਼ ਲੱਗੀ ਰਹਿਣ ਦਿਓ — ਇਹ ਕਟਾਈ ਨੂੰ ਬੰਦ ਹੋ ਕੇ ਬਲੇਡ ਜਕੜਨ ਤੋਂ ਰੋਕਦੀ ਹੈ (ਕਿੱਕਬੈਕ ਦਾ ਆਮ ਕਾਰਨ)।",
+        "ਜੇ ਮਸ਼ੀਨ ਤੇ ਗਾਰਡ ਨਹੀਂ, ਤਾਂ ਉਸਨੂੰ ਨਾ ਚਲਾਓ। ਪਹਿਲਾਂ ਗਾਰਡ ਲਵਾਓ — ਕੋਈ ਕੰਮ ਉਂਗਲ ਤੋਂ ਵੱਧ ਨਹੀਂ।"
+      ],
+      "practice": "ਆਪਣੀ ਦੁਕਾਨ ਦੀ ਇੱਕ ਮਸ਼ੀਨ ਜਾਂਚੋ। ਲਿਖੋ ਉਸ ਤੇ ਕਿਹੜੇ ਗਾਰਡ ਹਨ ਤੇ ਕੀ ਗ਼ੈਰ-ਹਾਜ਼ਰ ਹੈ। ਗ਼ੈਰ-ਹਾਜ਼ਰ ਗਾਰਡ ਲੱਗਣ ਤਕ ਉਸਨੂੰ ਨਾ ਚਲਾਓ।",
+      "safetyNote": "ਇਹ ਪਾਠ ਸੁਰੱਖਿਆ-ਪੱਖੋਂ ਅਹਿਮ ਹੈ ਤੇ ਕਿਸੇ ਮਾਹਰ ਵੱਲੋਂ ਜਾਂਚਿਆ ਨਹੀਂ ਗਿਆ। ਇਸਨੂੰ ਤਜਰਬੇਕਾਰ ਮਿਸਤਰੀ ਜਾਂ ਪ੍ਰਮਾਣਿਤ ਕੋਰਸ ਤੋਂ ਵਿਹਾਰਕ ਸਿਖਲਾਈ ਦਾ ਬਦਲ ਨਾ ਸਮਝੋ।"
+    },
+    "bgc": {
+      "title": "मशीनां कै लोवै सुरक्षित काम करो",
+      "objectives": [
+        "जिस मशीन का गार्ड या बेल्ट कवर न्ही हो, उसनै कदे ना चलाओ",
+        "हर चीर-कटाई कै आखरी हिस्से खातर पुश-स्टिक इस्तेमाल करो",
+        "किकबैक नै पिछाणो अर उसतै बचो"
+      ],
+      "summary": "बिना गार्ड की खुली बेल्ट आळी मशीनां अर हाथ तै चलाई जाण आळी 'पट्टी' आरी भारतीय वर्कशॉप म्ह गंभीर चोट का सबतै बड्डा कारण सैं। नियम थोड़े सैं, पर ये मर्जी की बात न्ही।",
+      "steps": [
+        "चालू करण तै पहलम: ब्लेड गार्ड, राइविंग नाइफ अर बेल्ट/पुली कवर — तीनूँ लाग्गे हों पक्का करो।",
+        "ब्लेड की सीध तै जरा किनारै खड़े हो, कटाई कै ठीक पाच्छै कदे न्ही — उड़ै ए किकबैक काम नै फेंकै सै।",
+        "एक-सी रफ्तार तै धकेलो; आखरी 150 मिमी खातर पुश-स्टिक इस्तेमाल करो ताके हाथ ब्लेड कै लोवै ना जावै।",
+        "राइविंग नाइफ लाग्गी रहण द्यो — यो कटाई नै बंद होकै ब्लेड जकड़ण तै रोकै (किकबैक का आम कारण)।",
+        "जै मशीन पै गार्ड न्ही, तो उसनै ना चलाओ। पहलम गार्ड लगवाओ — कोई काम उंगली तै बढ़कै न्ही।"
+      ],
+      "practice": "अपणी दुकान की एक मशीन जाँचो। लिखो उस पै कौण-से गार्ड सैं अर के गायब सै। गायब गार्ड लाग्गण तक उसनै ना चलाओ।",
+      "safetyNote": "यो पाठ सुरक्षा-पक्ष तै अहम सै अर किसे माहिर नै जाँच्या न्ही। इसनै तजुर्बेकार मिस्त्री या प्रमाणित कोर्स तै व्यावहारिक ट्रेनिंग का बदल ना समझो।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "What is the riving knife for?",
+        "hi": "राइविंग नाइफ किसलिए होती है?",
+        "pa": "ਰਾਈਵਿੰਗ ਨਾਈਫ਼ ਕਿਸ ਲਈ ਹੁੰਦੀ ਹੈ?",
+        "bgc": "राइविंग नाइफ किसखातर होवै सै?"
+      },
+      "options": [
+        { "en": "To cut faster", "hi": "तेज़ काटने के लिए", "pa": "ਤੇਜ਼ ਕੱਟਣ ਲਈ", "bgc": "तेज काटण खातर" },
+        { "en": "To stop the cut pinching the blade and causing kickback", "hi": "कटाई को ब्लेड जकड़ने और किकबैक से रोकने के लिए", "pa": "ਕਟਾਈ ਨੂੰ ਬਲੇਡ ਜਕੜਨ ਤੇ ਕਿੱਕਬੈਕ ਤੋਂ ਰੋਕਣ ਲਈ", "bgc": "कटाई नै ब्लेड जकड़ण अर किकबैक तै रोकण खातर" },
+        { "en": "To hold the wood down", "hi": "लकड़ी को दबाकर रखने के लिए", "pa": "ਲੱਕੜ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖਣ ਲਈ", "bgc": "लकड़ी नै दबाकै राखण खातर" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "The riving knife keeps the saw kerf open behind the blade, so the wood can't pinch the blade and get thrown back.",
+        "hi": "राइविंग नाइफ ब्लेड के पीछे कटाई की दरार खुली रखती है, जिससे लकड़ी ब्लेड को जकड़कर पीछे नहीं फेंक सकती।",
+        "pa": "ਰਾਈਵਿੰਗ ਨਾਈਫ਼ ਬਲੇਡ ਦੇ ਪਿੱਛੇ ਕਟਾਈ ਦੀ ਦਰਾਰ ਖੁੱਲ੍ਹੀ ਰੱਖਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਲੱਕੜ ਬਲੇਡ ਨੂੰ ਜਕੜ ਕੇ ਪਿੱਛੇ ਨਹੀਂ ਸੁੱਟ ਸਕਦੀ।",
+        "bgc": "राइविंग नाइफ ब्लेड कै पाच्छै कटाई की दरार खुली राखै, जिसतै लकड़ी ब्लेड नै जकड़कै पाच्छै न्ही फेंक सकै।"
+      }
+    }
+  ]
+}

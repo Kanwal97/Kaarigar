@@ -1,0 +1,71 @@
+{
+  "id": "l06-glue-and-fasteners",
+  "level": 6,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 14,
+  "tags": ["hardware"],
+  "tools": ["screwdriver", "power-drill"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "WDc68_vu_rE", "lang": "hi", "role": "primary", "credit": "WOOD WORK ZK", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "G-foX6cTH-k", "lang": "en", "role": "deep-dive", "credit": "POUSE around the HOUSE", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Glue, screws, dowels & nails",
+      "objectives": [
+        "Pick the right glue for interior vs wet locations",
+        "Pre-drill pilot holes so screws don't split the wood",
+        "Know when to use screws, dowels or nails"
+      ],
+      "summary": "A joint is glue + a mechanical hold. Choose both to match the job, and the furniture lasts instead of coming back.",
+      "steps": [
+        "For dry interiors use ordinary wood glue (PVA, e.g. Fevicol SH). For damp/exterior use a waterproof grade. Glue is strongest on a snug joint clamped until set.",
+        "Near an edge or end, always drill a pilot hole before a screw — otherwise the wood splits.",
+        "Countersink so the screw head sits flush, and match screw length to the material thickness.",
+        "Dowels line parts up and add glue surface — good for edge-joining boards and knock-down carcasses.",
+        "Nails are for light or temporary work; they don't hold like screws under load."
+      ],
+      "practice": "Join two offcuts three ways — glue only, glue + screws (with pilot holes), and glue + dowels. Load each after the glue sets and feel the difference.",
+      "safetyNote": "Wipe squeeze-out before it dries; cured glue blunts blades and shows through finish."
+    },
+    "hi": {
+      "title": "गोंद, पेंच, डौवल और कील",
+      "objectives": [
+        "अंदरूनी बनाम गीली जगह के लिए सही गोंद चुनें",
+        "पहले पायलट छेद करें ताकि पेंच लकड़ी न फाड़े",
+        "जानें कब पेंच, डौवल या कील इस्तेमाल करें"
+      ],
+      "summary": "जोड़ = गोंद + यांत्रिक पकड़। दोनों काम के हिसाब से चुनें, तो फर्नीचर टिकता है, वापस नहीं आता।",
+      "steps": [
+        "सूखे अंदरूनी के लिए सामान्य लकड़ी गोंद (PVA, जैसे फेविकॉल SH)। नमी/बाहरी के लिए वॉटरप्रूफ ग्रेड। कसे जोड़ पर, जमने तक क्लैंप करने से गोंद सबसे मज़बूत।",
+        "किनारे या सिरे के पास पेंच से पहले हमेशा पायलट छेद करें — वरना लकड़ी फट जाती है।",
+        "काउंटरसिंक करें ताकि पेंच का सिर बराबर बैठे, और पेंच की लंबाई मोटाई से मिलाएँ।",
+        "डौवल टुकड़ों को सीध में रखते और गोंद की सतह बढ़ाते हैं — किनारे जोड़ने और खुलने वाले ढाँचे के लिए अच्छे।",
+        "कील हल्के या अस्थायी काम के लिए हैं; वज़न में पेंच जैसी पकड़ नहीं देतीं।"
+      ],
+      "practice": "दो कतरनों को तीन तरह जोड़ें — सिर्फ गोंद, गोंद + पेंच (पायलट छेद के साथ), और गोंद + डौवल। गोंद जमने पर हर पर वज़न डालें और फर्क महसूस करें।",
+      "safetyNote": "बाहर निकला गोंद सूखने से पहले पोंछ दें; जमा गोंद ब्लेड कुंद करता है और फिनिश में दिखता है।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Why drill a pilot hole before driving a screw near the end of a board?",
+        "hi": "बोर्ड के सिरे के पास पेंच से पहले पायलट छेद क्यों करें?"
+      },
+      "options": [
+        { "en": "To make it look neat", "hi": "साफ दिखाने के लिए" },
+        { "en": "So the screw doesn't split the wood", "hi": "ताकि पेंच लकड़ी न फाड़े" },
+        { "en": "To use less glue", "hi": "कम गोंद इस्तेमाल के लिए" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "A screw wedges the fibres apart; near an end there's little wood to resist, so it splits without a pilot hole.",
+        "hi": "पेंच रेशों को अलग धकेलता है; सिरे के पास रोकने को कम लकड़ी होती है, इसलिए बिना पायलट छेद फट जाती है।"
+      }
+    }
+  ]
+}

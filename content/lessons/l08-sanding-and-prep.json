@@ -1,0 +1,73 @@
+{
+  "id": "l08-sanding-and-prep",
+  "level": 8,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 12,
+  "tags": ["finishing"],
+  "tools": ["sandpaper"],
+  "materials": ["sheesham"],
+  "hazards": ["wood-dust"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "_-P95wh_U9E", "lang": "en", "role": "primary", "credit": "Bailey Line Road", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true },
+    { "videoId": "bE5MpU54TNY", "lang": "en", "role": "deep-dive", "credit": "Specific Love Creations", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Sand & prepare the surface",
+      "objectives": [
+        "Sand up through the grits in order, without skipping",
+        "Sand with the grain and remove all dust before finishing",
+        "Know when the surface is actually ready for finish"
+      ],
+      "summary": "A finish only looks as good as the surface under it. Most 'bad polish' is really bad preparation — the finish just magnifies every scratch.",
+      "steps": [
+        "Fix defects first: fill dents/gaps with matching filler and let it set.",
+        "Start with a coarse grit (80–100) to level, then step up through 120, 150, 180 — don't jump more than about 50 grit at a time.",
+        "Always sand with the grain; cross-grain scratches show badly under polish.",
+        "Wipe or vacuum every speck of dust off (and out of the pores) before the first coat.",
+        "Between finish coats, a light 320-grit rub knocks down the roughness — then dust off again."
+      ],
+      "practice": "Sand a sheesham offcut through 100 → 150 → 180 and wipe clean. Tilt it to the light — no cross scratches, no dust — before you'd call it ready.",
+      "safetyNote": "Sanding makes fine dust, and sheesham dust is a respiratory sensitiser — sand with extraction or outdoors and wear a fitted mask (L0)."
+    },
+    "hi": {
+      "title": "सतह रेगमाल करें और तैयार करें",
+      "objectives": [
+        "ग्रिट क्रम से बढ़ते हुए रेगमाल करें, बिना कोई छोड़े",
+        "रेशे के साथ रेगमाल करें और फिनिश से पहले पूरी धूल हटाएँ",
+        "जानें सतह सच में फिनिश के लिए कब तैयार है"
+      ],
+      "summary": "फिनिश उतना ही अच्छा दिखता है जितनी नीचे की सतह। ज़्यादातर 'खराब पॉलिश' असल में खराब तैयारी है — फिनिश हर खरोंच को उभार देता है।",
+      "steps": [
+        "पहले दोष ठीक करें: गड्ढे/गैप मिलते फिलर से भरें और जमने दें।",
+        "मोटे ग्रिट (80–100) से समतल करें, फिर 120, 150, 180 तक बढ़ें — एक बार में ~50 ग्रिट से ज़्यादा न छोड़ें।",
+        "हमेशा रेशे के साथ रेगमाल करें; उल्टी खरोंच पॉलिश के नीचे बुरी दिखती है।",
+        "पहली कोट से पहले हर कण धूल पोंछ/खींच लें (और छिद्रों से भी)।",
+        "फिनिश की कोटों के बीच हल्का 320-ग्रिट रगड़ खुरदरापन हटाता है — फिर धूल झाड़ें।"
+      ],
+      "practice": "शीशम की कतरन को 100 → 150 → 180 तक रेगमाल करें और साफ पोंछें। रोशनी की तरफ झुकाएँ — कोई उल्टी खरोंच, कोई धूल नहीं — तभी तैयार कहें।",
+      "safetyNote": "रेगमाल से बारीक बुरादा बनता है, और शीशम का बुरादा साँस की एलर्जी करता है — एक्सट्रैक्शन के साथ या बाहर करें और सही मास्क पहनें (L0)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "Why not jump straight from 80-grit to 220-grit?",
+        "hi": "सीधे 80-ग्रिट से 220-ग्रिट पर क्यों न कूदें?"
+      },
+      "options": [
+        { "en": "It wastes paper", "hi": "कागज़ बर्बाद होता है" },
+        { "en": "The finer paper can't remove the deep 80-grit scratches", "hi": "बारीक कागज़ 80-ग्रिट की गहरी खरोंच नहीं हटा पाता" },
+        { "en": "It takes less time", "hi": "कम समय लगता है" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Each grit removes the scratches of the one before it. Skip too far and the coarse scratches stay and show under the finish.",
+        "hi": "हर ग्रिट पिछले की खरोंच हटाता है। ज़्यादा छोड़ने पर मोटी खरोंच रह जाती और फिनिश में दिखती है।"
+      }
+    }
+  ]
+}

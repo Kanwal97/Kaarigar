@@ -1,0 +1,71 @@
+{
+  "id": "l01-identify-timbers",
+  "level": 1,
+  "order": 1,
+  "difficulty": "beginner",
+  "estMinutes": 14,
+  "tags": ["wood"],
+  "materials": ["sheesham", "teak", "mango", "pine", "babool", "rubberwood"],
+  "hazards": ["wood-dust"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "staILYH9uSs", "lang": "hi", "role": "primary", "credit": "Marble flooring Jitendra sharma", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Know your timbers",
+      "objectives": [
+        "Tell sheesham, teak, mango and pine apart by colour, weight and grain",
+        "Match a timber to the job and the budget",
+        "Know which woods move or crack if not properly seasoned"
+      ],
+      "summary": "In a North Indian shop, sheesham is the default hardwood, teak the premium, mango the budget hardwood, and pine the cheap softwood for practice and frames. Choosing right saves money and callbacks.",
+      "steps": [
+        "Sheesham (shisham): reddish-brown with dark streaks, heavy and hard — beds, almirah, doors, carving.",
+        "Teak (sagwan): golden-brown, oily feel, very stable — premium doors, windows, wardrobes.",
+        "Mango (aam): pale with pink/grey tones, softer and lighter — tabletops, shelves, budget furniture.",
+        "Pine (chir): pale yellow, light, knotty, soft — cheap frames, crates, and practice pieces.",
+        "Always ask if the wood is seasoned. Unseasoned timber shrinks, warps and cracks after you build with it."
+      ],
+      "practice": "Collect one offcut each of two different timbers. Feel the weight, look at the end grain, and try a pencil dent — the harder wood resists more. Note which you'd use for a bed frame and why.",
+      "safetyNote": "Sanding and sawing any hardwood makes fine dust — sheesham dust in particular can trigger asthma. Wear a fitted mask (see L0)."
+    },
+    "hi": {
+      "title": "अपनी लकड़ियाँ पहचानें",
+      "objectives": [
+        "शीशम, सागौन, आम और चीड़ को रंग, वज़न और रेशे से पहचानें",
+        "काम और बजट के हिसाब से सही लकड़ी चुनें",
+        "जानें कौन-सी लकड़ी ठीक से न सूखी हो तो मुड़ती/चटकती है"
+      ],
+      "summary": "उत्तर भारतीय दुकान में शीशम आम कठोर लकड़ी है, सागौन प्रीमियम, आम बजट की कठोर लकड़ी, और चीड़ सस्ती नरम लकड़ी (अभ्यास व फ्रेम के लिए)। सही चुनाव पैसे और शिकायतें बचाता है।",
+      "steps": [
+        "शीशम: लाल-भूरा रंग गहरी धारियों के साथ, भारी व कठोर — पलंग, अलमारी, दरवाज़े, नक्काशी।",
+        "सागौन (सागवान): सुनहरा-भूरा, तैलीय स्पर्श, बहुत स्थिर — प्रीमियम दरवाज़े, खिड़कियाँ, अलमारी।",
+        "आम: हल्के रंग में गुलाबी/स्लेटी झलक, नरम व हल्की — टेबल-टॉप, शेल्फ, बजट फर्नीचर।",
+        "चीड़: हल्का पीला, हल्का वज़न, गाँठदार, नरम — सस्ते फ्रेम, पेटियाँ, अभ्यास के टुकड़े।",
+        "हमेशा पूछें कि लकड़ी सूखी (सीज़न्ड) है या नहीं। बिना सूखी लकड़ी बनाने के बाद सिकुड़ती, मुड़ती और चटकती है।"
+      ],
+      "practice": "दो अलग लकड़ियों की एक-एक कतरन लें। वज़न महसूस करें, सिरे का रेशा देखें, और पेंसिल से दबाकर देखें — कठोर लकड़ी ज़्यादा रोकेगी। नोट करें पलंग के फ्रेम के लिए कौन-सी लेंगे और क्यों।",
+      "safetyNote": "किसी भी कठोर लकड़ी को रगड़ने-काटने से बारीक बुरादा बनता है — खासकर शीशम का बुरादा दमा कर सकता है। सही मास्क पहनें (देखें L0)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "For a low-cost practice frame, which timber makes most sense?",
+        "hi": "कम लागत के अभ्यास फ्रेम के लिए कौन-सी लकड़ी सबसे सही है?"
+      },
+      "options": [
+        { "en": "Teak", "hi": "सागौन" },
+        { "en": "Pine", "hi": "चीड़" },
+        { "en": "Sheesham", "hi": "शीशम" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Pine is the cheapest and softest — ideal for practice and rough frames; save teak/sheesham for paid work.",
+        "hi": "चीड़ सबसे सस्ती और नरम है — अभ्यास व मोटे फ्रेम के लिए सही; सागौन/शीशम पैसे वाले काम के लिए रखें।"
+      }
+    }
+  ]
+}

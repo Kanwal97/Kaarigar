@@ -1,0 +1,67 @@
+{
+  "id": "l10-estimating-and-quoting",
+  "level": 10,
+  "order": 1,
+  "difficulty": "intermediate",
+  "estMinutes": 18,
+  "tags": ["business"],
+  "prerequisites": ["l02-squaring-and-marking", "l01-choose-sheet-goods"],
+  "reviewStatus": "needs-expert-review",
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Estimate & quote a job",
+      "objectives": [
+        "Build a quote from materials + labour + wastage + margin",
+        "State whether you quoted face area or developed area",
+        "Put the quote in writing so there's no dispute later"
+      ],
+      "summary": "The fastest way to lose money is a quote made in your head. A clear, written estimate wins trust and protects your profit.",
+      "steps": [
+        "Measure the job and decide the area method: face area (front only) or developed area (every shelf and partition). State which one — this is the #1 cause of disputes (see L2).",
+        "List materials by grade: board (MR/BWR/BWP), laminate/veneer, edge-banding, hardware (hinges/channels/handles/locks), finish.",
+        "Add a wastage allowance (offcuts, breakage) — commonly around 10% — and transport.",
+        "Add labour as days × your day rate, then a margin. Don't quote labour at cost.",
+        "Write it all down with the area method named, take an advance for materials, and keep a copy."
+      ],
+      "practice": "Quote a 7 ft × 6 ft wardrobe two ways — face area and developed area — itemising board, laminate, hardware, finish, wastage, labour and margin. Compare the totals.",
+      "safetyNote": "Rupee rates change by city and season — treat any number in this lesson as a method to follow, not a fixed price. Verify current rates in your local market."
+    },
+    "hi": {
+      "title": "काम का एस्टिमेट और कोट करें",
+      "objectives": [
+        "सामग्री + मज़दूरी + बर्बादी + मार्जिन से कोट बनाएँ",
+        "बताएँ कि आपने फेस एरिया कोट किया या डेवलप्ड एरिया",
+        "कोट लिखकर दें ताकि बाद में झगड़ा न हो"
+      ],
+      "summary": "पैसा गँवाने का सबसे तेज़ तरीका है दिमाग़ में बनाया कोट। साफ, लिखित एस्टिमेट भरोसा जीतता है और मुनाफ़ा बचाता है।",
+      "steps": [
+        "काम नापें और क्षेत्रफल का तरीका तय करें: फेस एरिया (सिर्फ सामने) या डेवलप्ड एरिया (हर शेल्फ और पार्टिशन)। कौन-सा, यह बताएँ — यही झगड़ों का सबसे बड़ा कारण है (देखें L2)।",
+        "सामग्री ग्रेड से लिखें: बोर्ड (MR/BWR/BWP), लैमिनेट/विनियर, एज-बैंडिंग, हार्डवेयर (हिंज/चैनल/हैंडल/लॉक), फिनिश।",
+        "बर्बादी की छूट जोड़ें (कतरन, टूट-फूट) — आमतौर पर लगभग 10% — और ढुलाई।",
+        "मज़दूरी = दिन × आपका दिन-रेट, फिर मार्जिन जोड़ें। मज़दूरी लागत पर कोट न करें।",
+        "सब लिखें, क्षेत्रफल का तरीका बताते हुए, सामग्री के लिए एडवांस लें, और एक कॉपी रखें।"
+      ],
+      "practice": "7 फुट × 6 फुट अलमारी को दो तरह कोट करें — फेस एरिया और डेवलप्ड एरिया — बोर्ड, लैमिनेट, हार्डवेयर, फिनिश, बर्बादी, मज़दूरी और मार्जिन अलग-अलग लिखकर। कुल की तुलना करें।",
+      "safetyNote": "रुपये के रेट शहर और मौसम से बदलते हैं — इस पाठ के किसी नंबर को तय दाम नहीं, तरीका मानें। अपने बाज़ार के मौजूदा रेट जाँचें।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "What must a written quote always state to avoid the most common dispute?",
+        "hi": "सबसे आम झगड़े से बचने के लिए लिखित कोट में हमेशा क्या बताना चाहिए?"
+      },
+      "options": [
+        { "en": "The carpenter's phone number", "hi": "बढ़ई का फ़ोन नंबर" },
+        { "en": "Whether it's face area or developed area", "hi": "यह फेस एरिया है या डेवलप्ड एरिया" },
+        { "en": "The colour of the laminate", "hi": "लैमिनेट का रंग" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Face vs developed area gives very different totals; naming the method in writing prevents the argument.",
+        "hi": "फेस बनाम डेवलप्ड एरिया के कुल बहुत अलग होते हैं; लिखकर तरीका बताना बहस रोकता है।"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "l04",
+  "number": 4,
+  "joint": "sawn-edge",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Sawing, planing & chiselling",
+      "outcome": "Saw to a line, plane a surface flat and square, and pare with a chisel — the three cuts everything else is built on."
+    },
+    "hi": {
+      "title": "आरी, रंदा और छेनी चलाना",
+      "outcome": "लकीर तक आरी चलाएँ, सतह को समतल-चौकोर रंदें, और छेनी से छीलें — यही तीन कटाई हर काम की नींव हैं।"
+    }
+  },
+  "lessons": ["l04-sawing-technique", "l04-planing-technique", "l04-chiselling-technique"]
+}

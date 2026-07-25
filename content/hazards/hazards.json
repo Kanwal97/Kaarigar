@@ -1,0 +1,165 @@
+[
+  {
+    "id": "wood-dust",
+    "severity": "high",
+    "i18n": {
+      "en": {
+        "label": "Wood dust",
+        "risk": "Fine wood dust harms the lungs and nose over time; some hardwood dust (incl. sheesham) can cause asthma and is a carcinogen. It also feeds fire.",
+        "control": "Use dust extraction / local exhaust at the machine, keep the shop swept (don't dry-sweep into clouds), and wear a fitted FFP2/FFP3 dust mask. Don't use compressed air to blow dust off yourself."
+      },
+      "hi": {
+        "label": "लकड़ी का बुरादा",
+        "risk": "बारीक बुरादा समय के साथ फेफड़ों और नाक को नुकसान पहुँचाता है; कुछ कठोर लकड़ी (जैसे शीशम) का बुरादा दमा और कैंसर का कारण बन सकता है। यह आग भी पकड़ता है।",
+        "control": "मशीन पर धूल खींचने वाला (डस्ट एक्सट्रैक्शन) लगाएँ, दुकान साफ रखें (सूखा झाड़ू मारकर धूल न उड़ाएँ), और सही नाप का FFP2/FFP3 मास्क पहनें। हवा के प्रेशर से बुरादा शरीर पर से न उड़ाएँ।"
+      }
+    },
+    "source": [
+      { "org": "HSE (UK)", "url": "https://www.hse.gov.uk/woodworking/wood-dust.htm", "ref": "Wood dust — control and health effects" },
+      { "org": "OSHA", "url": "https://www.osha.gov/woodworking", "ref": "Woodworking — dust hazards" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  },
+  {
+    "id": "eye-injury",
+    "severity": "medium",
+    "i18n": {
+      "en": {
+        "label": "Eye injury",
+        "risk": "Flying chips, dust, and broken-off pieces can hit the eyes during sawing, chiselling, grinding, and machining.",
+        "control": "Wear impact-rated safety glasses or goggles whenever cutting, grinding, or machining — not just 'when it looks risky'. Keep them on for the whole task."
+      },
+      "hi": {
+        "label": "आँख की चोट",
+        "risk": "आरी चलाते, छेनी मारते, घिसाई (ग्राइंडिंग) और मशीन के काम में उड़ते छिलके, धूल और टूटे टुकड़े आँख में लग सकते हैं।",
+        "control": "काटते, घिसते या मशीन चलाते समय हमेशा सेफ्टी चश्मा/गॉगल पहनें — सिर्फ 'खतरा दिखने पर' नहीं। पूरे काम के दौरान पहने रखें।"
+      }
+    },
+    "source": [
+      { "org": "OSHA", "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.133", "ref": "1910.133 Eye and face protection" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  },
+  {
+    "id": "hearing-loss",
+    "severity": "medium",
+    "i18n": {
+      "en": {
+        "label": "Noise / hearing loss",
+        "risk": "Planers, circular saws, routers and grinders are loud enough to permanently damage hearing with repeated exposure.",
+        "control": "Wear ear-plugs or ear-muffs near running machines. If you must raise your voice to be heard at arm's length, it's loud enough to need protection."
+      },
+      "hi": {
+        "label": "शोर / सुनने की क्षति",
+        "risk": "प्लेनर, गोल आरी (सर्कुलर सॉ), राउटर और ग्राइंडर इतने तेज़ होते हैं कि बार-बार के शोर से कान की सुनने की ताकत हमेशा के लिए कम हो सकती है।",
+        "control": "चलती मशीन के पास कान के प्लग या ईयर-मफ पहनें। अगर एक हाथ की दूरी पर बात के लिए आवाज़ ऊँची करनी पड़े, तो शोर इतना है कि बचाव ज़रूरी है।"
+      }
+    },
+    "source": [
+      { "org": "OSHA", "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.95", "ref": "1910.95 Occupational noise exposure" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  },
+  {
+    "id": "chisel-cut",
+    "severity": "medium",
+    "i18n": {
+      "en": {
+        "label": "Chisel / edge-tool cut",
+        "risk": "A slipping chisel or knife travels toward whatever is in its path — often the hand holding the work.",
+        "control": "Clamp the workpiece; keep both hands behind the cutting edge and never in the line of the cut. Keep edge tools sharp — a blunt tool needs more force and slips more."
+      },
+      "hi": {
+        "label": "छेनी / धार वाले औज़ार का कटना",
+        "risk": "फिसलती छेनी या चाकू अपनी सीध में जो भी हो उसकी तरफ जाती है — अक्सर वह हाथ जो काम पकड़े होता है।",
+        "control": "काम को शिकंजे (क्लैंप) से कसें; दोनों हाथ धार के पीछे रखें, कभी कटाई की सीध में नहीं। औज़ार की धार तेज़ रखें — कुंद औज़ार में ज़्यादा ज़ोर लगता है और वह ज़्यादा फिसलता है।"
+      }
+    },
+    "source": [
+      { "org": "NCVT / DGT (ITI Carpenter CTS)", "url": "https://bharatskills.gov.in/pdf/Qp_Curriculum/Carpenter_CTS_NSQF-4.pdf", "ref": "Safety & tool handling (Sem 1)" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  },
+  {
+    "id": "workpiece-slip",
+    "severity": "medium",
+    "i18n": {
+      "en": {
+        "label": "Workpiece slip / movement",
+        "risk": "An unheld workpiece can spin, kick, or shift while you cut — pulling a hand into the tool.",
+        "control": "Hold work in a vice or with clamps / a bench dog before cutting. Never hand-hold small pieces against a running machine — use a jig or push block."
+      },
+      "hi": {
+        "label": "काम का खिसकना / हिलना",
+        "risk": "बिना पकड़ा काम काटते समय घूम सकता है, झटका दे सकता है या खिसक सकता है — और हाथ औज़ार की तरफ खिंच सकता है।",
+        "control": "काटने से पहले काम को शिकंजे या क्लैंप/बेंच-डॉग से पकड़ें। छोटे टुकड़े चलती मशीन पर कभी हाथ से न पकड़ें — जिग या पुश-ब्लॉक इस्तेमाल करें।"
+      }
+    },
+    "source": [
+      { "org": "NCVT / DGT (ITI Carpenter CTS)", "url": "https://bharatskills.gov.in/pdf/Qp_Curriculum/Carpenter_CTS_NSQF-4.pdf", "ref": "Work-holding devices (Sem 1)" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  },
+  {
+    "id": "unguarded-blade",
+    "severity": "critical",
+    "i18n": {
+      "en": {
+        "label": "Unguarded blade / machine",
+        "risk": "Many Indian workshops run open belt-driven machines and hand-fed 'patti' saws without guards — the highest-risk cause of amputations in the trade.",
+        "control": "Fit and use the blade guard and riving knife; keep the belt/pulley covered. Use a push-stick for the last 150 mm of a cut. If a machine has no guard, do not run it until it is guarded."
+      },
+      "hi": {
+        "label": "बिना गार्ड की ब्लेड / मशीन",
+        "risk": "कई भारतीय वर्कशॉप में खुली बेल्ट वाली मशीनें और हाथ से चलाई जाने वाली 'पट्टी' आरी बिना गार्ड के चलती हैं — यही इस पेशे में अंग कटने का सबसे बड़ा कारण है।",
+        "control": "ब्लेड गार्ड और राइविंग नाइफ लगाएँ और इस्तेमाल करें; बेल्ट/पुली को ढककर रखें। कटाई के आखिरी 150 मिमी के लिए पुश-स्टिक इस्तेमाल करें। अगर मशीन पर गार्ड नहीं है, तो गार्ड लगने तक उसे न चलाएँ।"
+      }
+    },
+    "source": [
+      { "org": "OSHA", "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212", "ref": "1910.212 General requirements for all machines (guarding)" },
+      { "org": "HSE (UK)", "url": "https://www.hse.gov.uk/woodworking/", "ref": "Woodworking machinery safety (WIS sheets)" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  },
+  {
+    "id": "electric-shock",
+    "severity": "high",
+    "i18n": {
+      "en": {
+        "label": "Electric shock",
+        "risk": "Frayed leads, no earthing, and wet floors around single-phase and 3-phase machines can give a fatal shock.",
+        "control": "Check leads and plugs for damage before use; ensure machines are earthed and, where possible, protected by an RCD/ELCB. Keep the floor dry around tools. Get a qualified electrician to fix faults — don't jugaad live wiring."
+      },
+      "hi": {
+        "label": "बिजली का झटका",
+        "risk": "कटे हुए तार, अर्थिंग न होना, और मशीनों के आसपास गीला फर्श जानलेवा झटका दे सकते हैं।",
+        "control": "इस्तेमाल से पहले तार और प्लग की जाँच करें; मशीन की अर्थिंग हो और हो सके तो RCD/ELCB लगा हो। औज़ारों के आसपास फर्श सूखा रखें। खराबी किसी योग्य बिजली मिस्त्री से ठीक कराएँ — चालू तारों में जुगाड़ न करें।"
+      }
+    },
+    "source": [
+      { "org": "HSE (UK)", "url": "https://www.hse.gov.uk/electricity/", "ref": "Electrical safety at work" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  },
+  {
+    "id": "spray-fumes",
+    "severity": "high",
+    "i18n": {
+      "en": {
+        "label": "Spray & solvent fumes",
+        "risk": "PU and Duco sprays contain solvents and (in PU) isocyanates that harm the lungs and can cause occupational asthma; the mist is also flammable.",
+        "control": "Spray only in a ventilated area or booth, wear a proper respirator rated for organic vapours/isocyanates (a dust mask does NOT protect against fumes), keep sparks and flames away, and follow the product's safety data sheet."
+      },
+      "hi": {
+        "label": "स्प्रे और सॉल्वेंट के धुएँ",
+        "risk": "PU और डुको स्प्रे में सॉल्वेंट और (PU में) आइसोसाइनेट होते हैं जो फेफड़ों को नुकसान और दमा कर सकते हैं; धुंध ज्वलनशील भी है।",
+        "control": "सिर्फ हवादार जगह या बूथ में स्प्रे करें, ऑर्गैनिक वेपर/आइसोसाइनेट के लिए बना सही रेस्पिरेटर पहनें (धूल मास्क धुएँ से नहीं बचाता), चिंगारी और आग दूर रखें, और उत्पाद की सेफ्टी डेटा शीट मानें।"
+      }
+    },
+    "source": [
+      { "org": "HSE (UK)", "url": "https://www.hse.gov.uk/isocyanates/", "ref": "Isocyanates, spray coatings & occupational asthma" },
+      { "org": "OSHA", "url": "https://www.osha.gov/woodworking", "ref": "Woodworking — finishing/solvent hazards" }
+    ],
+    "reviewStatus": "needs-expert-review"
+  }
+]

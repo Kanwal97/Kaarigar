@@ -1,0 +1,17 @@
+{
+  "id": "l02",
+  "number": 2,
+  "joint": "marking",
+  "icon": "learn",
+  "i18n": {
+    "en": {
+      "title": "Measuring & marking",
+      "outcome": "Measure accurately, mark a clean cut line, and check a true square — plus quote area the way the trade does (face vs developed)."
+    },
+    "hi": {
+      "title": "नाप और निशान लगाना",
+      "outcome": "सही नाप लें, कटाई की साफ लकीर लगाएँ, सच्चा गुनिया जाँचें — और जिस तरह से बाज़ार में क्षेत्रफल का हिसाब होता है (फेस बनाम डेवलप्ड) वह समझें।"
+    }
+  },
+  "lessons": ["l02-measuring-basics", "l02-squaring-and-marking"]
+}

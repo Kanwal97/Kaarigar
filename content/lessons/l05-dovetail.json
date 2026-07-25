@@ -1,0 +1,73 @@
+{
+  "id": "l05-dovetail",
+  "level": 5,
+  "order": 3,
+  "difficulty": "advanced",
+  "estMinutes": 40,
+  "tags": ["joinery", "heritage-premium"],
+  "prerequisites": ["l05-mortise-tenon"],
+  "tools": ["tenon-saw", "chisel-firmer", "mallet", "marking-gauge", "gunia"],
+  "materials": ["sheesham"],
+  "hazards": ["chisel-cut", "workpiece-slip"],
+  "reviewStatus": "needs-expert-review",
+  "videos": [
+    { "videoId": "2hP-QAAhpxQ", "lang": "en", "role": "primary", "credit": "Matt Estlea", "verifiedAt": "2026-07-25T00:00:00Z", "embeddable": true }
+  ],
+  "translationStatus": { "en": "authored", "hi": "authored", "pa": "missing", "bgc": "missing" },
+  "i18n": {
+    "en": {
+      "title": "Dovetail joint (heritage / premium)",
+      "objectives": [
+        "Mark, saw and pare a dovetail that fits crisply",
+        "Transfer the tails to mark matching pins",
+        "Judge when a dovetail is worth the time"
+      ],
+      "summary": "The dovetail is the mark of a skilled hand — the strongest corner joint for drawers and boxes. In most Indian commercial work it's a premium, not an everyday joint, so learn it to stand out and for quality pieces, not to win price-sensitive jobs. It never gates your progress.",
+      "steps": [
+        "Set a gauge to the board thickness and mark the depth line on both pieces.",
+        "Mark the tails with a bevel and gauge, saw down the tail lines on the waste side, then chop out the waste between the tails.",
+        "Stand the tail board on the pin board and scribe the tails onto it — this transfer is what makes the pins match exactly.",
+        "Saw and chop the pins to the scribed lines, pare gently, and test-fit — a dovetail should push together snug with light taps, no gaps.",
+        "Go slow: dovetails reward patience over force. Glue only once the dry fit is clean."
+      ],
+      "practice": "Cut one through-dovetail corner in a softwood offcut first (softer = more forgiving), then try sheesham once your softwood joint fits with no gaps.",
+      "safetyNote": "Lots of chisel paring here — clamp the work, keep both hands behind the edge, and never pare toward your holding hand (L0)."
+    },
+    "hi": {
+      "title": "डवटेल जोड़ (विरासती / प्रीमियम)",
+      "objectives": [
+        "डवटेल को मार्क, आरी और छेनी से ऐसा बनाएँ कि साफ फिट हो",
+        "टेल्स को ट्रांसफर करके मिलते पिन मार्क करें",
+        "परखें कि डवटेल कब समय के लायक है"
+      ],
+      "summary": "डवटेल कुशल हाथ की पहचान है — दराज़ और बॉक्स के लिए सबसे मज़बूत कोने का जोड़। भारतीय व्यापारिक काम में यह प्रीमियम है, रोज़ का जोड़ नहीं, इसलिए इसे अलग दिखने और बढ़िया टुकड़ों के लिए सीखें, न कि दाम-संवेदनशील काम जीतने के लिए। यह आपकी प्रगति कभी नहीं रोकता।",
+      "steps": [
+        "गेज को बोर्ड की मोटाई पर सेट करें और दोनों टुकड़ों पर गहराई की लकीर लगाएँ।",
+        "बेवल और गेज से टेल्स मार्क करें, टेल लकीरों के बेकार तरफ आरी चलाएँ, फिर टेल्स के बीच का बेकार चॉप करें।",
+        "टेल बोर्ड को पिन बोर्ड पर खड़ा करके टेल्स को उस पर स्क्राइब करें — यही ट्रांसफर पिनों को बिल्कुल मिलाता है।",
+        "पिन को स्क्राइब लकीरों तक आरी-चॉप करें, हल्के से छीलें, और फिट करके देखें — डवटेल हल्की थपकी से कसकर जुड़े, बिना गैप।",
+        "धीरे चलें: डवटेल ज़ोर नहीं, धैर्य माँगता है। सूखा फिट साफ हो तभी गोंद लगाएँ।"
+      ],
+      "practice": "पहले नरम लकड़ी की कतरन में एक थ्रू-डवटेल कोना काटें (नरम = ज़्यादा माफ़ करने वाली), फिर नरम लकड़ी का जोड़ बिना गैप फिट होने पर शीशम आज़माएँ।",
+      "safetyNote": "यहाँ बहुत छेनी छिलाई है — काम क्लैंप करें, दोनों हाथ धार के पीछे रखें, और पकड़ने वाले हाथ की तरफ कभी न छीलें (L0)।"
+    }
+  },
+  "selfCheck": [
+    {
+      "q": {
+        "en": "How do you make the pins match the tails exactly?",
+        "hi": "पिन को टेल्स से बिल्कुल कैसे मिलाते हैं?"
+      },
+      "options": [
+        { "en": "Measure both separately", "hi": "दोनों अलग-अलग नापें" },
+        { "en": "Scribe (transfer) the tails onto the pin board", "hi": "टेल्स को पिन बोर्ड पर स्क्राइब (ट्रांसफर) करें" },
+        { "en": "Cut them at the same time", "hi": "दोनों एक साथ काटें" }
+      ],
+      "answerIndex": 1,
+      "explain": {
+        "en": "Marking the pins directly from the finished tails guarantees they match — measuring each separately never fits as well.",
+        "hi": "पिन को तैयार टेल्स से सीधे मार्क करना पक्का मिलान देता है — अलग-अलग नापना कभी उतना अच्छा फिट नहीं होता।"
+      }
+    }
+  ]
+}

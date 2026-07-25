@@ -1,0 +1,390 @@
+[
+  {
+    "id": "l00-workshop-setup",
+    "level": 0,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 12,
+    "tags": [
+      "safety"
+    ],
+    "titles": {
+      "en": "Set up a safe workshop",
+      "hi": "सुरक्षित वर्कशॉप तैयार करें",
+      "pa": "ਸੁਰੱਖਿਅਤ ਵਰਕਸ਼ਾਪ ਤਿਆਰ ਕਰੋ",
+      "bgc": "सुरक्षित वर्कशॉप त्यार करो"
+    }
+  },
+  {
+    "id": "l00-ppe-and-dust",
+    "level": 0,
+    "order": 2,
+    "difficulty": "beginner",
+    "estMinutes": 12,
+    "tags": [
+      "safety"
+    ],
+    "titles": {
+      "en": "Protect your eyes, lungs and ears",
+      "hi": "अपनी आँख, फेफड़े और कान बचाएँ",
+      "pa": "ਆਪਣੀਆਂ ਅੱਖਾਂ, ਫੇਫੜੇ ਤੇ ਕੰਨ ਬਚਾਓ",
+      "bgc": "अपणी आँख, फेफड़े अर कान बचाओ"
+    }
+  },
+  {
+    "id": "l00-machine-safety",
+    "level": 0,
+    "order": 3,
+    "difficulty": "beginner",
+    "estMinutes": 15,
+    "tags": [
+      "safety"
+    ],
+    "titles": {
+      "en": "Work safely around machines",
+      "hi": "मशीनों के पास सुरक्षित काम करें",
+      "pa": "ਮਸ਼ੀਨਾਂ ਦੇ ਕੋਲ ਸੁਰੱਖਿਅਤ ਕੰਮ ਕਰੋ",
+      "bgc": "मशीनां कै लोवै सुरक्षित काम करो"
+    }
+  },
+  {
+    "id": "l01-identify-timbers",
+    "level": 1,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 14,
+    "tags": [
+      "wood"
+    ],
+    "titles": {
+      "en": "Know your timbers",
+      "hi": "अपनी लकड़ियाँ पहचानें"
+    }
+  },
+  {
+    "id": "l01-choose-sheet-goods",
+    "level": 1,
+    "order": 2,
+    "difficulty": "beginner",
+    "estMinutes": 16,
+    "tags": [
+      "wood",
+      "sheet-goods"
+    ],
+    "titles": {
+      "en": "Choose the right board",
+      "hi": "सही बोर्ड चुनें"
+    }
+  },
+  {
+    "id": "l01-seasoning-and-treatment",
+    "level": 1,
+    "order": 3,
+    "difficulty": "beginner",
+    "estMinutes": 12,
+    "tags": [
+      "wood"
+    ],
+    "titles": {
+      "en": "Seasoning & protecting timber",
+      "hi": "लकड़ी की सीज़निंग और बचाव"
+    }
+  },
+  {
+    "id": "l01-cut-and-edgeband",
+    "level": 1,
+    "order": 4,
+    "difficulty": "intermediate",
+    "estMinutes": 18,
+    "tags": [
+      "sheet-goods"
+    ],
+    "titles": {
+      "en": "Cut, edge-band & laminate sheet goods",
+      "hi": "शीट गुड्स: कटाई, एज-बैंडिंग और लैमिनेट"
+    }
+  },
+  {
+    "id": "l02-measuring-basics",
+    "level": 2,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 12,
+    "tags": [
+      "measuring"
+    ],
+    "titles": {
+      "en": "Measure twice, cut once",
+      "hi": "दो बार नापो, एक बार काटो"
+    }
+  },
+  {
+    "id": "l02-squaring-and-marking",
+    "level": 2,
+    "order": 2,
+    "difficulty": "beginner",
+    "estMinutes": 15,
+    "tags": [
+      "measuring",
+      "business"
+    ],
+    "titles": {
+      "en": "Square, scribe & quote by area",
+      "hi": "गुनिया, निशान और क्षेत्रफल का हिसाब"
+    }
+  },
+  {
+    "id": "l03-sharpen-edge-tools",
+    "level": 3,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 15,
+    "tags": [
+      "hand-tools"
+    ],
+    "titles": {
+      "en": "Sharpen your chisels & plane iron",
+      "hi": "छेनी और रंदे के ब्लेड की धार करें"
+    }
+  },
+  {
+    "id": "l03-tune-a-plane",
+    "level": 3,
+    "order": 2,
+    "difficulty": "beginner",
+    "estMinutes": 12,
+    "tags": [
+      "hand-tools"
+    ],
+    "titles": {
+      "en": "Tune your randa (plane)",
+      "hi": "अपना रंदा सेट करें"
+    }
+  },
+  {
+    "id": "l04-sawing-technique",
+    "level": 4,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 14,
+    "tags": [
+      "hand-tools"
+    ],
+    "titles": {
+      "en": "Saw to a line",
+      "hi": "लकीर तक आरी चलाएँ"
+    }
+  },
+  {
+    "id": "l04-planing-technique",
+    "level": 4,
+    "order": 2,
+    "difficulty": "beginner",
+    "estMinutes": 14,
+    "tags": [
+      "hand-tools"
+    ],
+    "titles": {
+      "en": "Plane a face flat & an edge square",
+      "hi": "एक सतह समतल और एक किनारा चौकोर रंदें"
+    }
+  },
+  {
+    "id": "l04-chiselling-technique",
+    "level": 4,
+    "order": 3,
+    "difficulty": "beginner",
+    "estMinutes": 14,
+    "tags": [
+      "hand-tools"
+    ],
+    "titles": {
+      "en": "Pare & chop with a chisel",
+      "hi": "छेनी से छीलना और चॉप करना"
+    }
+  },
+  {
+    "id": "l05-butt-and-lap",
+    "level": 5,
+    "order": 1,
+    "difficulty": "intermediate",
+    "estMinutes": 18,
+    "tags": [
+      "joinery"
+    ],
+    "titles": {
+      "en": "Butt & half-lap joints",
+      "hi": "बट और हाफ-लैप जोड़"
+    }
+  },
+  {
+    "id": "l05-mortise-tenon",
+    "level": 5,
+    "order": 2,
+    "difficulty": "intermediate",
+    "estMinutes": 30,
+    "tags": [
+      "joinery"
+    ],
+    "titles": {
+      "en": "Mortise & tenon",
+      "hi": "मोर्टिस और टेनन"
+    }
+  },
+  {
+    "id": "l05-dovetail",
+    "level": 5,
+    "order": 3,
+    "difficulty": "advanced",
+    "estMinutes": 40,
+    "tags": [
+      "joinery",
+      "heritage-premium"
+    ],
+    "titles": {
+      "en": "Dovetail joint (heritage / premium)",
+      "hi": "डवटेल जोड़ (विरासती / प्रीमियम)"
+    }
+  },
+  {
+    "id": "l06-glue-and-fasteners",
+    "level": 6,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 14,
+    "tags": [
+      "hardware"
+    ],
+    "titles": {
+      "en": "Glue, screws, dowels & nails",
+      "hi": "गोंद, पेंच, डौवल और कील"
+    }
+  },
+  {
+    "id": "l06-hinges-channels-hardware",
+    "level": 6,
+    "order": 2,
+    "difficulty": "intermediate",
+    "estMinutes": 20,
+    "tags": [
+      "hardware",
+      "business"
+    ],
+    "titles": {
+      "en": "Hinges, channels & fittings",
+      "hi": "हिंज, चैनल और फिटिंग"
+    }
+  },
+  {
+    "id": "l07-drill-and-driver",
+    "level": 7,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 12,
+    "tags": [
+      "power-tools"
+    ],
+    "titles": {
+      "en": "Use a drill / driver",
+      "hi": "ड्रिल / ड्राइवर इस्तेमाल करें"
+    }
+  },
+  {
+    "id": "l07-circular-saw-and-jigsaw",
+    "level": 7,
+    "order": 2,
+    "difficulty": "intermediate",
+    "estMinutes": 18,
+    "tags": [
+      "power-tools"
+    ],
+    "titles": {
+      "en": "Circular saw & jigsaw",
+      "hi": "गोल आरी और जिगसॉ"
+    }
+  },
+  {
+    "id": "l08-sanding-and-prep",
+    "level": 8,
+    "order": 1,
+    "difficulty": "beginner",
+    "estMinutes": 12,
+    "tags": [
+      "finishing"
+    ],
+    "titles": {
+      "en": "Sand & prepare the surface",
+      "hi": "सतह रेगमाल करें और तैयार करें"
+    }
+  },
+  {
+    "id": "l08-finishes",
+    "level": 8,
+    "order": 2,
+    "difficulty": "intermediate",
+    "estMinutes": 18,
+    "tags": [
+      "finishing"
+    ],
+    "titles": {
+      "en": "Choose & apply a finish",
+      "hi": "फिनिश चुनें और लगाएँ"
+    }
+  },
+  {
+    "id": "l09-build-a-stool",
+    "level": 9,
+    "order": 1,
+    "difficulty": "intermediate",
+    "estMinutes": 40,
+    "tags": [
+      "project"
+    ],
+    "titles": {
+      "en": "Build a stool, start to finish",
+      "hi": "स्टूल बनाएँ, शुरू से अंत तक"
+    }
+  },
+  {
+    "id": "l09-build-a-wardrobe",
+    "level": 9,
+    "order": 2,
+    "difficulty": "advanced",
+    "estMinutes": 60,
+    "tags": [
+      "project"
+    ],
+    "titles": {
+      "en": "Build a wardrobe (almirah)",
+      "hi": "अलमारी बनाएँ"
+    }
+  },
+  {
+    "id": "l10-estimating-and-quoting",
+    "level": 10,
+    "order": 1,
+    "difficulty": "intermediate",
+    "estMinutes": 18,
+    "tags": [
+      "business"
+    ],
+    "titles": {
+      "en": "Estimate & quote a job",
+      "hi": "काम का एस्टिमेट और कोट करें"
+    }
+  },
+  {
+    "id": "l10-clients-and-tools",
+    "level": 10,
+    "order": 2,
+    "difficulty": "beginner",
+    "estMinutes": 15,
+    "tags": [
+      "business"
+    ],
+    "titles": {
+      "en": "Clients, contractors & tool investment",
+      "hi": "ग्राहक, ठेकेदार और औज़ारों में निवेश"
+    }
+  }
+]
