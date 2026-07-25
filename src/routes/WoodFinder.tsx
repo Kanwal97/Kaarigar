@@ -5,6 +5,7 @@ import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
 import { DiscoveryNav } from '../components/DiscoveryNav'
+import { RefDraftNotice } from '../components/RefDraftNotice'
 
 const KIND_LABEL: Record<string, string> = {
   'solid-timber': 'Solid timber',
@@ -29,6 +30,7 @@ export default function WoodFinder({ lang }: { lang: Locale }) {
     <section className="page discovery" lang={lang}>
       <h1>{t('disc.woodsTitle', lang)}</h1>
       <DiscoveryNav lang={lang} />
+      <RefDraftNotice locale={lang} />
       <SearchBox value={q} onChange={setQ} placeholder={t('search.wood', lang)} />
 
       <ul className="entity-grid">
