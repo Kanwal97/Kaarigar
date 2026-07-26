@@ -280,6 +280,214 @@
   vertical-align: middle;
 }
 
+/* ============================================================================
+   LESSON DETAIL — turn the long how-to article into a guided, scannable page.
+   Targets existing markup; the only JSX change is the meta line → pills.
+   ============================================================================ */
+
+/* back crumb becomes a real tappable chip */
+.lesson .crumbs {
+  margin-bottom: var(--sp-2);
+}
+.lesson .crumbs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--surface-sunk);
+  border: 1px solid var(--border-strong);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+.lesson .crumbs a:hover {
+  border-color: var(--cta);
+  color: var(--cta);
+}
+
+/* title + meta pills */
+.lesson > h1 {
+  margin-bottom: var(--sp-2);
+}
+.lesson__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  align-items: center;
+}
+.lmeta {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  background: var(--surface-sunk);
+  color: var(--ink-soft);
+  text-transform: capitalize;
+}
+.lmeta--diff[data-diff='beginner'] {
+  background: color-mix(in srgb, var(--success) 16%, var(--surface));
+  color: var(--success);
+}
+.lmeta--diff[data-diff='intermediate'] {
+  background: color-mix(in srgb, var(--accent) 22%, var(--surface));
+  color: var(--ink);
+}
+.lmeta--diff[data-diff='advanced'] {
+  background: color-mix(in srgb, var(--danger) 12%, var(--surface));
+  color: var(--danger);
+}
+
+/* every lesson section heading gets a coloured marker bar (rhythm + scannability) */
+.lesson section > h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lesson section > h2::before {
+  content: '';
+  flex: none;
+  width: 8px;
+  height: 1.1em;
+  border-radius: 999px;
+  background: var(--accent);
+}
+.lesson .hazards h2::before {
+  background: var(--danger);
+}
+.lesson__practice h2::before {
+  background: var(--cta);
+}
+.lesson__steps h2::before {
+  background: var(--primary);
+}
+
+/* objectives → a checklist panel ("what you'll be able to do") */
+.lesson__objectives {
+  padding: var(--sp-3) var(--sp-4) var(--sp-4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--elev-1);
+}
+.lesson__objectives ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--sp-2);
+}
+.lesson__objectives li {
+  position: relative;
+  padding-left: 36px;
+}
+.lesson__objectives li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--success) 22%, var(--surface));
+  color: var(--success);
+  font-weight: 800;
+  font-size: 0.8em;
+}
+
+/* steps → numbered cards, the heart of the how-to */
+.lesson__steps ol {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--sp-3);
+}
+.lesson__steps ol > li {
+  counter-increment: step;
+  position: relative;
+  padding: var(--sp-3) var(--sp-4) var(--sp-3) 62px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: var(--elev-1);
+}
+.lesson__steps ol > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--primary-ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-base);
+}
+
+/* practice → a "try it" callout */
+.lesson__practice {
+  margin-top: var(--sp-6);
+  padding: var(--sp-3) var(--sp-4) var(--sp-4);
+  background: color-mix(in srgb, var(--cta) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--cta) 40%, var(--line));
+  border-left: 4px solid var(--cta);
+  border-radius: var(--r-md);
+}
+.lesson__practice h2 {
+  margin-top: 0;
+}
+.lesson__practice p {
+  margin-bottom: 0;
+}
+
+/* mark complete → prominent full-width action + a satisfying done panel */
+.lesson__complete {
+  margin-top: var(--sp-8);
+}
+.lesson__complete .btn {
+  width: 100%;
+}
+.done-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: var(--sp-3) var(--sp-4);
+  background: color-mix(in srgb, var(--success) 16%, var(--surface));
+  border: 1px solid var(--success);
+  border-radius: var(--r-md);
+}
+.done-note::before {
+  content: '✓';
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--success);
+  color: var(--success-ink);
+  font-weight: 800;
+}
+
+/* prev / next arrows on the lesson footer nav */
+.lesson-nav__link--prev .lesson-nav__dir::before {
+  content: '← ';
+}
+.lesson-nav__link--next .lesson-nav__dir::after {
+  content: ' →';
+}
+
 /* ---------- desktop rail: active tab gets a soft pill highlight ---------- */
 @media (min-width: 900px) {
   .tab {

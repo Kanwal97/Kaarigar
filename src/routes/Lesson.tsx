@@ -51,10 +51,17 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
       </p>
 
       <h1>{text.title}</h1>
-      <p className="lesson__meta">
-        {lesson.difficulty} · {lesson.estMinutes} min
-        {idx >= 0 && siblings.length > 1 ? ` · ${t('lesson.word', lang)} ${idx + 1} / ${siblings.length}` : ''}
-      </p>
+      <div className="lesson__meta">
+        <span className="lmeta lmeta--diff" data-diff={lesson.difficulty}>
+          {lesson.difficulty}
+        </span>
+        <span className="lmeta">{lesson.estMinutes} min</span>
+        {idx >= 0 && siblings.length > 1 && (
+          <span className="lmeta">
+            {t('lesson.word', lang)} {idx + 1}/{siblings.length}
+          </span>
+        )}
+      </div>
 
       {prereqs.length > 0 && (
         <p className="prereqs" role="note">
