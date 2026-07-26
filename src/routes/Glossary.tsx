@@ -5,6 +5,7 @@ import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
 import { DiscoveryNav } from '../components/DiscoveryNav'
+import { RefDraftNotice } from '../components/RefDraftNotice'
 
 const CATS = ['tool', 'wood', 'material', 'joint', 'technique', 'finishing', 'hardware', 'business', 'safety']
 
@@ -21,6 +22,7 @@ export default function Glossary({ lang }: { lang: Locale }) {
     <section className="page discovery" lang={lang}>
       <h1>{t('disc.glossary', lang)}</h1>
       <DiscoveryNav lang={lang} />
+      <RefDraftNotice locale={lang} />
       <SearchBox value={q} onChange={setQ} placeholder={t('search.glossary', lang)} />
 
       <div className="chip-filters" role="group" aria-label="Category">

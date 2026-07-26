@@ -44,9 +44,9 @@ Default is **no machine translation** shipped as authored (a hard rule — Harya
 | **All 27 lessons (L0–L10)** | machine-draft shipped — **needs human translation/correction** | machine-draft shipped — **needs human (Haryanvi) translation/correction** |
 | **tools.json (23 tools)** | machine-draft names+use shipped (notice on ToolFinder) — **needs human correction** | machine-draft shipped — **needs human (Haryanvi) correction** |
 | **woods.json (15 entries)** | machine-draft names+workability+uses shipped (notice on WoodFinder) — **needs human correction** | machine-draft shipped — **needs human (Haryanvi) correction** |
-| glossary.json (8 terms) | pa/bgc still needed (still silent Hindi fallback, no notice yet) | pa/bgc still needed |
+| **glossary.json (8 terms)** | machine-draft term+definition shipped (notice on Glossary) — **needs human correction** | machine-draft shipped — **needs human (Haryanvi) correction** |
 
-**Reference-data note:** reference finders render names via `pick()` with no per-item badge, so machine-draft pa/bgc names are gated behind a **page-level `RefDraftNotice`** (`src/components/RefDraftNotice.tsx`, shown only for pa/bgc). ToolFinder + WoodFinder now have it. When glossary gets pa/bgc drafts, add `<RefDraftNotice locale={lang} />` to Glossary too — do NOT ship reference drafts without that notice.
+**Reference layer COMPLETE (2026-07-25):** all three finders (tools/woods/glossary) now carry machine-draft pa+bgc, each gated behind the page-level `RefDraftNotice` (`src/components/RefDraftNotice.tsx`, shown only for pa/bgc — reference entries render via `pick()` with no per-item badge, so the page notice is how the "never present MT as authored" rule holds). Remaining reference work is purely human correction of the drafts (+ the `verified:false` term-accuracy checks that already existed). If any NEW reference file/finder is added later, it MUST get `<RefDraftNotice locale={lang}/>` before shipping pa/bgc drafts.
 
 Set `translationStatus.<lang>` to `authored` only when a human has written/verified it. `machine-draft` is allowed **only** if explicitly badged as such in the UI (it is).
 
