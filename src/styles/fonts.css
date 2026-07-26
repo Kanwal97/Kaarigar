@@ -12,6 +12,14 @@
  *
  * OpenType layout tables are kept in these subsets, so Devanagari conjuncts and the
  * dotted-circle (U+25CC) shape correctly (docs/RESEARCH.md §1.4).
+ *
+ * GLYPH-SUBSET: the Devanagari & Gurmukhi .woff2 files are further subset to the glyphs the
+ * app actually uses (the full hi/bgc/pa text corpus), via `npm run subset:fonts`
+ * (scripts/subset-fonts.py, needs `pip install fonttools brotli`). This cut the Devanagari
+ * body face ~40% (99→59 KB) and Gurmukhi ~42% — a real data-cost win for low-end phones.
+ * SAFE BY CONSTRUCTION: subset by the whole corpus, so every glyph any content needs is
+ * retained + GSUB/GPOS kept (conjuncts render); the full base blocks are pinned so any
+ * single typed letter still shows. Re-run subset:fonts after adding new content/languages.
  * `font-display: swap` shows fallback text immediately; combined with unitless
  * line-heights and no fixed-height text boxes, font-swap causes negligible layout
  * shift. Precise metric-override tuning (Fontaine) is an M9 refinement.

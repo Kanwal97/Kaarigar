@@ -12,7 +12,8 @@
     "validate:content": "node scripts/validate-content.mjs",
     "verify:videos": "node scripts/verify-videos.mjs",
     "check:budget": "node scripts/check-budget.mjs",
-    "test": "vitest run"
+    "test": "vitest run",
+    "subset:fonts": "python scripts/subset-fonts.py"
   },
   "dependencies": {
     "react": "^18.3.1",
