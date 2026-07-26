@@ -1,0 +1,296 @@
+/* ============================================================================
+   ENHANCE — a polish layer on top of the M2 design system (tokens + components).
+   Pure CSS, zero JS, zero deps. Everything here is additive: it deepens hierarchy,
+   adds restrained motion (press/hover/lift), and warms the surfaces — without
+   touching the contrast-verified palette or the accessibility contracts.
+   Motion is automatically neutralised by the prefers-reduced-motion block in
+   base.css (it forces transition/animation durations to ~0), so hover/active
+   END states still apply instantly for those users; nothing moves.
+   ============================================================================ */
+
+/* selection + smoother rendering */
+::selection {
+  background: color-mix(in srgb, var(--accent) 40%, var(--surface));
+  color: var(--ink);
+}
+
+/* ---------- shared: tappable surfaces lift on hover, press down on tap ---------- */
+.card,
+.entity,
+.lesson-list__item,
+.lesson-nav__link,
+.video-link,
+.continue,
+.jump-card,
+.spine__link,
+.filter,
+.btn,
+.lang-select__btn,
+.home__level-link {
+  transition: transform var(--dur-1) var(--ease-1), box-shadow var(--dur-1) var(--ease-1),
+    border-color var(--dur-1) var(--ease-1), background-color var(--dur-1) var(--ease-1);
+}
+.entity:hover,
+.lesson-list__item:hover,
+.lesson-nav__link:hover,
+.video-link:hover,
+.jump-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elev-1);
+  border-color: var(--cta);
+}
+.card:hover,
+.continue:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elev-2);
+}
+/* press feedback — travels back down, so taps feel physical */
+.entity:active,
+.lesson-list__item:active,
+.lesson-nav__link:active,
+.video-link:active,
+.jump-card:active,
+.continue:active,
+.card:active,
+.btn:active,
+.filter:active,
+.lang-select__btn:active,
+.home__level-link:active {
+  transform: translateY(0);
+}
+
+/* ---------- buttons + CTA ---------- */
+.btn {
+  box-shadow: 0 1px 0 rgba(36, 26, 20, 0.06);
+}
+.btn--cta {
+  box-shadow: var(--elev-1);
+}
+.btn--cta:hover {
+  box-shadow: var(--elev-2);
+  transform: translateY(-1px);
+}
+
+/* ---------- search box: soft focus ring instead of just a colour flip ---------- */
+.searchbox {
+  transition: border-color var(--dur-1) var(--ease-1), box-shadow var(--dur-1) var(--ease-1);
+}
+.searchbox:focus-within {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--cta) 22%, transparent);
+}
+
+/* ---------- section headings: a short brass accent bar under the title ---------- */
+.page > h1,
+.home__h1,
+.home__jump {
+  position: relative;
+}
+.page > h1::after,
+.home__h1::after,
+.home__jump::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 40%, var(--cta)));
+}
+
+/* ---------- HOME: the flagship "continue / start" card ---------- */
+.continue {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--surface), color-mix(in srgb, var(--accent) 9%, var(--surface)));
+  border-left: 4px solid var(--accent);
+}
+/* soft brass glow in the corner — pure decoration */
+.continue::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 26%, transparent), transparent 70%);
+  pointer-events: none;
+}
+.continue--start {
+  background: linear-gradient(135deg, var(--surface), color-mix(in srgb, var(--cta) 12%, var(--surface)));
+  border-left-color: var(--cta);
+}
+.continue--start::after {
+  background: radial-gradient(circle, color-mix(in srgb, var(--cta) 24%, transparent), transparent 70%);
+}
+/* the go button gains an arrow that slides on hover */
+.continue__go {
+  gap: 8px;
+  transition: gap var(--dur-1) var(--ease-1), filter var(--dur-1) var(--ease-1);
+}
+.continue__go::after {
+  content: '→';
+  font-weight: 700;
+}
+.continue:hover .continue__go {
+  gap: 14px;
+  filter: brightness(1.05);
+}
+
+/* ---------- streak → a proper reward pill ---------- */
+.streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--sp-4);
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 20%, var(--surface));
+  border: 1px solid var(--accent);
+  color: var(--ink);
+}
+
+/* ---------- HOME: overall progress meter ---------- */
+.home-progress {
+  margin-top: var(--sp-4);
+  display: grid;
+  gap: 6px;
+}
+.home-progress__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: var(--fs-sm);
+  color: var(--ink-soft);
+}
+.home-progress__pct {
+  font-weight: 700;
+  color: var(--success);
+  font-variant-numeric: tabular-nums;
+}
+
+/* progress fills get a gradient + animate their width in on load */
+.progress__fill,
+.home-progress .progress__track > i {
+  background: linear-gradient(90deg, var(--success), color-mix(in srgb, var(--success) 55%, var(--accent)));
+}
+.home-progress .progress__track {
+  height: 12px;
+  background: var(--surface-sunk);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.home-progress .progress__track > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 700ms var(--ease-1);
+}
+
+/* ---------- HOME: "jump in" quick-access cards (icon + label) ---------- */
+.home__entries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-2);
+}
+.jump-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 92px;
+  padding: var(--sp-3);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-md);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+.jump-card__icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--primary) 12%, var(--surface));
+  color: var(--primary);
+}
+.jump-card:hover .jump-card__icon {
+  background: color-mix(in srgb, var(--cta) 16%, var(--surface));
+  color: var(--cta);
+}
+
+/* ---------- JOINERY SPINE: warmer nodes, a live pulse on the current level ---------- */
+.spine__link:hover .spine__joint {
+  transform: scale(1.12);
+}
+.spine__node--completed .spine__joint {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--success) 20%, transparent);
+}
+/* the in-progress node quietly pulses to draw the eye to "you are here" */
+.spine__node--in-progress .spine__joint {
+  animation: spine-pulse 2.4s var(--ease-1) infinite;
+}
+@keyframes spine-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--cta) 45%, transparent); }
+  50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--cta) 0%, transparent); }
+}
+
+/* ---------- discovery finder: give the entity icon tile a little depth ---------- */
+.entity__icon {
+  background: linear-gradient(160deg, var(--surface-sunk), color-mix(in srgb, var(--primary) 8%, var(--surface-sunk)));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
+/* ---------- filters: active chip gets a subtle lift ---------- */
+.filter.is-on {
+  box-shadow: var(--elev-1);
+}
+
+/* ---------- lesson: lead summary gets a warm sunk panel for readability ---------- */
+.lesson__summary {
+  padding: var(--sp-3) var(--sp-4);
+  background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-md);
+}
+
+/* ---------- header: richer sheesham gradient + brass accent hairline ---------- */
+.topbar {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 92%, #fff), var(--primary));
+  border-bottom: 2px solid var(--accent);
+  box-shadow: var(--elev-1);
+}
+.topbar__brand {
+  letter-spacing: 0.01em;
+}
+/* a tiny brass dot before the wordmark — a small badge of craft */
+.topbar__brand::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 3px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+/* ---------- desktop rail: active tab gets a soft pill highlight ---------- */
+@media (min-width: 900px) {
+  .tab {
+    border-radius: var(--r-md);
+    margin-inline: var(--sp-2);
+    transition: background-color var(--dur-1) var(--ease-1), color var(--dur-1) var(--ease-1);
+  }
+  .tab:hover {
+    background: var(--surface-sunk);
+  }
+  .tab--active {
+    background: color-mix(in srgb, var(--cta) 12%, var(--surface));
+  }
+}

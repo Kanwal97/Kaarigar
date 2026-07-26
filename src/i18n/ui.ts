@@ -23,6 +23,8 @@ const UI: Record<string, Entry> = {
   'home.path': { en: 'The path', hi: 'रास्ता', pa: 'ਰਾਹ', bgc: 'रास्ता' },
   'home.jumpIn': { en: 'Jump in', hi: 'सीधे जाओ', pa: 'ਸਿੱਧੇ ਜਾਓ', bgc: 'सीधा जाओ' },
   'home.dayStreak': { en: 'day streak', hi: 'दिन की लगन', pa: 'ਦਿਨ ਦੀ ਲਗਨ', bgc: 'दिन की लगन' },
+  'home.overall': { en: 'Your progress', hi: 'आपकी प्रगति', pa: 'ਤੁਹਾਡੀ ਤਰੱਕੀ', bgc: 'थारी प्रगति' },
+  'home.lessonsDone': { en: 'lessons done', hi: 'पाठ पूरे', pa: 'ਪਾਠ ਪੂਰੇ', bgc: 'पाठ पूरे' },
 
   'lesson.objectives': { en: 'You’ll be able to', hi: 'आप कर पाएँगे', pa: 'ਤੁਸੀਂ ਕਰ ਸਕੋਗੇ', bgc: 'थम कर पाओगे' },
   'lesson.steps': { en: 'Steps', hi: 'चरण', pa: 'ਪੜਾਅ', bgc: 'चरण' },

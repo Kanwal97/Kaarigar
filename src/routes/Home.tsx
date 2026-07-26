@@ -2,8 +2,15 @@ import { Link } from 'react-router-dom'
 import type { Locale } from '../i18n/locales'
 import { t } from '../i18n/ui'
 import { useProgress } from '../lib/progress'
-import { getLevel } from '../content/refdata'
+import { getLevel, lessonIndex } from '../content/refdata'
 import { JoinerySpine } from '../components/JoinerySpine'
+import { Icon, type IconName } from '../components/ui/Icon'
+
+const JUMP: { seg: string; icon: IconName; key: string }[] = [
+  { seg: 'tools', icon: 'tools', key: 'nav.tools' },
+  { seg: 'build', icon: 'build', key: 'nav.build' },
+  { seg: 'fix', icon: 'fix', key: 'nav.fix' },
+]
 
 // Home (docs/WIREFRAMES.md): continue-where-you-left-off first, then streak (neutral),
 // then the Joinery Spine. Chrome is localised via the UI dictionary; the prerendered
@@ -13,6 +20,10 @@ export default function Home({ lang }: { lang: Locale }) {
   const cont = data.lastLesson
   const l0 = getLevel('l00')
   const l0Title = l0 ? `L0 · ${(l0.i18n[lang] ?? l0.i18n.en).title}` : 'L0'
+
+  const totalLessons = lessonIndex.length
+  const doneCount = data.completedLessons.length
+  const pct = totalLessons ? Math.round((doneCount / totalLessons) * 100) : 0
 
   return (
     <section className="page home" lang={lang}>
@@ -30,6 +41,20 @@ export default function Home({ lang }: { lang: Locale }) {
         </Link>
       )}
 
+      {hydrated && doneCount > 0 && (
+        <div className="home-progress">
+          <div className="home-progress__row">
+            <span>{t('home.overall', lang)}</span>
+            <span className="home-progress__pct">
+              {doneCount}/{totalLessons} {t('home.lessonsDone', lang)}
+            </span>
+          </div>
+          <div className="progress__track" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
+            <i style={{ width: `${pct}%` }} />
+          </div>
+        </div>
+      )}
+
       {hydrated && data.streak.count > 0 && (
         <p className="streak">
           🔥 {data.streak.count} {t('home.dayStreak', lang)}
@@ -41,15 +66,14 @@ export default function Home({ lang }: { lang: Locale }) {
 
       <h2 className="home__jump">{t('home.jumpIn', lang)}</h2>
       <div className="home__entries">
-        <Link className="entry" to={`/${lang}/tools`}>
-          {t('nav.tools', lang)}
-        </Link>
-        <Link className="entry" to={`/${lang}/build`}>
-          {t('nav.build', lang)}
-        </Link>
-        <Link className="entry" to={`/${lang}/fix`}>
-          {t('nav.fix', lang)}
-        </Link>
+        {JUMP.map((j) => (
+          <Link key={j.seg} className="jump-card" to={`/${lang}/${j.seg}`}>
+            <span className="jump-card__icon">
+              <Icon name={j.icon} />
+            </span>
+            <span>{t(j.key, lang)}</span>
+          </Link>
+        ))}
       </div>
     </section>
   )
