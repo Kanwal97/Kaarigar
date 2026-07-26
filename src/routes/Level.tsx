@@ -30,7 +30,7 @@ export default function Level({ lang, levelId }: { lang: Locale; levelId: string
       )}
 
       <ol className="lesson-list">
-        {lessons.map((lesson) => {
+        {lessons.map((lesson, i) => {
           const title = lessonTitle(lesson, lang)
           const complete = hydrated && isComplete(lesson.id)
           return (
@@ -39,16 +39,20 @@ export default function Level({ lang, levelId }: { lang: Locale; levelId: string
                 className={`lesson-list__item ${complete ? 'is-complete' : ''}`.trim()}
                 to={`/${lang}/lesson/${lesson.id}`}
               >
-                <span className="lesson-list__title">
-                  {complete && (
-                    <span className="lesson-list__check" aria-label="completed">
-                      ✓{' '}
-                    </span>
-                  )}
-                  {title}
+                <span className="lesson-list__num" aria-hidden="true">
+                  {complete ? '✓' : i + 1}
                 </span>
-                <span className="lesson-list__meta">
-                  {t(`diff.${lesson.difficulty}`, lang)} · {lesson.estMinutes} min
+                <span className="lesson-list__body">
+                  <span className="lesson-list__title">{title}</span>
+                  <span className="lesson-list__meta">
+                    <span className="lmeta lmeta--diff" data-diff={lesson.difficulty}>
+                      {t(`diff.${lesson.difficulty}`, lang)}
+                    </span>
+                    <span className="lmeta">{lesson.estMinutes} min</span>
+                  </span>
+                </span>
+                <span className="lesson-list__go" aria-hidden="true">
+                  →
                 </span>
               </Link>
             </li>

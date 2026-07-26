@@ -285,11 +285,11 @@
    Targets existing markup; the only JSX change is the meta line → pills.
    ============================================================================ */
 
-/* back crumb becomes a real tappable chip */
-.lesson .crumbs {
+/* back crumb becomes a real tappable chip (lesson + level pages) */
+.crumbs {
   margin-bottom: var(--sp-2);
 }
-.lesson .crumbs a {
+.crumbs a {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
@@ -302,8 +302,56 @@
   font-weight: 600;
   font-size: var(--fs-sm);
 }
-.lesson .crumbs a:hover {
+.crumbs a:hover {
   border-color: var(--cta);
+  color: var(--cta);
+}
+
+/* ---------- LEVEL page: numbered, status-aware lesson rows ---------- */
+.lesson-list__item {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--sp-3);
+}
+.lesson-list__num {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--border-strong);
+  background: var(--surface-sunk);
+  color: var(--ink-soft);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.lesson-list__item.is-complete .lesson-list__num {
+  background: var(--success);
+  border-color: var(--success);
+  color: var(--success-ink);
+}
+.lesson-list__body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  flex: 1;
+}
+.lesson-list__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+.lesson-list__go {
+  flex: none;
+  color: var(--ink-soft);
+  font-weight: 700;
+  font-size: 1.35em;
+  transition: transform var(--dur-1) var(--ease-1), color var(--dur-1) var(--ease-1);
+}
+.lesson-list__item:hover .lesson-list__go {
+  transform: translateX(3px);
   color: var(--cta);
 }
 
