@@ -643,6 +643,44 @@
   border-top: 1px solid var(--line);
 }
 
+/* ---------- responsive top bar + language dropdown ----------
+   The top bar packs the language menu + a 3-button text-size control + the theme
+   toggle. Without wrapping they overflow a narrow phone and the dropdown can spill
+   off-screen. Fixes: let the controls wrap, cap the menu to the viewport, and drop
+   the theme *label* on phones (icon + aria-label stay) so the row fits. */
+.topbar__controls {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 0;
+}
+.langsw__menu {
+  z-index: 50;
+  max-width: min(260px, calc(100vw - var(--sp-6)));
+}
+.langsw__menu a {
+  white-space: nowrap;
+}
+@media (max-width: 560px) {
+  /* icon-only theme toggle to save width; the language label stays visible so the
+     user always sees their current language */
+  .topbar .ctl__txt {
+    display: none;
+  }
+  /* pin the menu to the top bar's right padding edge so it can never run off-screen,
+     regardless of where the trigger wrapped to */
+  .topbar__controls {
+    position: static;
+  }
+  .langsw {
+    position: static;
+  }
+  .langsw__menu {
+    right: var(--sp-4);
+    left: auto;
+    max-width: calc(100vw - var(--sp-8));
+  }
+}
+
 /* ---------- route-transition progress bar (feedback on slow connections) ---------- */
 .route-progress {
   position: fixed;
