@@ -11,15 +11,17 @@ export default function ProjectDetail({ lang, projectId }: { lang: Locale; proje
   const skills = (p.skillsNeeded ?? []).map((id) => getLessonMeta(id)).filter(Boolean)
 
   return (
-    <article className="page" lang={lang}>
+    <article className="page lesson" lang={lang}>
       <p className="crumbs">
         <Link to={`/${lang}/build`}>← {t('nav.build', lang)}</Link>
       </p>
       <h1>{pt.title}</h1>
-      <p className="lesson__meta">
-        {t(`diff.${p.difficulty}`, lang)}
-        {p.estHours ? ` · ~${p.estHours} hrs` : ''}
-      </p>
+      <div className="lesson__meta">
+        <span className="lmeta lmeta--diff" data-diff={p.difficulty}>
+          {t(`diff.${p.difficulty}`, lang)}
+        </span>
+        {p.estHours ? <span className="lmeta">~{p.estHours} hrs</span> : null}
+      </div>
 
       {pt.outcome && (
         <section className="lesson__objectives">
@@ -45,7 +47,12 @@ export default function ProjectDetail({ lang, projectId }: { lang: Locale; proje
               return m ? (
                 <li key={id}>
                   <Link className="lesson-list__item" to={`/${lang}/lesson/${id}`}>
-                    <span className="lesson-list__title">{lessonTitle(m, lang)}</span>
+                    <span className="lesson-list__body">
+                      <span className="lesson-list__title">{lessonTitle(m, lang)}</span>
+                    </span>
+                    <span className="lesson-list__go" aria-hidden="true">
+                      →
+                    </span>
                   </Link>
                 </li>
               ) : null

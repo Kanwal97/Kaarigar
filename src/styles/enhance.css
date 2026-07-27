@@ -643,6 +643,63 @@
   border-top: 1px solid var(--line);
 }
 
+/* ---------- LANGUAGE-SELECT splash: the app's front door ---------- */
+.lang-select {
+  max-width: 32rem;
+  margin-inline: auto;
+  padding-top: var(--sp-8);
+  text-align: center;
+}
+.lang-select__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  font-size: var(--fs-3xl);
+  color: var(--primary);
+}
+.lang-select__title::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--accent), var(--cta));
+  transform: rotate(45deg);
+}
+.lang-select__prompt {
+  margin-top: var(--sp-6);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+}
+.lang-select__list {
+  grid-template-columns: repeat(2, 1fr);
+  text-align: start;
+}
+@media (max-width: 380px) {
+  .lang-select__list {
+    grid-template-columns: 1fr;
+  }
+}
+.lang-select__btn {
+  justify-content: space-between;
+  background: linear-gradient(135deg, var(--surface), color-mix(in srgb, var(--accent) 9%, var(--surface)));
+  transition: transform var(--dur-1) var(--ease-1), border-color var(--dur-1) var(--ease-1),
+    box-shadow var(--dur-1) var(--ease-1);
+}
+.lang-select__btn::after {
+  content: '→';
+  color: var(--cta);
+  font-weight: 700;
+}
+.lang-select__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elev-1);
+  border-color: var(--cta);
+}
+.lang-select__btn:active {
+  transform: translateY(0);
+}
+
 /* ---------- desktop rail: active tab gets a soft pill highlight ---------- */
 @media (min-width: 900px) {
   .tab {
