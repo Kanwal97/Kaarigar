@@ -643,6 +643,48 @@
   border-top: 1px solid var(--line);
 }
 
+/* ---------- SELF-CHECK quiz: letter badges → ✓/✗, tactile options ---------- */
+.selfcheck__opt {
+  gap: 12px;
+  transition: transform var(--dur-1) var(--ease-1), border-color var(--dur-1) var(--ease-1),
+    background-color var(--dur-1) var(--ease-1);
+}
+.selfcheck__opt:hover {
+  border-color: var(--cta);
+  background: var(--surface-sunk);
+}
+.selfcheck__opt:active {
+  transform: translateY(1px);
+}
+/* the mark becomes a real circular badge: shows A/B/C, then ✓ (correct) / ✗ (your wrong pick) */
+.selfcheck__mark {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.95em;
+}
+.selfcheck__opt.is-correct .selfcheck__mark {
+  background: var(--success);
+  border-color: var(--success);
+  color: var(--success-ink);
+}
+.selfcheck__opt.is-wrong .selfcheck__mark {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: var(--danger-ink);
+}
+.selfcheck__explain {
+  border-left: 3px solid var(--info);
+}
+
 /* ---------- LANGUAGE-SELECT splash: the app's front door ---------- */
 .lang-select {
   max-width: 32rem;

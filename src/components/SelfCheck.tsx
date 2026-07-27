@@ -27,6 +27,8 @@ function SelfCheckQuestion({ item, lang, n }: { item: SelfCheckItem; lang: Local
         {item.options.map((opt, i) => {
           const isCorrect = i === item.answerIndex
           const state = !answered ? '' : isCorrect ? 'is-correct' : picked === i ? 'is-wrong' : ''
+          const letter = String.fromCharCode(65 + i) // A, B, C…
+          const mark = answered ? (isCorrect ? '✓' : picked === i ? '✗' : letter) : letter
           return (
             <li key={i}>
               <button
@@ -36,7 +38,7 @@ function SelfCheckQuestion({ item, lang, n }: { item: SelfCheckItem; lang: Local
                 onClick={() => setPicked(i)}
               >
                 <span aria-hidden="true" className="selfcheck__mark">
-                  {answered && isCorrect ? '✓' : answered && picked === i ? '✗' : ''}
+                  {mark}
                 </span>
                 {pick(opt, lang)}
               </button>
