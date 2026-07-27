@@ -643,6 +643,42 @@
   border-top: 1px solid var(--line);
 }
 
+/* ---------- route-transition progress bar (feedback on slow connections) ---------- */
+.route-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms var(--ease-1);
+}
+.route-progress[data-busy='true'] {
+  opacity: 1;
+}
+.route-progress > i {
+  display: block;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, var(--cta), var(--accent));
+  animation: route-indeterminate 1s ease-in-out infinite;
+}
+@keyframes route-indeterminate {
+  0% { margin-left: -42%; }
+  100% { margin-left: 100%; }
+}
+/* reduced-motion: base.css kills the slide, so show a static full bar that still says "busy" */
+@media (prefers-reduced-motion: reduce) {
+  .route-progress > i {
+    width: 100%;
+    margin-left: 0;
+    animation: none;
+    opacity: 0.8;
+  }
+}
+
 /* ---------- SELF-CHECK quiz: letter badges → ✓/✗, tactile options ---------- */
 .selfcheck__opt {
   gap: 12px;
