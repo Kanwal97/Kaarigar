@@ -1,7 +1,8 @@
 import { useRef, useState, type ChangeEvent } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import type { Locale } from '../i18n/locales'
 import { t } from '../i18n/ui'
+import { GUIDE_KEY } from '../components/FirstRunGuide'
 import { ThemeToggle } from '../components/controls/ThemeToggle'
 import { TextSizeControl } from '../components/controls/TextSizeControl'
 import { DataSaverControl } from '../components/controls/DataSaverControl'
@@ -13,6 +14,15 @@ import { useInstallPrompt } from '../lib/useInstallPrompt'
 // "Me" — settings & progress. Appearance controls + progress export/import, fully
 // localised via the UI dictionary (the tab is visited often, so it must not be English-only).
 export default function Me({ lang }: { lang: Locale }) {
+  const navigate = useNavigate()
+  function replayGuide() {
+    try {
+      localStorage.removeItem(GUIDE_KEY)
+    } catch {
+      /* ignore */
+    }
+    navigate(`/${lang}`)
+  }
   return (
     <section className="page" lang={lang}>
       <h1>{t('nav.me', lang)}</h1>
@@ -42,6 +52,12 @@ export default function Me({ lang }: { lang: Locale }) {
         <h2>{t('me.offlineHeading', lang)}</h2>
         <p className="muted">{t('me.offlineNote', lang)}</p>
       </Card>
+
+      <p className="muted">
+        <button type="button" className="linkish" onClick={replayGuide}>
+          {t('guide.replay', lang)}
+        </button>
+      </p>
 
       <p className="muted">
         <Link to="/styleguide">{t('me.designLink', lang)}</Link>

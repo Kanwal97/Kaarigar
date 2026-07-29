@@ -4,6 +4,7 @@ import { t } from '../i18n/ui'
 import { useProgress } from '../lib/progress'
 import { getLevel, lessonIndex } from '../content/refdata'
 import { JoinerySpine } from '../components/JoinerySpine'
+import { FirstRunGuide } from '../components/FirstRunGuide'
 import { Icon, type IconName } from '../components/ui/Icon'
 
 const JUMP: { seg: string; icon: IconName; key: string }[] = [
@@ -27,6 +28,7 @@ export default function Home({ lang }: { lang: Locale }) {
 
   return (
     <section className="page home" lang={lang}>
+      <FirstRunGuide lang={lang} />
       {hydrated && cont ? (
         <Link className="continue" to={`/${cont.lang}/lesson/${cont.lessonId}`}>
           <span className="continue__k">{t('home.continue', lang)}</span>

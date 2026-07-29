@@ -61,6 +61,19 @@ const UI: Record<string, Entry> = {
   'ctl.textLarge': { en: 'Large text size', hi: 'बड़ा आकार', pa: 'ਵੱਡਾ ਆਕਾਰ', bgc: 'बड्डा आकार' },
   'ctl.textXlarge': { en: 'Extra-large text size', hi: 'बहुत बड़ा आकार', pa: 'ਬਹੁਤ ਵੱਡਾ ਆਕਾਰ', bgc: 'घणा बड्डा आकार' },
 
+  // first-run guide (shown once to a new visitor)
+  'guide.title': { en: 'Welcome to Kaarigar', hi: 'कारीगर में स्वागत है', pa: 'ਕਾਰੀਗਰ ਵਿੱਚ ਜੀ ਆਇਆਂ ਨੂੰ', bgc: 'कारीगर म्ह सुवागत सै' },
+  'guide.s1Title': { en: 'Follow the path', hi: 'रास्ते पर चलें', pa: 'ਰਾਹ ਤੇ ਚੱਲੋ', bgc: 'रास्ते पै चालो' },
+  'guide.s1Body': { en: 'Start at Level 0 and move up one step at a time.', hi: 'लेवल 0 से शुरू करें और एक-एक कदम आगे बढ़ें।', pa: 'ਲੈਵਲ 0 ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ ਤੇ ਇੱਕ-ਇੱਕ ਕਦਮ ਅੱਗੇ ਵਧੋ।', bgc: 'लेवल 0 तै शुरू करो अर एक-एक कदम आगै बढ़ो।' },
+  'guide.s2Title': { en: 'Watch, then do', hi: 'देखें, फिर करें', pa: 'ਵੇਖੋ, ਫਿਰ ਕਰੋ', bgc: 'देखो, फेर करो' },
+  'guide.s2Body': { en: 'Every lesson has a short video and simple steps to practice.', hi: 'हर पाठ में छोटा वीडियो और आसान कदम होते हैं।', pa: 'ਹਰ ਪਾਠ ਵਿੱਚ ਛੋਟਾ ਵੀਡੀਓ ਤੇ ਸੌਖੇ ਕਦਮ ਹੁੰਦੇ ਹਨ।', bgc: 'हर पाठ म्ह छोटा वीडियो अर आसान कदम होवैं।' },
+  'guide.s3Title': { en: 'No account needed', hi: 'कोई खाता नहीं चाहिए', pa: 'ਕੋਈ ਖਾਤਾ ਨਹੀਂ ਚਾਹੀਦਾ', bgc: 'कोई खाता ना चाहिए' },
+  'guide.s3Body': { en: 'Works offline. Your progress is saved on this phone.', hi: 'ऑफलाइन चलता है। आपकी प्रगति इसी फ़ोन पर सुरक्षित रहती है।', pa: 'ਆਫ਼ਲਾਈਨ ਚੱਲਦਾ ਹੈ। ਤੁਹਾਡੀ ਤਰੱਕੀ ਇਸੇ ਫ਼ੋਨ ਤੇ ਸੁਰੱਖਿਅਤ ਰਹਿੰਦੀ ਹੈ।', bgc: 'ऑफलाइन चलै। थारी प्रगति इसी फोन पै सुरक्षित रहवै।' },
+  'guide.next': { en: 'Next', hi: 'आगे', pa: 'ਅੱਗੇ', bgc: 'आगै' },
+  'guide.start': { en: 'Start learning', hi: 'सीखना शुरू करें', pa: 'ਸਿੱਖਣਾ ਸ਼ੁਰੂ ਕਰੋ', bgc: 'सीखणा शुरू करो' },
+  'guide.skip': { en: 'Skip', hi: 'छोड़ें', pa: 'ਛੱਡੋ', bgc: 'छोड़ो' },
+  'guide.replay': { en: 'Show the intro again', hi: 'परिचय फिर देखें', pa: 'ਜਾਣ-ਪਛਾਣ ਫਿਰ ਵੇਖੋ', bgc: 'परिचय फेर देखो' },
+
   'lesson.objectives': { en: 'You’ll be able to', hi: 'आप कर पाएँगे', pa: 'ਤੁਸੀਂ ਕਰ ਸਕੋਗੇ', bgc: 'थम कर पाओगे' },
   'lesson.steps': { en: 'Steps', hi: 'चरण', pa: 'ਪੜਾਅ', bgc: 'चरण' },
   'lesson.practice': { en: 'Practice', hi: 'अभ्यास', pa: 'ਅਭਿਆਸ', bgc: 'अभ्यास' },
