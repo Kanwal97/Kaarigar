@@ -16,6 +16,7 @@ import FixIt from './routes/FixIt'
 import Me from './routes/Me'
 import Styleguide from './routes/Styleguide'
 import NotFound from './routes/NotFound'
+import RouteError from './routes/RouteError'
 
 // M1 skeleton route table. Every path here is STATIC (no :params), so vite-react-ssg
 // prerenders each one to its own real HTML file — which is exactly what makes deep
@@ -31,6 +32,7 @@ export const routes: RouteRecord[] = [
   {
     path: '/',
     element: <Layout />,
+    errorElement: <RouteError />,
     children: [
       { index: true, element: <LangSelect /> },
       ...LOCALES.flatMap((lang) => [

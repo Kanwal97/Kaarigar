@@ -35,6 +35,12 @@ export default defineConfig({
         // (cross-origin + ToS) and is honestly online-only.
         globPatterns: ['**/*.{js,css,woff2,svg,html}'],
         navigateFallback: 'index.html',
+        // The SPA-shell fallback is for NAVIGATIONS only — never for hashed asset requests
+        // (any URL whose last path segment has a file extension). Without this, a missing
+        // chunk after a redeploy could be answered with index.html (HTML), which the module
+        // loader then chokes on ("Unexpected token '<'"). Let such requests 404 cleanly so
+        // Vite's preloadError handler (src/main.tsx) can reload to the fresh build instead.
+        navigateFallbackDenylist: [/\/[^/?]+\.[^/?]+$/],
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 3_000_000,
       },
