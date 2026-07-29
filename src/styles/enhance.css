@@ -661,21 +661,30 @@
   white-space: nowrap;
 }
 @media (max-width: 560px) {
-  /* icon-only theme toggle to save width; the language label stays visible so the
-     user always sees their current language */
+  /* Controls drop to their OWN full-width row under the brand (flex-basis:100% forces
+     the wrap) so they can't overflow beside the wordmark. */
+  .topbar {
+    row-gap: var(--sp-2);
+  }
+  .topbar__controls {
+    flex-basis: 100%;
+    justify-content: flex-end;
+  }
+  /* Trim the row so it always fits a narrow phone: theme + language become icon-only
+     (the menu still shows the current language, highlighted). Text-size stays. */
   .topbar .ctl__txt {
     display: none;
   }
-  /* pin the menu to the top bar's right padding edge so it can never run off-screen,
-     regardless of where the trigger wrapped to */
-  .topbar__controls {
-    position: static;
+  .langsw > summary > span:not(.ctl__icon) {
+    display: none;
   }
+  /* Put the language switcher LAST — flush to the right edge — so its menu (right:0,
+     relative to the trigger) opens against the screen edge and is always on-screen. */
   .langsw {
-    position: static;
+    order: 9;
   }
   .langsw__menu {
-    right: var(--sp-4);
+    right: 0;
     left: auto;
     max-width: calc(100vw - var(--sp-8));
   }
