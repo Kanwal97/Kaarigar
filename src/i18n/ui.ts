@@ -115,6 +115,10 @@ const UI: Record<string, Entry> = {
 
   'audio.listen': { en: 'Listen', hi: 'सुनो', pa: 'ਸੁਣੋ', bgc: 'सुणो' },
   'audio.coming': { en: 'Audio narration coming', hi: 'ऑडियो जल्द आ रहा है', pa: 'ਆਡੀਓ ਜਲਦੀ ਆ ਰਿਹਾ ਹੈ', bgc: 'ऑडियो जल्दी आवैगा' },
+  'audio.readAloud': { en: 'Read this lesson aloud', hi: 'यह पाठ पढ़कर सुनाओ', pa: 'ਇਹ ਪਾਠ ਪੜ੍ਹ ਕੇ ਸੁਣਾਓ', bgc: 'यो पाठ पढ़कै सुणाओ' },
+  'audio.pause': { en: 'Pause', hi: 'रोको', pa: 'ਰੋਕੋ', bgc: 'रोको' },
+  'audio.resume': { en: 'Continue', hi: 'जारी रखो', pa: 'ਜਾਰੀ ਰੱਖੋ', bgc: 'जारी राखो' },
+  'audio.stop': { en: 'Stop', hi: 'बंद करो', pa: 'ਬੰਦ ਕਰੋ', bgc: 'बंद करो' },
 
   'offline.badge': { en: 'Offline — lessons, glossary & tools work. Video needs internet.', hi: 'ऑफलाइन — पाठ, शब्दकोश और औज़ार चलते हैं। वीडियो के लिए इंटरनेट चाहिए।', pa: 'ਆਫ਼ਲਾਈਨ — ਪਾਠ, ਸ਼ਬਦਕੋਸ਼ ਤੇ ਔਜ਼ਾਰ ਚੱਲਦੇ ਹਨ। ਵੀਡੀਓ ਲਈ ਇੰਟਰਨੈੱਟ ਚਾਹੀਦਾ ਹੈ।', bgc: 'ऑफलाइन — पाठ, शब्दकोश अर औजार चलैं सैं। वीडियो खातर इंटरनेट चाहिए।' },
 

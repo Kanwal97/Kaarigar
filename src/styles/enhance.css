@@ -778,6 +778,24 @@
   border-left: 3px solid var(--info);
 }
 
+/* ---------- read-aloud (device TTS) controls ---------- */
+.audio {
+  padding: var(--sp-3);
+  background: color-mix(in srgb, var(--info) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--info) 30%, var(--line));
+  border-radius: var(--r-md);
+}
+.audio__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+.audio__btn {
+  min-height: 48px;
+  padding: 10px 18px;
+  font-size: var(--fs-sm);
+}
+
 /* ---------- first-run welcome guide (one-time, 3 steps) ---------- */
 .guide-overlay {
   position: fixed;

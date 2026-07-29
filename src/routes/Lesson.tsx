@@ -75,7 +75,7 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         </p>
       )}
 
-      <AudioPlayer lesson={lesson} lang={usedLocale} />
+      <AudioPlayer lesson={lesson} lang={usedLocale} text={text} />
 
       {isFallback && <FallbackBadge requested={lang} shown={usedLocale} />}
       {isDraft && <MachineDraftBadge locale={usedLocale} />}
