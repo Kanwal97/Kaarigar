@@ -244,6 +244,16 @@
   background: linear-gradient(160deg, var(--surface-sunk), color-mix(in srgb, var(--primary) 8%, var(--surface-sunk)));
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 10%, transparent);
 }
+/* emoji icons (tools + projects) render a touch larger and in their own colours */
+.entity__icon--emoji {
+  font-size: 1.6rem;
+}
+/* Fix It: emoji before each problem title */
+.fixit__icon {
+  flex: none;
+  font-size: 1.3rem;
+  line-height: 1;
+}
 
 /* ---------- filters: active chip gets a subtle lift ---------- */
 .filter.is-on {

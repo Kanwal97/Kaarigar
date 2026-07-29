@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Locale } from '../i18n/locales'
 import { tools, getLessonMeta, pick } from '../content/refdata'
+import { toolEmoji } from '../content/emoji'
 import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
@@ -44,8 +45,8 @@ export default function ToolFinder({ lang }: { lang: Locale }) {
       <ul className="entity-grid">
         {list.map((t) => (
           <li key={t.id} className="entity">
-            <span className="entity__icon" aria-hidden="true">
-              {(t.roman ?? pick(t.names, lang) ?? '?').charAt(0).toUpperCase()}
+            <span className="entity__icon entity__icon--emoji" aria-hidden="true">
+              {toolEmoji(t.id, t.category)}
             </span>
             <div className="entity__body">
               <p className="entity__title">

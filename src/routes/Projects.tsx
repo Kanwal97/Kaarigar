@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import type { Locale } from '../i18n/locales'
 import { t } from '../i18n/ui'
 import { projects } from '../content/refdata'
+import { projectEmoji } from '../content/emoji'
 
 // Project Library — "I want to build X" (docs/PLAN.md §2.2). The Build tab.
 export default function Projects({ lang }: { lang: Locale }) {
@@ -14,7 +15,7 @@ export default function Projects({ lang }: { lang: Locale }) {
           const pt = p.i18n[lang] ?? p.i18n.en
           return (
             <li key={p.id} className="entity">
-              <span className="entity__icon" aria-hidden="true">{pt.title.charAt(0)}</span>
+              <span className="entity__icon entity__icon--emoji" aria-hidden="true">{projectEmoji(p.id)}</span>
               <div className="entity__body">
                 <Link className="project-link" to={`/${lang}/project/${p.id}`}>
                   {pt.title}

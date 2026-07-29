@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import type { Locale } from '../i18n/locales'
 import { t } from '../i18n/ui'
 import { fixit, getLessonMeta, lessonTitle } from '../content/refdata'
+import { fixEmoji } from '../content/emoji'
 import { keywords, matchesQuery } from '../lib/search'
 import { SearchBox } from '../components/SearchBox'
 
@@ -27,6 +28,7 @@ export default function FixIt({ lang }: { lang: Locale }) {
           return (
             <details className="fixit" key={f.id}>
               <summary className="fixit__summary">
+                <span className="fixit__icon" aria-hidden="true">{fixEmoji(f.category)}</span>
                 <span className="fixit__title">{ft.title}</span>
                 {f.category && <span className="tag-mini">{f.category}</span>}
               </summary>
