@@ -778,6 +778,42 @@
   border-left: 3px solid var(--info);
 }
 
+/* running score + celebration once every question is answered */
+.selfcheck__score {
+  margin-top: var(--sp-3);
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: var(--fs-md);
+  border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--info) 10%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--info) 26%, var(--line));
+}
+.selfcheck__score.is-aced {
+  background: color-mix(in srgb, var(--ok, var(--accent)) 16%, var(--surface));
+  border-color: color-mix(in srgb, var(--ok, var(--accent)) 40%, var(--line));
+}
+.selfcheck__nudge {
+  margin-top: var(--sp-2);
+  padding-left: var(--sp-1);
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
+
+/* ---------- unified search: grouped result sections ---------- */
+.search-group {
+  margin-top: var(--sp-4);
+}
+.search-group > h2 {
+  margin-bottom: var(--sp-2);
+  font-size: var(--fs-md);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.search-group > h2 a {
+  color: inherit;
+}
+
 /* ---------- read-aloud: highlight the line being spoken ---------- */
 /* !important so it wins over the step-card / summary-panel backgrounds it sits on. */
 .is-reading {

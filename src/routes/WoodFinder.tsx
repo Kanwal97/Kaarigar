@@ -8,16 +8,11 @@ import { SearchBox } from '../components/SearchBox'
 import { DiscoveryNav } from '../components/DiscoveryNav'
 import { RefDraftNotice } from '../components/RefDraftNotice'
 
-const KIND_LABEL: Record<string, string> = {
-  'solid-timber': 'Solid timber',
-  'sheet-good': 'Sheet good',
-  surfacing: 'Surfacing',
-}
 const WATER_LABEL: Record<string, string> = {
-  none: 'not water-resistant',
-  'moisture-resistant': 'moisture-resistant',
-  'boiling-water-resistant': 'boil-resistant',
-  waterproof: 'waterproof',
+  none: 'water.none',
+  'moisture-resistant': 'water.moisture-resistant',
+  'boiling-water-resistant': 'water.boiling-water-resistant',
+  waterproof: 'water.waterproof',
   na: '',
 }
 
@@ -43,11 +38,11 @@ export default function WoodFinder({ lang }: { lang: Locale }) {
             <div className="entity__body">
               <p className="entity__title">{pick(w.names, lang)}</p>
               <p className="entity__tags">
-                <span className="tag-mini">{KIND_LABEL[w.kind] ?? w.kind}</span>
-                {w.priceTier && <span className="tag-mini">{w.priceTier}</span>}
+                <span className="tag-mini">{t(`woodkind.${w.kind}`, lang)}</span>
+                {w.priceTier && <span className="tag-mini">{t(`price.${w.priceTier}`, lang)}</span>}
                 {w.isStandard && <span className="tag-mini">{w.isStandard}</span>}
                 {w.waterResistance && WATER_LABEL[w.waterResistance] && (
-                  <span className="tag-mini">{WATER_LABEL[w.waterResistance]}</span>
+                  <span className="tag-mini">{t(WATER_LABEL[w.waterResistance]!, lang)}</span>
                 )}
               </p>
               {w.typicalUses && <p className="entity__sub">{pick(w.typicalUses, lang)}</p>}

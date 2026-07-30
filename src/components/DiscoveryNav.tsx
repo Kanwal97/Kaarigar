@@ -3,6 +3,7 @@ import type { Locale } from '../i18n/locales'
 import { t } from '../i18n/ui'
 
 const TABS = [
+  { seg: 'search', key: 'nav.search' },
   { seg: 'tools', key: 'disc.tools' },
   { seg: 'woods', key: 'disc.woods' },
   { seg: 'glossary', key: 'disc.glossary' },

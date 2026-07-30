@@ -10,6 +10,7 @@ import Lesson from './routes/Lesson'
 import ToolFinder from './routes/ToolFinder'
 import WoodFinder from './routes/WoodFinder'
 import Glossary from './routes/Glossary'
+import Search from './routes/Search'
 import Projects from './routes/Projects'
 import ProjectDetail from './routes/ProjectDetail'
 import FixIt from './routes/FixIt'
@@ -48,6 +49,7 @@ export const routes: RouteRecord[] = [
           // and fetched as its own chunk on client navigation (docs/CONTENT-LAZY-LOADING.md).
           loader: () => loadLessonBody(meta.id),
         })),
+        { path: `${lang}/search`, element: <Search lang={lang} /> },
         { path: `${lang}/tools`, element: <ToolFinder lang={lang} /> },
         { path: `${lang}/woods`, element: <WoodFinder lang={lang} /> },
         { path: `${lang}/glossary`, element: <Glossary lang={lang} /> },

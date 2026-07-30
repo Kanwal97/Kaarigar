@@ -237,7 +237,7 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
       {lesson.selfCheck && lesson.selfCheck.length > 0 && (
         <section className="lesson__selfcheck">
           <h2>{t('lesson.selfCheck', lang)}</h2>
-          <SelfCheck items={lesson.selfCheck} lang={lang} />
+          <SelfCheck items={lesson.selfCheck} lang={lang} alreadyDone={done} />
         </section>
       )}
 

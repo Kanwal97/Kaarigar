@@ -75,6 +75,31 @@ const UI: Record<string, Entry> = {
   // read-aloud speed
   'audio.speed': { en: 'Speed', hi: 'गति', pa: 'ਗਤੀ', bgc: 'गति' },
 
+  // wood finder labels (were raw English)
+  'woodkind.solid-timber': { en: 'Solid timber', hi: 'ठोस लकड़ी', pa: 'ਠੋਸ ਲੱਕੜ', bgc: 'ठोस लकड़ी' },
+  'woodkind.sheet-good': { en: 'Board', hi: 'बोर्ड', pa: 'ਬੋਰਡ', bgc: 'बोर्ड' },
+  'woodkind.surfacing': { en: 'Surfacing', hi: 'ऊपरी परत', pa: 'ਉੱਪਰਲੀ ਪਰਤ', bgc: 'ऊपरली परत' },
+  'price.low': { en: 'Low cost', hi: 'कम दाम', pa: 'ਘੱਟ ਦਾਮ', bgc: 'कम दाम' },
+  'price.low-mid': { en: 'Low–mid', hi: 'कम-मध्यम', pa: 'ਘੱਟ-ਮੱਧ', bgc: 'कम-मध्यम' },
+  'price.mid': { en: 'Mid', hi: 'मध्यम', pa: 'ਮੱਧ', bgc: 'मध्यम' },
+  'price.mid-high': { en: 'Mid–high', hi: 'मध्यम-ऊँचा', pa: 'ਮੱਧ-ਉੱਚਾ', bgc: 'मध्यम-ऊंचा' },
+  'price.high': { en: 'High cost', hi: 'ऊँचा दाम', pa: 'ਉੱਚਾ ਦਾਮ', bgc: 'ऊंचा दाम' },
+  'water.none': { en: 'Not water-resistant', hi: 'पानी-रोधी नहीं', pa: 'ਪਾਣੀ-ਰੋਧੀ ਨਹੀਂ', bgc: 'पाणी-रोधी न्ही' },
+  'water.moisture-resistant': { en: 'Moisture-resistant', hi: 'नमी-रोधी', pa: 'ਨਮੀ-ਰੋਧੀ', bgc: 'नमी-रोधी' },
+  'water.boiling-water-resistant': { en: 'Boil-resistant', hi: 'उबाल-रोधी', pa: 'ਉਬਾਲ-ਰੋਧੀ', bgc: 'उबाल-रोधी' },
+  'water.waterproof': { en: 'Waterproof', hi: 'वॉटरप्रूफ', pa: 'ਵਾਟਰਪਰੂਫ਼', bgc: 'वॉटरप्रूफ' },
+
+  // unified search
+  'nav.search': { en: 'Search', hi: 'खोजो', pa: 'ਖੋਜੋ', bgc: 'खोजो' },
+  'search.everything': { en: 'Search lessons, tools, wood…', hi: 'पाठ, औज़ार, लकड़ी खोजें…', pa: 'ਪਾਠ, ਔਜ਼ਾਰ, ਲੱਕੜ ਖੋਜੋ…', bgc: 'पाठ, औजार, लकड़ी खोजो…' },
+  'search.prompt': { en: 'Type to search everything — lessons, tools, wood, glossary and fixes.', hi: 'सब कुछ खोजने के लिए लिखें — पाठ, औज़ार, लकड़ी, शब्दकोश और ठीक करना।', pa: 'ਸਭ ਕੁਝ ਖੋਜਣ ਲਈ ਲਿਖੋ — ਪਾਠ, ਔਜ਼ਾਰ, ਲੱਕੜ, ਸ਼ਬਦਾਵਲੀ ਤੇ ਠੀਕ ਕਰਨਾ।', bgc: 'सब कुछ खोजण खातर लिखो — पाठ, औजार, लकड़ी, शब्दकोश अर ठीक करणा।' },
+  'search.lessons': { en: 'Lessons', hi: 'पाठ', pa: 'ਪਾਠ', bgc: 'पाठ' },
+
+  // self-check results
+  'selfcheck.correctWord': { en: 'correct', hi: 'सही', pa: 'ਸਹੀ', bgc: 'सही' },
+  'selfcheck.aced': { en: 'All correct — well done! 🎉', hi: 'सब सही — शाबाश! 🎉', pa: 'ਸਭ ਸਹੀ — ਸ਼ਾਬਾਸ਼! 🎉', bgc: 'सब सही — शाबाश! 🎉' },
+  'selfcheck.nudge': { en: "You're ready — mark this lesson done below.", hi: 'आप तैयार हैं — नीचे इस पाठ को पूरा करें।', pa: 'ਤੁਸੀਂ ਤਿਆਰ ਹੋ — ਹੇਠਾਂ ਇਸ ਪਾਠ ਨੂੰ ਪੂਰਾ ਕਰੋ।', bgc: 'थम तैयार सो — नीचै इस पाठ नै पूरा करो।' },
+
   // first-run guide (shown once to a new visitor)
   'guide.title': { en: 'Welcome to Kaarigar', hi: 'कारीगर में स्वागत है', pa: 'ਕਾਰੀਗਰ ਵਿੱਚ ਜੀ ਆਇਆਂ ਨੂੰ', bgc: 'कारीगर म्ह सुवागत सै' },
   'guide.s1Title': { en: 'Follow the path', hi: 'रास्ते पर चलें', pa: 'ਰਾਹ ਤੇ ਚੱਲੋ', bgc: 'रास्ते पै चालो' },
