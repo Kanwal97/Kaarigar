@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Locale } from '../i18n/locales'
 import { woods, pick } from '../content/refdata'
+import { woodEmoji } from '../content/emoji'
 import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
@@ -36,8 +37,8 @@ export default function WoodFinder({ lang }: { lang: Locale }) {
       <ul className="entity-grid">
         {list.map((w) => (
           <li key={w.id} className="entity">
-            <span className="entity__icon" aria-hidden="true">
-              {pick(w.names, lang).charAt(0).toUpperCase()}
+            <span className="entity__icon entity__icon--emoji" aria-hidden="true">
+              {woodEmoji(w.kind)}
             </span>
             <div className="entity__body">
               <p className="entity__title">{pick(w.names, lang)}</p>

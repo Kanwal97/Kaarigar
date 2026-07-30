@@ -13,11 +13,15 @@ const UTTER_LANG: Record<Locale, string> = { hi: 'hi-IN', en: 'en-IN', bgc: 'hi-
 const SEP = '। ' // danda — a clean sentence break for hi/bgc, harmless elsewhere
 
 export type ReadState = 'idle' | 'speaking' | 'paused'
+export type Speed = 'slow' | 'normal' | 'fast'
+const RATES: Record<Speed, number> = { slow: 0.72, normal: 0.92, fast: 1.2 }
 
 export interface ReadAloud {
   supported: boolean
   state: ReadState
   active: number // index of the segment being spoken, or -1
+  speed: Speed
+  setSpeed: (s: Speed) => void
   play: () => void
   pause: () => void
   resume: () => void
@@ -28,6 +32,8 @@ export function useReadAloud(segments: string[], lang: Locale): ReadAloud {
   const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null)
   const [state, setState] = useState<ReadState>('idle')
   const [active, setActive] = useState(-1)
+  const [speed, setSpeedState] = useState<Speed>('normal')
+  const rateRef = useRef(RATES.normal)
   const uttRef = useRef<SpeechSynthesisUtterance | null>(null)
 
   useEffect(() => {
@@ -64,7 +70,7 @@ export function useReadAloud(segments: string[], lang: Locale): ReadAloud {
     const u = new SpeechSynthesisUtterance(fullText)
     u.lang = UTTER_LANG[lang]
     if (voice) u.voice = voice
-    u.rate = 0.92
+    u.rate = rateRef.current
     u.onboundary = (e) => {
       const ci = e.charIndex
       let idx = 0
@@ -100,6 +106,15 @@ export function useReadAloud(segments: string[], lang: Locale): ReadAloud {
     setState('idle')
     setActive(-1)
   }
+  // Change reading speed. If currently speaking, restart at the new rate (Web Speech can't
+  // re-rate a live utterance) — acceptable for short lessons and gives instant feedback.
+  function setSpeed(s: Speed) {
+    rateRef.current = RATES[s]
+    setSpeedState(s)
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window && window.speechSynthesis.speaking) {
+      play()
+    }
+  }
 
-  return { supported, state, active, play, pause, resume, stop }
+  return { supported, state, active, speed, setSpeed, play, pause, resume, stop }
 }

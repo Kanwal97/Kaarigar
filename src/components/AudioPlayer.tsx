@@ -30,7 +30,12 @@ export function AudioPlayer({ lesson, lang, read }: { lesson: Lesson; lang: Loca
     )
   }
 
-  const { state, play, pause, resume, stop } = read
+  const { state, speed, setSpeed, play, pause, resume, stop } = read
+  const SPEEDS: { key: 'slow' | 'normal' | 'fast'; label: string }[] = [
+    { key: 'slow', label: '🐢' },
+    { key: 'normal', label: '1×' },
+    { key: 'fast', label: '🐇' },
+  ]
   return (
     <div className="audio">
       <span className="audio__label">
@@ -57,6 +62,19 @@ export function AudioPlayer({ lesson, lang, read }: { lesson: Lesson; lang: Loca
             ⏹ {t('audio.stop', lang)}
           </button>
         )}
+        <div className="audio__speed segmented" role="group" aria-label={t('audio.speed', lang)}>
+          {SPEEDS.map((s) => (
+            <button
+              key={s.key}
+              type="button"
+              className="segmented__btn segmented__btn--wide"
+              aria-pressed={speed === s.key}
+              onClick={() => setSpeed(s.key)}
+            >
+              {s.label}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   )

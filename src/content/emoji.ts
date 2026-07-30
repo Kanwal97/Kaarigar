@@ -1,44 +1,49 @@
 // Emoji "icons" for the discovery cards. Chosen over images on purpose: instantly
 // recognisable (helpful for low-literacy users), crisp at any size, and ZERO data cost —
-// they render from the phone's built-in emoji font, so nothing is downloaded. Where a tool
-// has no faithful emoji we fall back to its category, then a generic wrench.
+// they render from the phone's built-in emoji font, so nothing is downloaded.
+//
+// IMPORTANT: only Emoji 1.0 (2015) glyphs are used. Dedicated tool emoji like 🪚 (saw),
+// 🪛 (screwdriver) or 🪵 (wood) are Emoji 12–13 (2019–2020) and show as an empty box on the
+// old, cheap Android phones this app targets — so we use widely-recognisable Emoji-1.0
+// stand-ins (🔪 for cutting, ⚒️ for chisel, 🔨 for a mallet, 🌳 for timber, …). Verify any
+// new addition renders on an old device before using it.
 
 const TOOL_BY_ID: Record<string, string> = {
-  'safety-glasses': '🥽',
+  'safety-glasses': '👓',
   'dust-mask': '😷',
   'ear-protection': '🎧',
-  'first-aid-kit': '🩹',
-  'push-stick': '🧰',
+  'first-aid-kit': '🚑',
+  'push-stick': '✋',
   'measuring-tape': '📏',
   gunia: '📐',
-  'marking-gauge': '✒️',
+  'marking-gauge': '✏️',
   'carpenter-pencil': '✏️',
-  handsaw: '🪚',
-  'tenon-saw': '🪚',
-  'circular-saw': '🪚',
-  'table-saw': '🪚',
-  jigsaw: '🧩',
-  'hand-plane': '🪵',
+  handsaw: '🔪',
+  'tenon-saw': '🔪',
+  'circular-saw': '🔪',
+  'table-saw': '🔪',
+  jigsaw: '🔪',
+  'hand-plane': '🔧',
   mallet: '🔨',
   'chisel-firmer': '⚒️',
-  'sharpening-stone': '🪨',
+  'sharpening-stone': '🔧',
   'file-rasp': '🔧',
-  sandpaper: '🧽',
-  screwdriver: '🪛',
-  'power-drill': '🛠️',
+  sandpaper: '✨',
+  screwdriver: '🔧',
+  'power-drill': '🔌',
   router: '⚙️',
 }
 
 const TOOL_BY_CATEGORY: Record<string, string> = {
-  safety: '🦺',
+  safety: '😷',
   'measuring-marking': '📐',
-  cutting: '🪚',
-  planing: '🪵',
+  cutting: '🔪',
+  planing: '🔧',
   striking: '🔨',
   chisel: '⚒️',
-  fastening: '🪛',
-  power: '⚡',
-  finishing: '🧽',
+  fastening: '🔩',
+  power: '🔌',
+  finishing: '✨',
   machine: '⚙️',
 }
 
@@ -47,22 +52,32 @@ export function toolEmoji(id: string, category?: string): string {
 }
 
 const PROJECT_BY_ID: Record<string, string> = {
-  'patra-stool': '🪑',
-  chowki: '🪑',
+  'patra-stool': '💺',
+  chowki: '💺',
   palang: '🛏️',
   almirah: '🗄️',
   'modular-kitchen': '🍽️',
 }
 
 export function projectEmoji(id: string): string {
-  return PROJECT_BY_ID[id] ?? '🪚'
+  return PROJECT_BY_ID[id] ?? '🔨'
+}
+
+const WOOD_BY_KIND: Record<string, string> = {
+  'solid-timber': '🌳',
+  'sheet-good': '📋',
+  surfacing: '🎨',
+}
+
+export function woodEmoji(kind: string): string {
+  return WOOD_BY_KIND[kind] ?? '🌳'
 }
 
 const FIX_BY_CATEGORY: Record<string, string> = {
-  cutting: '🪚',
+  cutting: '🔪',
   joinery: '🔗',
-  finishing: '🧽',
-  boards: '🪵',
+  finishing: '✨',
+  boards: '📋',
 }
 
 export function fixEmoji(category?: string): string {

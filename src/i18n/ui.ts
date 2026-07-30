@@ -61,6 +61,20 @@ const UI: Record<string, Entry> = {
   'ctl.textLarge': { en: 'Large text size', hi: 'बड़ा आकार', pa: 'ਵੱਡਾ ਆਕਾਰ', bgc: 'बड्डा आकार' },
   'ctl.textXlarge': { en: 'Extra-large text size', hi: 'बहुत बड़ा आकार', pa: 'ਬਹੁਤ ਵੱਡਾ ਆਕਾਰ', bgc: 'घणा बड्डा आकार' },
 
+  // Fix It categories (were shown raw in English)
+  'fixcat.cutting': { en: 'Cutting', hi: 'कटाई', pa: 'ਕਟਾਈ', bgc: 'कटाई' },
+  'fixcat.joinery': { en: 'Joinery', hi: 'जोड़', pa: 'ਜੋੜ', bgc: 'जोड़' },
+  'fixcat.finishing': { en: 'Finishing', hi: 'फिनिशिंग', pa: 'ਫ਼ਿਨਿਸ਼ਿੰਗ', bgc: 'फिनिशिंग' },
+  'fixcat.boards': { en: 'Boards', hi: 'बोर्ड', pa: 'ਬੋਰਡ', bgc: 'बोर्ड' },
+
+  // 404 / not found (bilingual — the catch-all has no locale context)
+  'notfound.title': { en: 'Page not found', hi: 'पेज नहीं मिला', pa: 'ਪੰਨਾ ਨਹੀਂ ਮਿਲਿਆ', bgc: 'पेज न्ही मिल्या' },
+  'notfound.body': { en: "That page doesn't exist. Pick your language to start:", hi: 'यह पेज मौजूद नहीं है। शुरू करने के लिए अपनी भाषा चुनें:', pa: 'ਇਹ ਪੰਨਾ ਮੌਜੂਦ ਨਹੀਂ ਹੈ। ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ:', bgc: 'यो पेज मौजूद न्ही सै। शुरू करण खातर अपणी भाषा चुणो:' },
+  'notfound.cta': { en: 'Choose language', hi: 'भाषा चुनें', pa: 'ਭਾਸ਼ਾ ਚੁਣੋ', bgc: 'भाषा चुणो' },
+
+  // read-aloud speed
+  'audio.speed': { en: 'Speed', hi: 'गति', pa: 'ਗਤੀ', bgc: 'गति' },
+
   // first-run guide (shown once to a new visitor)
   'guide.title': { en: 'Welcome to Kaarigar', hi: 'कारीगर में स्वागत है', pa: 'ਕਾਰੀਗਰ ਵਿੱਚ ਜੀ ਆਇਆਂ ਨੂੰ', bgc: 'कारीगर म्ह सुवागत सै' },
   'guide.s1Title': { en: 'Follow the path', hi: 'रास्ते पर चलें', pa: 'ਰਾਹ ਤੇ ਚੱਲੋ', bgc: 'रास्ते पै चालो' },

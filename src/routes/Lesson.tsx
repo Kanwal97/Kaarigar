@@ -27,26 +27,25 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
   const done = isComplete(lessonId)
   const { primary: primaryVideo, extras: extraVideos } = selectVideos(lesson, lang)
 
-  // Read-aloud narration. Segments are in DISPLAY order (title → objectives → summary →
-  // steps → practice) so the highlight flows top-to-bottom as the device voice speaks.
-  const nObj = text.objectives.length
-  const nStep = text.steps.length
-  const segTexts = [
-    text.title,
-    ...text.objectives,
-    text.summary,
-    ...text.steps,
-    ...(text.practice ? [text.practice] : []),
-  ]
-  const NARR = {
-    title: 0,
-    obj: (i: number) => 1 + i,
-    summary: 1 + nObj,
-    step: (i: number) => 2 + nObj + i,
-    practice: text.practice ? 2 + nObj + nStep : -1,
+  // Read-aloud narration segments in DISPLAY order (title → objectives → summary → safety →
+  // steps → practice); each rendered element is tagged with its index so the spoken line can
+  // be highlighted. `put` appends a segment and returns its index (-1 for absent optionals).
+  const seg: string[] = []
+  const put = (s?: string): number => {
+    if (!s) return -1
+    seg.push(s)
+    return seg.length - 1
   }
-  const read = useReadAloud(segTexts, usedLocale)
-  const reading = (idx: number) => (read.active === idx ? 'is-reading' : undefined)
+  const NARR = {
+    title: put(text.title),
+    obj: text.objectives.map((o) => put(o)),
+    summary: put(text.summary),
+    safety: put(text.safetyNote),
+    step: text.steps.map((s) => put(s)),
+    practice: put(text.practice),
+  }
+  const read = useReadAloud(seg, usedLocale)
+  const reading = (idx: number) => (idx >= 0 && read.active === idx ? 'is-reading' : undefined)
 
   // Remember this as "continue where you left off" (client-only), with its title.
   useEffect(() => {
@@ -125,7 +124,7 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         <h2>{t('lesson.objectives', lang)}</h2>
         <ul>
           {text.objectives.map((o, i) => (
-            <li key={i} data-narr={NARR.obj(i)} className={reading(NARR.obj(i))}>
+            <li key={i} data-narr={NARR.obj[i]} className={reading(NARR.obj[i]!)}>
               {o}
             </li>
           ))}
@@ -203,11 +202,23 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         </section>
       )}
 
+      {/* Authored per-lesson safety reminder — previously present in content but never shown. */}
+      {text.safetyNote && (
+        <aside className="safety-note" role="note">
+          <p className="safety-note__label">
+            <span aria-hidden="true">⚠️</span> {t('lesson.safety', lang)}
+          </p>
+          <p className={reading(NARR.safety)} data-narr={NARR.safety}>
+            {text.safetyNote}
+          </p>
+        </aside>
+      )}
+
       <section className="lesson__steps">
         <h2>{t('lesson.steps', lang)}</h2>
         <ol>
           {text.steps.map((s, i) => (
-            <li key={i} data-narr={NARR.step(i)} className={reading(NARR.step(i))}>
+            <li key={i} data-narr={NARR.step[i]} className={reading(NARR.step[i]!)}>
               {s}
             </li>
           ))}

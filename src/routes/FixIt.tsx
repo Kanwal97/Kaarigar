@@ -30,7 +30,7 @@ export default function FixIt({ lang }: { lang: Locale }) {
               <summary className="fixit__summary">
                 <span className="fixit__icon" aria-hidden="true">{fixEmoji(f.category)}</span>
                 <span className="fixit__title">{ft.title}</span>
-                {f.category && <span className="tag-mini">{f.category}</span>}
+                {f.category && <span className="tag-mini">{t(`fixcat.${f.category}`, lang)}</span>}
               </summary>
               <div className="fixit__body">
                 <p>
