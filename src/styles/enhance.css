@@ -778,6 +778,16 @@
   border-left: 3px solid var(--info);
 }
 
+/* ---------- read-aloud: highlight the line being spoken ---------- */
+/* !important so it wins over the step-card / summary-panel backgrounds it sits on. */
+.is-reading {
+  background: color-mix(in srgb, var(--accent) 26%, var(--surface)) !important;
+  box-shadow: 0 0 0 2px var(--accent) !important;
+  border-radius: var(--r-sm);
+  scroll-margin: 40vh 0; /* leave room so scrollIntoView(center) isn't hidden by sticky bars */
+  transition: background-color var(--dur-1) var(--ease-1);
+}
+
 /* ---------- read-aloud (device TTS) controls ---------- */
 .audio {
   padding: var(--sp-3);

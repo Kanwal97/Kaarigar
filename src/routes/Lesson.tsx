@@ -6,6 +6,7 @@ import type { Lesson as LessonData } from '../content/types'
 import { resolveLessonText, selectVideos } from '../content/loaders'
 import { getLevel, getHazard, getTool, getWood, getLessonMeta, levelLessonMeta, lessonTitle, pick } from '../content/refdata'
 import { useProgress } from '../lib/progress'
+import { useReadAloud } from '../lib/useReadAloud'
 import { FallbackBadge } from '../components/FallbackBadge'
 import { MachineDraftBadge } from '../components/MachineDraftBadge'
 import { SelfCheck } from '../components/SelfCheck'
@@ -26,10 +27,41 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
   const done = isComplete(lessonId)
   const { primary: primaryVideo, extras: extraVideos } = selectVideos(lesson, lang)
 
+  // Read-aloud narration. Segments are in DISPLAY order (title → objectives → summary →
+  // steps → practice) so the highlight flows top-to-bottom as the device voice speaks.
+  const nObj = text.objectives.length
+  const nStep = text.steps.length
+  const segTexts = [
+    text.title,
+    ...text.objectives,
+    text.summary,
+    ...text.steps,
+    ...(text.practice ? [text.practice] : []),
+  ]
+  const NARR = {
+    title: 0,
+    obj: (i: number) => 1 + i,
+    summary: 1 + nObj,
+    step: (i: number) => 2 + nObj + i,
+    practice: text.practice ? 2 + nObj + nStep : -1,
+  }
+  const read = useReadAloud(segTexts, usedLocale)
+  const reading = (idx: number) => (read.active === idx ? 'is-reading' : undefined)
+
   // Remember this as "continue where you left off" (client-only), with its title.
   useEffect(() => {
     recordVisit(lessonId, lang, text.title)
   }, [lessonId, lang, text.title, recordVisit])
+
+  // Keep the line being read in view (gentle; respects reduced-motion).
+  useEffect(() => {
+    if (read.active < 0 || typeof document === 'undefined') return
+    const el = document.querySelector(`[data-narr="${read.active}"]`)
+    if (el) {
+      const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+      el.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' })
+    }
+  }, [read.active])
   const level = getLevel(`l${String(lesson.level).padStart(2, '0')}`)
   const levelTitle = level ? (level.i18n[lang] ?? level.i18n.en).title : ''
 
@@ -50,7 +82,9 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         {level && <Link to={`/${lang}/level/${level.id}`}>← {levelTitle}</Link>}
       </p>
 
-      <h1>{text.title}</h1>
+      <h1 data-narr={NARR.title} className={reading(NARR.title)}>
+        {text.title}
+      </h1>
       <div className="lesson__meta">
         <span className="lmeta lmeta--diff" data-diff={lesson.difficulty}>
           {lesson.difficulty}
@@ -75,7 +109,7 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         </p>
       )}
 
-      <AudioPlayer lesson={lesson} lang={usedLocale} text={text} />
+      <AudioPlayer lesson={lesson} lang={usedLocale} read={read} />
 
       {isFallback && <FallbackBadge requested={lang} shown={usedLocale} />}
       {isDraft && <MachineDraftBadge locale={usedLocale} />}
@@ -91,7 +125,9 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         <h2>{t('lesson.objectives', lang)}</h2>
         <ul>
           {text.objectives.map((o, i) => (
-            <li key={i}>{o}</li>
+            <li key={i} data-narr={NARR.obj(i)} className={reading(NARR.obj(i))}>
+              {o}
+            </li>
           ))}
         </ul>
       </section>
@@ -113,7 +149,9 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         </div>
       )}
 
-      <p className="lesson__summary">{text.summary}</p>
+      <p className={`lesson__summary ${reading(NARR.summary) ?? ''}`.trim()} data-narr={NARR.summary}>
+        {text.summary}
+      </p>
 
       {(lesson.tools?.length || lesson.materials?.length) && (
         <div className="chips-block">
@@ -169,7 +207,9 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
         <h2>{t('lesson.steps', lang)}</h2>
         <ol>
           {text.steps.map((s, i) => (
-            <li key={i}>{s}</li>
+            <li key={i} data-narr={NARR.step(i)} className={reading(NARR.step(i))}>
+              {s}
+            </li>
           ))}
         </ol>
       </section>
@@ -177,7 +217,9 @@ export default function Lesson({ lang, lessonId }: { lang: Locale; lessonId: str
       {text.practice && (
         <section className="lesson__practice">
           <h2>{t('lesson.practice', lang)}</h2>
-          <p>{text.practice}</p>
+          <p data-narr={NARR.practice} className={reading(NARR.practice)}>
+            {text.practice}
+          </p>
         </section>
       )}
 
