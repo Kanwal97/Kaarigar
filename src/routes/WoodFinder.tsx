@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import type { Locale } from '../i18n/locales'
 import { woods, pick } from '../content/refdata'
-import { woodEmoji } from '../content/emoji'
+import { woodIcon } from '../content/icons'
+import { Icon } from '../components/ui/Icon'
 import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
@@ -32,8 +33,8 @@ export default function WoodFinder({ lang }: { lang: Locale }) {
       <ul className="entity-grid">
         {list.map((w) => (
           <li key={w.id} className="entity">
-            <span className="entity__icon entity__icon--emoji" aria-hidden="true">
-              {woodEmoji(w.kind)}
+            <span className="icon-tile icon-tile--success">
+              <Icon name={woodIcon(w.kind)} size={26} />
             </span>
             <div className="entity__body">
               <p className="entity__title">{pick(w.names, lang)}</p>
@@ -47,7 +48,11 @@ export default function WoodFinder({ lang }: { lang: Locale }) {
               </p>
               {w.typicalUses && <p className="entity__sub">{pick(w.typicalUses, lang)}</p>}
               {w.botanical && <p className="entity__botanical">{w.botanical}</p>}
-              {w.verified === false && <span className="entity__flag">figures need local check</span>}
+              {w.verified === false && (
+                <span className="entity__flag">
+                  <Icon name="flag" size={14} /> {t('flag.checkFigures', lang)}
+                </span>
+              )}
             </div>
           </li>
         ))}

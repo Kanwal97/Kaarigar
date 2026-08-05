@@ -13,7 +13,16 @@
       "hi": "सुरक्षित वर्कशॉप तैयार करें",
       "pa": "ਸੁਰੱਖਿਅਤ ਵਰਕਸ਼ਾਪ ਤਿਆਰ ਕਰੋ",
       "bgc": "सुरक्षित वर्कशॉप त्यार करो"
-    }
+    },
+    "tools": [
+      "first-aid-kit",
+      "chisel-firmer"
+    ],
+    "materials": [],
+    "hazards": [
+      "workpiece-slip",
+      "electric-shock"
+    ]
   },
   {
     "id": "l00-ppe-and-dust",
@@ -29,7 +38,18 @@
       "hi": "अपनी आँख, फेफड़े और कान बचाएँ",
       "pa": "ਆਪਣੀਆਂ ਅੱਖਾਂ, ਫੇਫੜੇ ਤੇ ਕੰਨ ਬਚਾਓ",
       "bgc": "अपणी आँख, फेफड़े अर कान बचाओ"
-    }
+    },
+    "tools": [
+      "safety-glasses",
+      "dust-mask",
+      "ear-protection"
+    ],
+    "materials": [],
+    "hazards": [
+      "wood-dust",
+      "eye-injury",
+      "hearing-loss"
+    ]
   },
   {
     "id": "l00-machine-safety",
@@ -45,7 +65,16 @@
       "hi": "मशीनों के पास सुरक्षित काम करें",
       "pa": "ਮਸ਼ੀਨਾਂ ਦੇ ਕੋਲ ਸੁਰੱਖਿਅਤ ਕੰਮ ਕਰੋ",
       "bgc": "मशीनां कै लोवै सुरक्षित काम करो"
-    }
+    },
+    "tools": [
+      "table-saw",
+      "push-stick"
+    ],
+    "materials": [],
+    "hazards": [
+      "unguarded-blade",
+      "eye-injury"
+    ]
   },
   {
     "id": "l01-identify-timbers",
@@ -61,7 +90,19 @@
       "hi": "अपनी लकड़ियाँ पहचानें",
       "pa": "ਆਪਣੀਆਂ ਲੱਕੜਾਂ ਪਛਾਣੋ",
       "bgc": "अपणी लकड़ियां पिछाणो"
-    }
+    },
+    "tools": [],
+    "materials": [
+      "sheesham",
+      "teak",
+      "mango",
+      "pine",
+      "babool",
+      "rubberwood"
+    ],
+    "hazards": [
+      "wood-dust"
+    ]
   },
   {
     "id": "l01-choose-sheet-goods",
@@ -78,7 +119,22 @@
       "hi": "सही बोर्ड चुनें",
       "pa": "ਸਹੀ ਬੋਰਡ ਚੁਣੋ",
       "bgc": "सही बोर्ड चुणो"
-    }
+    },
+    "tools": [],
+    "materials": [
+      "commercial-ply",
+      "bwr-ply",
+      "marine-ply",
+      "blockboard",
+      "mdf",
+      "particle-board",
+      "wpc",
+      "laminate",
+      "veneer"
+    ],
+    "hazards": [
+      "wood-dust"
+    ]
   },
   {
     "id": "l01-seasoning-and-treatment",
@@ -94,7 +150,15 @@
       "hi": "लकड़ी की सीज़निंग और बचाव",
       "pa": "ਲੱਕੜ ਦੀ ਸੀਜ਼ਨਿੰਗ ਤੇ ਬਚਾਅ",
       "bgc": "लकड़ी की सीज़निंग अर बचाव"
-    }
+    },
+    "tools": [],
+    "materials": [
+      "sheesham",
+      "pine",
+      "mango",
+      "rubberwood"
+    ],
+    "hazards": []
   },
   {
     "id": "l01-cut-and-edgeband",
@@ -110,7 +174,21 @@
       "hi": "शीट गुड्स: कटाई, एज-बैंडिंग और लैमिनेट",
       "pa": "ਸ਼ੀਟ ਗੁਡਸ: ਕਟਾਈ, ਐੱਜ-ਬੈਂਡਿੰਗ ਤੇ ਲੈਮੀਨੇਟ",
       "bgc": "शीट गुड्स: कटाई, एज-बैंडिंग अर लैमिनेट"
-    }
+    },
+    "tools": [
+      "circular-saw",
+      "handsaw",
+      "measuring-tape"
+    ],
+    "materials": [
+      "commercial-ply",
+      "laminate"
+    ],
+    "hazards": [
+      "wood-dust",
+      "unguarded-blade",
+      "eye-injury"
+    ]
   },
   {
     "id": "l02-measuring-basics",
@@ -126,7 +204,13 @@
       "hi": "दो बार नापो, एक बार काटो",
       "pa": "ਦੋ ਵਾਰ ਨਾਪੋ, ਇੱਕ ਵਾਰ ਕੱਟੋ",
       "bgc": "दो बार नापो, एक बार काटो"
-    }
+    },
+    "tools": [
+      "measuring-tape",
+      "carpenter-pencil"
+    ],
+    "materials": [],
+    "hazards": []
   },
   {
     "id": "l02-squaring-and-marking",
@@ -143,7 +227,14 @@
       "hi": "गुनिया, निशान और क्षेत्रफल का हिसाब",
       "pa": "ਗੁਨੀਆ, ਨਿਸ਼ਾਨ ਤੇ ਖੇਤਰਫਲ ਦਾ ਹਿਸਾਬ",
       "bgc": "गुनिया, निशान अर क्षेत्रफल का हिसाब"
-    }
+    },
+    "tools": [
+      "gunia",
+      "marking-gauge",
+      "carpenter-pencil"
+    ],
+    "materials": [],
+    "hazards": []
   },
   {
     "id": "l03-sharpen-edge-tools",
@@ -159,7 +250,16 @@
       "hi": "छेनी और रंदे के ब्लेड की धार करें",
       "pa": "ਆਪਣੀਆਂ ਛੈਣੀਆਂ ਤੇ ਰੰਦੇ ਦਾ ਬਲੇਡ ਤਿੱਖਾ ਕਰੋ",
       "bgc": "अपणी छेनी अर रंदे कै ब्लेड की धार करो"
-    }
+    },
+    "tools": [
+      "sharpening-stone",
+      "chisel-firmer",
+      "hand-plane"
+    ],
+    "materials": [],
+    "hazards": [
+      "chisel-cut"
+    ]
   },
   {
     "id": "l03-tune-a-plane",
@@ -175,7 +275,15 @@
       "hi": "अपना रंदा सेट करें",
       "pa": "ਆਪਣਾ ਰੰਦਾ ਸੈੱਟ ਕਰੋ",
       "bgc": "अपणा रंदा सेट करो"
-    }
+    },
+    "tools": [
+      "hand-plane",
+      "sharpening-stone"
+    ],
+    "materials": [],
+    "hazards": [
+      "chisel-cut"
+    ]
   },
   {
     "id": "l04-sawing-technique",
@@ -191,7 +299,18 @@
       "hi": "लकीर तक आरी चलाएँ",
       "pa": "ਲਕੀਰ ਤੱਕ ਆਰੀ ਚਲਾਓ",
       "bgc": "लकीर तक आरी चलाओ"
-    }
+    },
+    "tools": [
+      "handsaw",
+      "tenon-saw",
+      "gunia"
+    ],
+    "materials": [
+      "pine"
+    ],
+    "hazards": [
+      "workpiece-slip"
+    ]
   },
   {
     "id": "l04-planing-technique",
@@ -207,7 +326,18 @@
       "hi": "एक सतह समतल और एक किनारा चौकोर रंदें",
       "pa": "ਇੱਕ ਸਤਹ ਸਮਤਲ ਤੇ ਇੱਕ ਕਿਨਾਰਾ ਚੌਰਸ ਰੰਦੋ",
       "bgc": "एक सतह समतल अर एक किनारा चौकोर रंदो"
-    }
+    },
+    "tools": [
+      "hand-plane",
+      "gunia"
+    ],
+    "materials": [
+      "pine",
+      "sheesham"
+    ],
+    "hazards": [
+      "wood-dust"
+    ]
   },
   {
     "id": "l04-chiselling-technique",
@@ -223,7 +353,19 @@
       "hi": "छेनी से छीलना और चॉप करना",
       "pa": "ਛੈਣੀ ਨਾਲ ਛਿੱਲਣਾ ਤੇ ਚੌਪ ਕਰਨਾ",
       "bgc": "छेनी तै छीलणा अर चॉप करणा"
-    }
+    },
+    "tools": [
+      "chisel-firmer",
+      "mallet",
+      "gunia"
+    ],
+    "materials": [
+      "pine"
+    ],
+    "hazards": [
+      "chisel-cut",
+      "workpiece-slip"
+    ]
   },
   {
     "id": "l05-butt-and-lap",
@@ -239,7 +381,20 @@
       "hi": "बट और हाफ-लैप जोड़",
       "pa": "ਬੱਟ ਤੇ ਹਾਫ਼-ਲੈਪ ਜੋੜ",
       "bgc": "बट अर हाफ-लैप जोड़"
-    }
+    },
+    "tools": [
+      "handsaw",
+      "chisel-firmer",
+      "gunia",
+      "marking-gauge"
+    ],
+    "materials": [
+      "pine"
+    ],
+    "hazards": [
+      "chisel-cut",
+      "workpiece-slip"
+    ]
   },
   {
     "id": "l05-mortise-tenon",
@@ -255,7 +410,20 @@
       "hi": "मोर्टिस और टेनन",
       "pa": "ਮੋਰਟਿਸ ਤੇ ਟੈਨਨ",
       "bgc": "मोर्टिस अर टेनन"
-    }
+    },
+    "tools": [
+      "chisel-firmer",
+      "mallet",
+      "tenon-saw",
+      "marking-gauge"
+    ],
+    "materials": [
+      "sheesham"
+    ],
+    "hazards": [
+      "chisel-cut",
+      "workpiece-slip"
+    ]
   },
   {
     "id": "l05-dovetail",
@@ -272,7 +440,21 @@
       "hi": "डवटेल जोड़ (विरासती / प्रीमियम)",
       "pa": "ਡਵਟੇਲ ਜੋੜ (ਵਿਰਾਸਤੀ / ਪ੍ਰੀਮੀਅਮ)",
       "bgc": "डवटेल जोड़ (विरासती / प्रीमियम)"
-    }
+    },
+    "tools": [
+      "tenon-saw",
+      "chisel-firmer",
+      "mallet",
+      "marking-gauge",
+      "gunia"
+    ],
+    "materials": [
+      "sheesham"
+    ],
+    "hazards": [
+      "chisel-cut",
+      "workpiece-slip"
+    ]
   },
   {
     "id": "l06-glue-and-fasteners",
@@ -288,7 +470,13 @@
       "hi": "गोंद, पेंच, डौवल और कील",
       "pa": "ਗੂੰਦ, ਪੇਚ, ਡੌਵਲ ਤੇ ਕਿੱਲ",
       "bgc": "गोंद, पेंच, डौवल अर कील"
-    }
+    },
+    "tools": [
+      "screwdriver",
+      "power-drill"
+    ],
+    "materials": [],
+    "hazards": []
   },
   {
     "id": "l06-hinges-channels-hardware",
@@ -305,7 +493,13 @@
       "hi": "हिंज, चैनल और फिटिंग",
       "pa": "ਹਿੰਜ, ਚੈਨਲ ਤੇ ਫਿਟਿੰਗ",
       "bgc": "हिंज, चैनल अर फिटिंग"
-    }
+    },
+    "tools": [
+      "power-drill",
+      "screwdriver"
+    ],
+    "materials": [],
+    "hazards": []
   },
   {
     "id": "l07-drill-and-driver",
@@ -321,7 +515,14 @@
       "hi": "ड्रिल / ड्राइवर इस्तेमाल करें",
       "pa": "ਡ੍ਰਿਲ / ਡ੍ਰਾਈਵਰ ਵਰਤੋ",
       "bgc": "ड्रिल / ड्राइवर इस्तेमाल करो"
-    }
+    },
+    "tools": [
+      "power-drill"
+    ],
+    "materials": [],
+    "hazards": [
+      "eye-injury"
+    ]
   },
   {
     "id": "l07-circular-saw-and-jigsaw",
@@ -337,7 +538,21 @@
       "hi": "गोल आरी और जिगसॉ",
       "pa": "ਗੋਲ ਆਰੀ ਤੇ ਜਿਗਸੌ",
       "bgc": "गोल आरी अर जिगसॉ"
-    }
+    },
+    "tools": [
+      "circular-saw",
+      "jigsaw",
+      "push-stick"
+    ],
+    "materials": [
+      "commercial-ply"
+    ],
+    "hazards": [
+      "eye-injury",
+      "hearing-loss",
+      "unguarded-blade",
+      "electric-shock"
+    ]
   },
   {
     "id": "l08-sanding-and-prep",
@@ -353,7 +568,16 @@
       "hi": "सतह रेगमाल करें और तैयार करें",
       "pa": "ਸਤਹ ਰੇਗਮਾਰ ਕਰੋ ਤੇ ਤਿਆਰ ਕਰੋ",
       "bgc": "सतह रेगमाल करो अर तैयार करो"
-    }
+    },
+    "tools": [
+      "sandpaper"
+    ],
+    "materials": [
+      "sheesham"
+    ],
+    "hazards": [
+      "wood-dust"
+    ]
   },
   {
     "id": "l08-finishes",
@@ -369,7 +593,15 @@
       "hi": "फिनिश चुनें और लगाएँ",
       "pa": "ਫ਼ਿਨਿਸ਼ ਚੁਣੋ ਤੇ ਲਾਓ",
       "bgc": "फिनिश चुणो अर लगाओ"
-    }
+    },
+    "tools": [],
+    "materials": [
+      "sheesham"
+    ],
+    "hazards": [
+      "spray-fumes",
+      "wood-dust"
+    ]
   },
   {
     "id": "l09-build-a-stool",
@@ -385,7 +617,23 @@
       "hi": "स्टूल बनाएँ, शुरू से अंत तक",
       "pa": "ਸਟੂਲ ਬਣਾਓ, ਸ਼ੁਰੂ ਤੋਂ ਅੰਤ ਤੱਕ",
       "bgc": "स्टूल बणाओ, शुरू तै अंत तक"
-    }
+    },
+    "tools": [
+      "measuring-tape",
+      "gunia",
+      "handsaw",
+      "hand-plane",
+      "chisel-firmer",
+      "mallet"
+    ],
+    "materials": [
+      "pine",
+      "sheesham"
+    ],
+    "hazards": [
+      "chisel-cut",
+      "workpiece-slip"
+    ]
   },
   {
     "id": "l09-build-a-wardrobe",
@@ -401,7 +649,24 @@
       "hi": "अलमारी बनाएँ",
       "pa": "ਅਲਮਾਰੀ ਬਣਾਓ",
       "bgc": "अलमारी बणाओ"
-    }
+    },
+    "tools": [
+      "measuring-tape",
+      "gunia",
+      "circular-saw",
+      "power-drill",
+      "screwdriver"
+    ],
+    "materials": [
+      "commercial-ply",
+      "bwr-ply",
+      "laminate"
+    ],
+    "hazards": [
+      "wood-dust",
+      "unguarded-blade",
+      "eye-injury"
+    ]
   },
   {
     "id": "l10-estimating-and-quoting",
@@ -417,7 +682,10 @@
       "hi": "काम का एस्टिमेट और कोट करें",
       "pa": "ਕੰਮ ਦਾ ਐਸਟੀਮੇਟ ਤੇ ਕੋਟ ਕਰੋ",
       "bgc": "काम का एस्टिमेट अर कोट करो"
-    }
+    },
+    "tools": [],
+    "materials": [],
+    "hazards": []
   },
   {
     "id": "l10-clients-and-tools",
@@ -433,6 +701,9 @@
       "hi": "ग्राहक, ठेकेदार और औज़ारों में निवेश",
       "pa": "ਗਾਹਕ, ਠੇਕੇਦਾਰ ਤੇ ਔਜ਼ਾਰਾਂ ਵਿੱਚ ਨਿਵੇਸ਼",
       "bgc": "ग्राहक, ठेकेदार अर औजारां म्ह निवेश"
-    }
+    },
+    "tools": [],
+    "materials": [],
+    "hazards": []
   }
 ]

@@ -14,8 +14,9 @@ export default function NotFound() {
       <h1>{t('notfound.title', lang)}</h1>
       <p>{t('notfound.body', lang)}</p>
       <p>
+        {/* the arrow is drawn by .notfound__btn::after — don't repeat it in the label */}
         <Link className="notfound__btn" to="/">
-          {t('notfound.cta', lang)} →
+          {t('notfound.cta', lang)}
         </Link>
       </p>
     </section>

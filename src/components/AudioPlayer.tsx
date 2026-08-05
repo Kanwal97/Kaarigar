@@ -3,6 +3,7 @@ import type { Locale } from '../i18n/locales'
 import { t } from '../i18n/ui'
 import { href } from '../lib/href'
 import type { ReadAloud } from '../lib/useReadAloud'
+import { Icon } from './ui/Icon'
 
 // Per-lesson narration. Priority: a real human recording if one is ever added
 // (lesson.audio[lang]); otherwise device text-to-speech "read aloud" driven by the
@@ -14,7 +15,7 @@ export function AudioPlayer({ lesson, lang, read }: { lesson: Lesson; lang: Loca
     return (
       <div className="audio">
         <span className="audio__label">
-          <span aria-hidden="true">🔊</span> {t('audio.listen', lang)}
+          <Icon name="speaker" size={20} />{t('audio.listen', lang)}
         </span>
         {/* preload none — never costs data until the user plays */}
         <audio controls preload="none" src={href(recorded)} />
@@ -25,7 +26,7 @@ export function AudioPlayer({ lesson, lang, read }: { lesson: Lesson; lang: Loca
   if (!read.supported) {
     return (
       <p className="audio audio--pending" role="note">
-        <span aria-hidden="true">🔊</span> {t('audio.coming', lang)}
+        <Icon name="speaker" size={20} />{t('audio.coming', lang)}
       </p>
     )
   }
@@ -39,7 +40,7 @@ export function AudioPlayer({ lesson, lang, read }: { lesson: Lesson; lang: Loca
   return (
     <div className="audio">
       <span className="audio__label">
-        <span aria-hidden="true">🔊</span> {t('audio.readAloud', lang)}
+        <Icon name="speaker" size={20} />{t('audio.readAloud', lang)}
       </span>
       <div className="audio__controls">
         {state === 'idle' && (

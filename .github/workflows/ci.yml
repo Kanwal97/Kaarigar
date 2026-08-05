@@ -19,6 +19,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run validate:content
+      # Guards the two structural rules of the design system: no undefined custom
+      # property, and no selector defined in two stylesheets. Both classes of bug
+      # shipped unnoticed before the redesign (docs/redesign/PHASE-1-RESEARCH.md §D).
+      - run: npm run check:styles
       - run: npm run typecheck
       - run: npm test
       - run: npm run build

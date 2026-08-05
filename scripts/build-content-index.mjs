@@ -20,6 +20,13 @@ for (const f of readdirSync(DIR).filter((f) => f.endsWith('.json'))) {
     estMinutes: l.estMinutes,
     tags: l.tags ?? [],
     titles,
+    // ID REFERENCES ONLY (never the bodies) so the Level page can show "at a glance"
+    // — the tools, woods and hazards a level covers — without loading 27 lesson
+    // chunks. Redesign Phase 3; the entities themselves are already eager reference
+    // data in src/content/refdata.ts.
+    tools: l.tools ?? [],
+    materials: l.materials ?? [],
+    hazards: l.hazards ?? [],
   })
 }
 index.sort((a, b) => a.level - b.level || a.order - b.order)

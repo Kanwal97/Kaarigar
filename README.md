@@ -2,9 +2,11 @@
 
 A **free, static, mobile-first, multilingual woodworking training platform** for carpenters and hobbyists in North India — **Hindi, English, Punjabi, and Haryanvi**. Hosted on GitHub Pages. No backend, no accounts, no ads, no tracking.
 
-> **Built so far (Phase 3, through Milestone 8):** deploy skeleton, design system with four-script typography, content engine, learning-path UI with progress, video layer, discovery (glossary/tool/wood finders), PWA + offline, and the first authored content (L0 Safety, L1 Wood & sheet goods, L2 Measuring & marking). See [the roadmap](#roadmap) for what remains.
+> **Built so far:** deploy skeleton, design system with four-script typography, content engine, learning-path UI with progress, video layer, discovery (unified search + glossary/tool/wood finders), PWA + offline, read-aloud narration, and **the full curriculum — 27 lessons across L0–L10, authored in all four languages.** See [the roadmap](#roadmap) for what remains.
 
-Planning docs: [RESEARCH](docs/RESEARCH.md) · [PLAN](docs/PLAN.md) · [DESIGN](docs/DESIGN.md) · [WIREFRAMES](docs/WIREFRAMES.md). **Non-developers:** see [CONTRIBUTING.md](CONTRIBUTING.md) to add a lesson or translate.
+Planning docs: [RESEARCH](docs/RESEARCH.md) · [PLAN](docs/PLAN.md) · [DESIGN](docs/DESIGN.md) · [WIREFRAMES](docs/WIREFRAMES.md).
+Redesign (2026-08): [Phase 1 Research](docs/redesign/PHASE-1-RESEARCH.md) · [Phase 2 Ideation](docs/redesign/PHASE-2-IDEATION.md) · [Phase 3 System](docs/redesign/PHASE-3-SYSTEM.md) · [Phase 4 Handoff](docs/redesign/PHASE-4-HANDOFF.md).
+**Non-developers:** see [CONTRIBUTING.md](CONTRIBUTING.md) to add a lesson or translate.
 
 ---
 
@@ -64,10 +66,9 @@ No accounts, backend, comments, certificates, payments, AI chat, video hosting, 
 
 ## Roadmap
 
-Done: M1 deploy skeleton · M2 design system · M3 content engine · M4 learning-path UI + progress · M5 video layer · M6 discovery · M7 PWA/offline · M8 content scale-out (L0–L2 authored).
+Done: M1 deploy skeleton · M2 design system · M3 content engine · M4 learning-path UI + progress · M5 video layer · M6 discovery · M7 PWA/offline · M8 content scale-out (L0–L10 authored) · M9 lazy-loaded lesson bodies · **M10 redesign** ([Phase 1–4](docs/redesign/PHASE-1-RESEARCH.md)) — the Joinery Spine built as real seating joints, desktop layouts, one drawn icon set, merged stylesheet layers, i18n and a11y gaps closed.
 
 Remaining before launch:
-- **Lazy-load lesson content** (route loaders + a generated metadata index) so the initial bundle stays under budget as levels L3–L10 are authored — see [docs/PLAN.md](docs/PLAN.md) §2.1. **Do this before adding more levels.**
-- Author **L3–L10** (each needs video sourcing, expert safety review, and human `pa`/`bgc` translation — tracked in [`content/_needs-sourcing.md`](content/_needs-sourcing.md)).
+- **Expert safety review** and human `pa`/`bgc` translation for the authored lessons (tracked in [`content/_needs-sourcing.md`](content/_needs-sourcing.md)).
 - Real **PNG app icons** (192/512) and font **metric-override** tuning for zero CLS.
-- **Real low-end Android** testing and a full accessibility (TalkBack) pass.
+- **Visual review of `/styleguide`**, then **real low-end Android** testing and a full accessibility (TalkBack) pass — see [Phase 4 §4.4](docs/redesign/PHASE-4-HANDOFF.md) for exactly what has and has not been verified.

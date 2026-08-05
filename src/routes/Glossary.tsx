@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import type { Locale } from '../i18n/locales'
 import { glossary, pick } from '../content/refdata'
+import { glossaryIcon } from '../content/icons'
+import { Icon } from '../components/ui/Icon'
 import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
@@ -25,7 +27,7 @@ export default function Glossary({ lang }: { lang: Locale }) {
       <RefDraftNotice locale={lang} />
       <SearchBox value={q} onChange={setQ} placeholder={t('search.glossary', lang)} />
 
-      <div className="chip-filters" role="group" aria-label="Category">
+      <div className="chip-filters" role="group" aria-label={t('a11y.category', lang)}>
         <button type="button" className={`filter ${!cat ? 'is-on' : ''}`.trim()} onClick={() => setCat(null)}>
           {t('filter.all', lang)}
         </button>
@@ -45,8 +47,10 @@ export default function Glossary({ lang }: { lang: Locale }) {
       <ul className="entity-grid">
         {list.map((g) => (
           <li key={g.id} className="entity">
-            <span className="entity__icon" aria-hidden="true">
-              {pick(g.term, lang).charAt(0).toUpperCase()}
+            {/* was the first LETTER of the term, which told the reader nothing —
+                category is a real signal and it was already in the data */}
+            <span className="icon-tile icon-tile--info">
+              <Icon name={glossaryIcon(g.category)} size={26} />
             </span>
             <div className="entity__body">
               <p className="entity__title">

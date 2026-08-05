@@ -40,7 +40,16 @@
   --fs-3xl: 2.875rem; /* 46 — hero (desktop) */
   --lh-body: 1.6; /* Indic scripts need headroom for matras / laga-matra */
   --lh-heading: 1.25;
+  --tracking-eyebrow: 0.06em; /* uppercase section labels only — never body */
+
+  /* layout — the MEASURE caps PROSE, never the page (redesign Phase 2 §2.2).
+     Three tiers: <900 single column; 900–1199 nav rail + content;
+     ≥1200 nav rail + content + context rail. */
   --measure: 66ch; /* max readable line length */
+  --rail-nav: 240px; /* desktop primary-nav rail */
+  --rail-ctx: 300px; /* desktop context rail (reference, never nav-critical) */
+  --page-max: 1440px; /* outer cap so ultrawide doesn't stretch the grid */
+  --gutter: var(--sp-4);
 
   /* shape */
   --r-sm: 8px;
@@ -63,11 +72,17 @@
 
   /* motion — restrained; disabled under prefers-reduced-motion (see base.css) */
   --dur-1: 160ms;
+  --dur-2: 200ms; /* ceiling: the joint-seat travel, nothing slower */
   --ease-1: cubic-bezier(0.2, 0.6, 0.2, 1);
 
   /* touch targets */
   --tap-min: 48px;
   --tap-primary: 56px;
+  --tap-icon: 44px; /* icon-only controls in the top bar */
+
+  /* focus — one ring definition, used everywhere (WCAG 2.4.7 / 2.4.13) */
+  --focus-w: 3px;
+  --focus-color: var(--accent);
 
   color-scheme: light dark;
 }

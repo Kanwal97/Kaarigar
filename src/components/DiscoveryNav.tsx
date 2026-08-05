@@ -12,7 +12,7 @@ const TABS = [
 // Sub-navigation shared by the three discovery screens (docs/PLAN.md §2.2).
 export function DiscoveryNav({ lang }: { lang: Locale }) {
   return (
-    <nav className="discnav" aria-label="Find">
+    <nav className="discnav" aria-label={t('a11y.find', lang)}>
       {TABS.map((tab) => (
         <NavLink
           key={tab.seg}
