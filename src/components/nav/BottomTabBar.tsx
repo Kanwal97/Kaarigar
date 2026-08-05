@@ -15,7 +15,7 @@ const TABS: { seg: string; icon: IconName; key: string; end?: boolean }[] = [
 
 export function BottomTabBar({ locale }: { locale: Locale }) {
   return (
-    <nav className="tabbar" aria-label="Main">
+    <nav className="tabbar" aria-label={t('a11y.mainNav', locale)}>
       {TABS.map((tab) => (
         <NavLink
           key={tab.seg || 'home'}

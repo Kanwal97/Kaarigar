@@ -23,6 +23,10 @@ export interface LessonMeta {
   estMinutes: number
   tags: string[]
   titles: Partial<Record<Locale, string>>
+  /** id references only — enough for the Level "at a glance" panel, no bodies loaded */
+  tools: string[]
+  materials: string[]
+  hazards: string[]
 }
 
 export const hazards = hazardsJson as unknown as Hazard[]

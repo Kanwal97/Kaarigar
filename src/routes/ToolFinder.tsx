@@ -1,21 +1,22 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Locale } from '../i18n/locales'
-import { tools, getLessonMeta, pick } from '../content/refdata'
-import { toolEmoji } from '../content/emoji'
+import { tools, getLessonMeta, lessonTitle, pick } from '../content/refdata'
+import { toolIcon } from '../content/icons'
 import { keywords, matchesQuery } from '../lib/search'
 import { t } from '../i18n/ui'
 import { SearchBox } from '../components/SearchBox'
 import { DiscoveryNav } from '../components/DiscoveryNav'
 import { RefDraftNotice } from '../components/RefDraftNotice'
+import { Icon } from '../components/ui/Icon'
 
 export default function ToolFinder({ lang }: { lang: Locale }) {
   const [q, setQ] = useState('')
   const [cat, setCat] = useState<string | null>(null)
 
-  const cats = Array.from(new Set(tools.map((t) => t.category).filter(Boolean))) as string[]
+  const cats = Array.from(new Set(tools.map((x) => x.category).filter(Boolean))) as string[]
   const list = tools.filter(
-    (t) => (!cat || t.category === cat) && matchesQuery(keywords(t.names, t.roman, t.use), q),
+    (x) => (!cat || x.category === cat) && matchesQuery(keywords(x.names, x.roman, x.use), q),
   )
 
   return (
@@ -25,7 +26,7 @@ export default function ToolFinder({ lang }: { lang: Locale }) {
       <RefDraftNotice locale={lang} />
       <SearchBox value={q} onChange={setQ} placeholder={t('search.tool', lang)} />
 
-      <div className="chip-filters" role="group" aria-label="Category">
+      <div className="chip-filters" role="group" aria-label={t('a11y.category', lang)}>
         <button type="button" className={`filter ${!cat ? 'is-on' : ''}`.trim()} onClick={() => setCat(null)}>
           {t('filter.all', lang)}
         </button>
@@ -43,27 +44,34 @@ export default function ToolFinder({ lang }: { lang: Locale }) {
       </div>
 
       <ul className="entity-grid">
-        {list.map((t) => (
-          <li key={t.id} className="entity">
-            <span className="entity__icon entity__icon--emoji" aria-hidden="true">
-              {toolEmoji(t.id, t.category)}
+        {list.map((tool) => (
+          <li key={tool.id} className="entity">
+            <span className="icon-tile">
+              <Icon name={toolIcon(tool.id, tool.category)} size={26} />
             </span>
             <div className="entity__body">
               <p className="entity__title">
-                {pick(t.names, lang)}
-                {t.roman ? ` · ${t.roman}` : ''}
+                {pick(tool.names, lang)}
+                {tool.roman ? ` · ${tool.roman}` : ''}
               </p>
-              {t.use && <p className="entity__sub">{pick(t.use, lang)}</p>}
-              {!t.verified && <span className="entity__flag">unverified term</span>}
-              {t.usedInLessons && t.usedInLessons.length > 0 && (
+              {tool.use && <p className="entity__sub">{pick(tool.use, lang)}</p>}
+              {!tool.verified && (
+                <span className="entity__flag">
+                  <Icon name="flag" size={14} /> {t('flag.unverifiedTerm', lang)}
+                </span>
+              )}
+              {/* Was "Used in a lesson →" — hard-coded English, repeated once per lesson
+                  without ever saying WHICH lesson. Now it names the lesson, localised. */}
+              {tool.usedInLessons && tool.usedInLessons.length > 0 && (
                 <p className="entity__links">
-                  {t.usedInLessons.map((id) =>
-                    getLessonMeta(id) ? (
+                  {tool.usedInLessons.map((id) => {
+                    const meta = getLessonMeta(id)
+                    return meta ? (
                       <Link key={id} to={`/${lang}/lesson/${id}`}>
-                        Used in a lesson →
+                        {lessonTitle(meta, lang)}
                       </Link>
-                    ) : null,
-                  )}
+                    ) : null
+                  })}
                 </p>
               )}
             </div>

@@ -2,6 +2,23 @@ import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 import { Pill } from '../components/ui/Pill'
 import { ProgressBar } from '../components/ui/ProgressBar'
+import { Icon, type IconName } from '../components/ui/Icon'
+import { JointMark, type JointName } from '../components/ui/JointMark'
+
+const ICONS: IconName[] = [
+  'learn', 'tools', 'build', 'fix', 'me', 'search',
+  'plane', 'saw', 'chisel', 'mallet', 'square', 'tape', 'pencil', 'gauge',
+  'stone', 'rasp', 'screwdriver', 'clamp', 'fastener',
+  'drill', 'circular-saw', 'machine',
+  'goggles', 'mask', 'ear', 'firstaid', 'warning',
+  'timber', 'board', 'surfacing', 'joint', 'finish',
+  'stool', 'bed', 'wardrobe', 'kitchen',
+  'book', 'clock', 'speaker', 'play', 'arrow-right', 'check', 'flag',
+]
+
+const JOINTS: JointName[] = [
+  'anchor', 'marking', 'sawn-edge', 'butt', 'dado', 'mortise-tenon', 'carcass', 'finished-piece',
+]
 
 // M2 verification page. Renders all scripts in both type families and the component
 // set, so we can confirm conjuncts/matras/laga-matra, the palette, dark mode, and the
@@ -19,7 +36,7 @@ export default function Styleguide() {
       <h2>Type &amp; scripts</h2>
 
       <Card>
-        <p className="sg-eyebrow">Latin — Baloo 2 display / Mukta body</p>
+        <p className="eyebrow">Latin — Baloo 2 display / Mukta body</p>
         <p className="sg-display" lang="en">Kaarigar — sharpen the chisel</p>
         <p className="sg-body" lang="en">
           Clamp the workpiece. Keep both hands behind the cutting edge. Take thin, controlled
@@ -28,7 +45,7 @@ export default function Styleguide() {
       </Card>
 
       <Card>
-        <p className="sg-eyebrow">Devanagari — used by Hindi (hi) &amp; Haryanvi (bgc)</p>
+        <p className="eyebrow">Devanagari — used by Hindi (hi) &amp; Haryanvi (bgc)</p>
         <p className="sg-display" lang="hi">कारीगर — छेनी को धार दो</p>
         <p className="sg-body" lang="hi">
           मिस्त्री · लकड़ी · श्री · क्षमता · प्रशिक्षण · द्वार — संयुक्ताक्षर और मात्राएँ सही बननी चाहिए।
@@ -36,7 +53,7 @@ export default function Styleguide() {
       </Card>
 
       <Card>
-        <p className="sg-eyebrow">Gurmukhi — used by Punjabi (pa), Baloo Paaji 2 / Mukta Mahee</p>
+        <p className="eyebrow">Gurmukhi — used by Punjabi (pa), Baloo Paaji 2 / Mukta Mahee</p>
         <p className="sg-display" lang="pa">ਕਾਰੀਗਰ — ਰੰਦਾ ਤਿੱਖਾ ਕਰੋ</p>
         <p className="sg-body" lang="pa">
           ਸਿੱਖੋ · ਲੱਕੜ · ਕਾਰੀਗਰ · ਤਰਖਾਣ · ਸੁਰੱਖਿਆ — ਲਗਾਂ-ਮਾਤਰਾਂ ਤੇ ਅੱਧਕ ਠੀਕ ਦਿਖਣੇ ਚਾਹੀਦੇ ਹਨ।
@@ -81,6 +98,45 @@ export default function Styleguide() {
 
         <ProgressBar value={40} label="L4 · Planing" />
         <ProgressBar value={100} label="L0 · Safety" />
+      </Card>
+
+      <h2>Icon set</h2>
+      <p className="muted">
+        One drawn set, <code>currentColor</code>, never shown without a label. Replaces the
+        emoji lookup tables retired in the redesign.
+      </p>
+      <Card>
+        <ul className="sg-icons">
+          {ICONS.map((name) => (
+            <li key={name}>
+              <span className="icon-tile">
+                <Icon name={name} size={26} />
+              </span>
+              <span className="fs-xs">{name}</span>
+            </li>
+          ))}
+        </ul>
+      </Card>
+
+      <h2>Joint marks — the Joinery Spine</h2>
+      <p className="muted">
+        Each level is drawn as the joint it teaches. Left of each pair: unseated (not yet
+        complete). Right: seated (level complete) — the pin has travelled home.
+      </p>
+      <Card>
+        <ul className="sg-joints">
+          {JOINTS.map((j) => (
+            <li key={j}>
+              <span className="sg-joint">
+                <JointMark joint={j} size={52} />
+              </span>
+              <span className="sg-joint sg-joint--seated spine__node--completed">
+                <JointMark joint={j} size={52} />
+              </span>
+              <span className="fs-xs">{j}</span>
+            </li>
+          ))}
+        </ul>
       </Card>
     </section>
   )

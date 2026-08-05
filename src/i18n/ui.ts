@@ -12,6 +12,21 @@ const UI: Record<string, Entry> = {
   'nav.fix': { en: 'Fix It', hi: 'ठीक करो', pa: 'ਠੀਕ ਕਰੋ', bgc: 'ठीक करो' },
   'nav.me': { en: 'Me', hi: 'मैं', pa: 'ਮੈਂ', bgc: 'मैं' },
 
+  // Assistive-tech + chrome strings. These were hard-coded English in the JSX until the
+  // redesign — a TalkBack user reading Hindi heard English landmark names.
+  'a11y.skip': { en: 'Skip to content', hi: 'सीधे सामग्री पर जाएँ', pa: 'ਸਿੱਧੇ ਸਮੱਗਰੀ ਤੇ ਜਾਓ', bgc: 'सीधा सामग्री पै जाओ' },
+  'a11y.mainNav': { en: 'Main', hi: 'मुख्य', pa: 'ਮੁੱਖ', bgc: 'मुख्य' },
+  'a11y.path': { en: 'Learning path', hi: 'सीखने का रास्ता', pa: 'ਸਿੱਖਣ ਦਾ ਰਾਹ', bgc: 'सीखण का रास्ता' },
+  'a11y.find': { en: 'Find', hi: 'खोजें', pa: 'ਖੋਜੋ', bgc: 'खोजो' },
+  'a11y.category': { en: 'Category', hi: 'श्रेणी', pa: 'ਸ਼੍ਰੇਣੀ', bgc: 'श्रेणी' },
+  'a11y.lessonNav': { en: 'Lesson navigation', hi: 'पाठ नेविगेशन', pa: 'ਪਾਠ ਨੈਵੀਗੇਸ਼ਨ', bgc: 'पाठ नेविगेशन' },
+
+  // Joinery-spine status. Was hard-coded English on the Home screen of every locale.
+  'spine.done': { en: 'done', hi: 'पूरा', pa: 'ਪੂਰਾ', bgc: 'पूरा' },
+  'spine.start': { en: 'start', hi: 'शुरू करो', pa: 'ਸ਼ੁਰੂ ਕਰੋ', bgc: 'शुरू करो' },
+  'spine.coming': { en: 'coming soon', hi: 'जल्द आ रहा', pa: 'ਜਲਦੀ ਆ ਰਿਹਾ', bgc: 'जल्दी आवैगा' },
+  'level.word': { en: 'Level', hi: 'लेवल', pa: 'ਲੈਵਲ', bgc: 'लेवल' },
+
   'disc.tools': { en: 'Tools', hi: 'औज़ार', pa: 'ਔਜ਼ਾਰ', bgc: 'औजार' },
   'disc.woods': { en: 'Woods', hi: 'लकड़ी', pa: 'ਲੱਕੜ', bgc: 'लकड़ी' },
   'disc.glossary': { en: 'Glossary', hi: 'शब्दकोश', pa: 'ਸ਼ਬਦਕੋਸ਼', bgc: 'शब्दकोश' },
@@ -24,6 +39,9 @@ const UI: Record<string, Entry> = {
   'home.jumpIn': { en: 'Jump in', hi: 'सीधे जाओ', pa: 'ਸਿੱਧੇ ਜਾਓ', bgc: 'सीधा जाओ' },
   'home.dayStreak': { en: 'day streak', hi: 'दिन की लगन', pa: 'ਦਿਨ ਦੀ ਲਗਨ', bgc: 'दिन की लगन' },
   'home.overall': { en: 'Your progress', hi: 'आपकी प्रगति', pa: 'ਤੁਹਾਡੀ ਤਰੱਕੀ', bgc: 'थारी प्रगति' },
+  // Shown when the streak is zero, so the streak row keeps its height between the
+  // prerendered HTML and the hydrated state (no jump for a returning learner).
+  'home.streakStart': { en: 'Start a streak today', hi: 'आज से लगन शुरू करें', pa: 'ਅੱਜ ਤੋਂ ਲਗਨ ਸ਼ੁਰੂ ਕਰੋ', bgc: 'आज तै लगन शुरू करो' },
   'home.lessonsDone': { en: 'lessons done', hi: 'पाठ पूरे', pa: 'ਪਾਠ ਪੂਰੇ', bgc: 'पाठ पूरे' },
 
   // Me / settings tab
@@ -97,6 +115,10 @@ const UI: Record<string, Entry> = {
 
   // self-check results
   'selfcheck.correctWord': { en: 'correct', hi: 'सही', pa: 'ਸਹੀ', bgc: 'सही' },
+  // Spoken-only state words. The ✓/✗ badge is decorative, so without these a screen
+  // reader user got no answer feedback at all.
+  'selfcheck.isCorrect': { en: 'correct answer', hi: 'सही जवाब', pa: 'ਸਹੀ ਜਵਾਬ', bgc: 'सही जवाब' },
+  'selfcheck.isWrong': { en: 'your answer, not correct', hi: 'आपका जवाब, सही नहीं', pa: 'ਤੁਹਾਡਾ ਜਵਾਬ, ਸਹੀ ਨਹੀਂ', bgc: 'थारा जवाब, सही न्ही' },
   'selfcheck.aced': { en: 'All correct — well done! 🎉', hi: 'सब सही — शाबाश! 🎉', pa: 'ਸਭ ਸਹੀ — ਸ਼ਾਬਾਸ਼! 🎉', bgc: 'सब सही — शाबाश! 🎉' },
   'selfcheck.nudge': { en: "You're ready — mark this lesson done below.", hi: 'आप तैयार हैं — नीचे इस पाठ को पूरा करें।', pa: 'ਤੁਸੀਂ ਤਿਆਰ ਹੋ — ਹੇਠਾਂ ਇਸ ਪਾਠ ਨੂੰ ਪੂਰਾ ਕਰੋ।', bgc: 'थम तैयार सो — नीचै इस पाठ नै पूरा करो।' },
 
@@ -142,6 +164,19 @@ const UI: Record<string, Entry> = {
 
   'crumb.home': { en: '← Home', hi: '← होम', pa: '← ਹੋਮ', bgc: '← होम' },
   'level.lessons': { en: 'lessons', hi: 'पाठ', pa: 'ਪਾਠ', bgc: 'पाठ' },
+  'level.atAGlance': { en: 'At a glance', hi: 'एक नज़र में', pa: 'ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ', bgc: 'एक नजर म्ह' },
+  'level.safetyTopics': { en: 'safety topics', hi: 'सुरक्षा विषय', pa: 'ਸੁਰੱਖਿਆ ਵਿਸ਼ੇ', bgc: 'सुरक्षा विषय' },
+
+  // lesson context rail
+  'lesson.whatYouNeed': { en: 'What you need', hi: 'क्या चाहिए', pa: 'ਕੀ ਚਾਹੀਦਾ ਹੈ', bgc: 'के चाहिए' },
+  'lesson.materials': { en: 'Wood & materials', hi: 'लकड़ी और सामग्री', pa: 'ਲੱਕੜ ਤੇ ਸਮੱਗਰੀ', bgc: 'लकड़ी अर सामग्री' },
+  'lesson.yourPlace': { en: 'Where you are', hi: 'आप कहाँ हैं', pa: 'ਤੁਸੀਂ ਕਿੱਥੇ ਹੋ', bgc: 'थम कड़ै सो' },
+
+  // discovery flags + links (were raw English inside the finder cards)
+  'disc.usedIn': { en: 'Used in:', hi: 'इसमें इस्तेमाल:', pa: 'ਇਸ ਵਿੱਚ ਵਰਤਿਆ:', bgc: 'इसम्ह इस्तेमाल:' },
+  'flag.unverifiedTerm': { en: 'term not yet verified', hi: 'शब्द अभी जाँचा नहीं', pa: 'ਸ਼ਬਦ ਹਾਲੇ ਜਾਂਚਿਆ ਨਹੀਂ', bgc: 'शब्द अभी जाँच्या न्ही' },
+  'flag.checkFigures': { en: 'figures need a local check', hi: 'आँकड़े स्थानीय जाँच माँगते हैं', pa: 'ਅੰਕੜੇ ਸਥਾਨਕ ਜਾਂਚ ਮੰਗਦੇ ਹਨ', bgc: 'आंकड़े लोकल जाँच माँगै सैं' },
+  'search.results': { en: 'results', hi: 'नतीजे', pa: 'ਨਤੀਜੇ', bgc: 'नतीजे' },
 
   'video.play': { en: 'Play video', hi: 'वीडियो चलाओ', pa: 'ਵੀਡੀਓ ਚਲਾਓ', bgc: 'वीडियो चलाओ' },
   'video.dataWarn': { en: 'uses mobile data (≈15 MB)', hi: 'मोबाइल डेटा लगेगा (≈15 MB)', pa: 'ਮੋਬਾਈਲ ਡਾਟਾ ਲੱਗੇਗਾ (≈15 MB)', bgc: 'मोबाइल डेटा लाग्गैगा (≈15 MB)' },

@@ -67,12 +67,15 @@ function SelfCheckQuestion({
           const state = !answered ? '' : isCorrect ? 'is-correct' : picked === i ? 'is-wrong' : ''
           const letter = String.fromCharCode(65 + i) // A, B, C…
           const mark = answered ? (isCorrect ? '✓' : picked === i ? '✗' : letter) : letter
+          // The ✓/✗ badge is decorative, so the result is also announced in words.
+          // (`aria-pressed` used to be set here — these are answers, not toggles, and a
+          // screen reader announced every option as "pressed".)
+          const spoken = !answered ? '' : isCorrect ? t('selfcheck.isCorrect', lang) : picked === i ? t('selfcheck.isWrong', lang) : ''
           return (
             <li key={i}>
               <button
                 type="button"
                 className={`selfcheck__opt ${state}`.trim()}
-                aria-pressed={picked === i}
                 onClick={() => {
                   setPicked(i)
                   onAnswer(i === item.answerIndex)
@@ -82,6 +85,7 @@ function SelfCheckQuestion({
                   {mark}
                 </span>
                 {pick(opt, lang)}
+                {spoken && <span className="sr-only"> — {spoken}</span>}
               </button>
             </li>
           )

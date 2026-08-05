@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import type { Locale } from '../i18n/locales'
 import { t } from '../i18n/ui'
 import { getProject, getLessonMeta, getTool, getWood, pick, lessonTitle } from '../content/refdata'
+import { toolIcon, woodIcon } from '../content/icons'
+import { Icon } from '../components/ui/Icon'
 import NotFound from './NotFound'
 
 export default function ProjectDetail({ lang, projectId }: { lang: Locale; projectId: string }) {
@@ -13,7 +15,9 @@ export default function ProjectDetail({ lang, projectId }: { lang: Locale; proje
   return (
     <article className="page lesson" lang={lang}>
       <p className="crumbs">
-        <Link to={`/${lang}/build`}>← {t('nav.build', lang)}</Link>
+        <Link to={`/${lang}/build`}>
+          <Icon name="arrow-right" size={18} className="icon--back" /> {t('nav.build', lang)}
+        </Link>
       </p>
       <h1>{pt.title}</h1>
       <div className="lesson__meta">
@@ -50,8 +54,8 @@ export default function ProjectDetail({ lang, projectId }: { lang: Locale; proje
                     <span className="lesson-list__body">
                       <span className="lesson-list__title">{lessonTitle(m, lang)}</span>
                     </span>
-                    <span className="lesson-list__go" aria-hidden="true">
-                      →
+                    <span className="lesson-list__go">
+                      <Icon name="arrow-right" size={22} />
                     </span>
                   </Link>
                 </li>
@@ -67,6 +71,7 @@ export default function ProjectDetail({ lang, projectId }: { lang: Locale; proje
             const tool = getTool(id)
             return (
               <span className="chip" key={id}>
+                <Icon name={toolIcon(id, tool?.category)} size={18} />
                 {tool ? pick(tool.names, lang) : id}
               </span>
             )
@@ -75,6 +80,7 @@ export default function ProjectDetail({ lang, projectId }: { lang: Locale; proje
             const w = getWood(id)
             return (
               <span className="chip chip--material" key={id}>
+                <Icon name={woodIcon(w?.kind ?? '')} size={18} />
                 {w ? pick(w.names, lang) : id}
               </span>
             )

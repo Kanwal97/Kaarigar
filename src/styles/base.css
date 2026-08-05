@@ -1,5 +1,8 @@
-/* Base styles — M1 skeleton. Minimal, mobile-first, accessible defaults.
-   Full component styles land in M2. */
+/* BASE — reset, element defaults, and the accessibility contracts.
+   Nothing component-specific lives here (see layout.css / components.css).
+   Redesign Phase 3: the M1 skeleton classes (.app-shell/.app-header/.app-main/
+   .app-footer/.brand, .home__levels, .home__level-link) were removed — no component
+   had referenced them since the M2 shell landed. */
 
 *,
 *::before,
@@ -25,13 +28,19 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  line-height: 1.25;
+  line-height: var(--lh-heading);
   /* padding so Devanagari/Gurmukhi matras never clip against the line above */
   padding-block: 0.1em;
+  text-wrap: balance;
 }
 
 a {
   color: var(--info);
+}
+
+p,
+li {
+  text-wrap: pretty;
 }
 
 code {
@@ -41,14 +50,25 @@ code {
   font-size: 0.9em;
 }
 
-/* Visible focus for keyboard users (WCAG 2.4.7). */
+img,
+svg {
+  max-width: 100%;
+}
+
+/* Visible focus for keyboard users (WCAG 2.4.7). One definition, everywhere. */
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: var(--focus-w) solid var(--focus-color);
   outline-offset: 2px;
   border-radius: var(--r-sm);
 }
 
-/* Respect reduced-motion everywhere (WCAG 2.3.3). */
+::selection {
+  background: color-mix(in srgb, var(--accent) 40%, var(--surface));
+  color: var(--ink);
+}
+
+/* Respect reduced-motion everywhere (WCAG 2.3.3). Hover/active END states still
+   apply instantly — only the travel between them is removed. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -60,121 +80,56 @@ code {
   }
 }
 
-.app-shell {
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-}
+/* ---------- shared utilities ---------- */
 
-.app-header {
-  display: flex;
-  align-items: baseline;
-  gap: var(--sp-3);
-  padding: var(--sp-4);
-  background: var(--primary);
-  color: var(--primary-ink);
-}
-.brand {
-  font-family: var(--font-display);
-  font-size: 1.375rem;
-  font-weight: 700;
-}
-.brand-sub {
-  opacity: 0.85;
-  font-size: 0.95rem;
-}
-
-.app-main {
-  flex: 1;
-  width: min(66ch, 100%);
-  margin-inline: auto;
-  padding: var(--sp-6) var(--sp-4);
-}
-
-.app-footer {
-  padding: var(--sp-4);
-  color: var(--ink-soft);
-  text-align: center;
-}
-
-/* Language select splash */
-.lang-select__title {
-  font-size: 2.25rem;
-  margin-block: 0 var(--sp-2);
-}
-.lang-select__tagline {
+.muted {
   color: var(--ink-soft);
 }
-.lang-select__prompt {
-  margin-top: var(--sp-6);
-  font-weight: 700;
+
+/* Prose measure. Applied to running text ONLY — never to the page shell, which is
+   what made every desktop screen a phone in a 240px frame (Phase 1, Finding B). */
+.measure {
+  max-width: var(--measure);
 }
-.lang-select__list {
-  list-style: none;
+
+/* Visually hidden but announced (used for landmark names and state text). */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  display: grid;
-  gap: var(--sp-3);
-}
-.lang-select__btn,
-.notfound__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 56px; /* primary target 56–64px, thumb-friendly */
-  padding: var(--sp-3) var(--sp-4);
-  background: var(--surface);
-  border: 2px solid var(--border-strong); /* interactive control edge — ≥3:1 (WCAG 1.4.11) */
-  border-radius: var(--r-md);
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-size: 1.375rem;
-  text-decoration: none;
-}
-.lang-select__btn:hover,
-.notfound__btn:hover {
-  border-color: var(--cta);
-  background: var(--surface-sunk);
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
-.crumbs {
-  margin-top: 0;
-  color: var(--ink-soft);
-}
-.home__levels {
-  list-style: none;
+/* A button that reads and behaves as a link (progress reset, replay intro). */
+.linkish {
+  min-height: var(--tap-icon);
   padding: 0;
-  display: grid;
-  gap: var(--sp-2);
+  background: none;
+  border: 0;
+  color: var(--info);
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
 }
-.home__level-link {
-  display: block;
-  min-height: 48px;
-  padding: var(--sp-3);
-  background: var(--surface);
-  border: 1px solid var(--border-strong); /* interactive control edge — ≥3:1 */
-  border-radius: var(--r-md);
-  text-decoration: none;
-  color: var(--ink);
-}
-/* The active "start" action — energetic orange CTA with dark ink (accessible + motivating). */
-.home__level-link--start {
-  background: var(--cta);
-  color: var(--cta-ink);
-  border-color: var(--cta);
-  font-family: var(--font-display);
+
+/* Uppercase section label. Tracking is applied to Latin only — Devanagari and
+   Gurmukhi must never be letter-spaced (it breaks conjuncts and matra attachment),
+   so callers set `lang` and this rule backs off for Indic scripts. */
+.eyebrow {
+  margin: 0;
+  font-size: var(--fs-xs);
   font-weight: 700;
-  min-height: 56px;
-  display: flex;
-  align-items: center;
-}
-.home__level-link--start:hover {
-  filter: brightness(1.05);
-}
-.home__level-muted {
-  padding: var(--sp-3);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
   color: var(--ink-soft);
 }
-.level-stub__todo,
-.home__note {
-  color: var(--ink-soft);
+:is(:lang(hi), :lang(pa), :lang(bgc)) .eyebrow,
+.eyebrow:is(:lang(hi), :lang(pa), :lang(bgc)) {
+  letter-spacing: normal;
+  text-transform: none;
 }

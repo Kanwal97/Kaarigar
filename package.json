@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
+    "check:styles": "node scripts/check-styles.mjs",
     "verify:videos": "node scripts/verify-videos.mjs",
     "check:budget": "node scripts/check-budget.mjs",
     "test": "vitest run",
